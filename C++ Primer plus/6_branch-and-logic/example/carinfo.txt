@@ -1,0 +1,4 @@
+Make and model: abcdefg
+Year: 1990
+Was asking $20.00
+Now asking $18.26

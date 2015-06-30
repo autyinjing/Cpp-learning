@@ -1,0 +1,16 @@
+知识点：
+
+1.ofstream Name; (声明一个对象)
+  Name.open(FileName); (打开一个文件)
+  Name << Data; (将数据写入已打开的文件)
+
+2.声明一个ofstream对象并将其同文件关联起来后，可以像使用cout那样使用它,ifstream对象类似;
+
+3.判断文件是否成功打开，使用fstream类成员函数is_open() || good();
+
+4.文件I/O：①声明ifstream对象或者ofstream对象;
+	   ②将该对象与文件相关联(打开文件);
+	   ③像cin或者cout一样使用该对象;
+	   ④关闭文件.
+
+5.判断到达文件尾用成员函数eof(),判断读取错误或者类型不匹配用fail();

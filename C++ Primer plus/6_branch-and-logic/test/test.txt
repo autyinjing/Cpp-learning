@@ -1,0 +1,42 @@
+1.第一种格式两条if语句都要判断，而第二种格式中若满足第一个if，程序就直接重新开始下一次循环;
+
+2.得到的数值相同，但++ch类型为char，将作为字符打印，而ch+1是int类型，将作为数字打印;
+
+3.输出为：H$i$!$
+	  S$e$n$d$ $ct1 = 9,ct2 = 9;
+
+4.a.weight >= 115 && weight < 125;
+  b.ch == 'q' || ch == 'Q';
+  c.x % 2 == 0 && x != 26;
+  d.x % 2 == 0 && x % 26 != 0;
+  e.donation >= 1000 && donation <= 2000 || guest == 1;
+  f.(ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z');
+
+5.不一定，!!x 等价于 !(!x)等价于!0 或者 !1,不一定等于x;
+
+6.(x >= 0) ? x : -x;
+
+7.switch ( ch )
+{
+	case 'A' : a_grade++;
+		   break;
+
+	case 'B' : b_grade++;
+		   break;
+
+	case 'C' : c_grade++;
+		   break;
+
+	case 'D' : d_grade++;
+		   break;
+
+	default : f_grade++;
+}
+
+8.使用字符时，输入的字符若是与各个case不匹配，则都归为default，然而若使用数字，输入的与case不匹配时，就会退出循环;
+
+9.int line = 0;
+  char ch;
+  while ( (cin.get(ch)) && (ch != 'Q') )
+  	if ( ch == '\n' )
+	     line++;

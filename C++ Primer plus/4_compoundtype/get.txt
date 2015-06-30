@@ -1,0 +1,41 @@
+知识点积累：
+
+1.g++编译c++代码时，使用 -std=c++0x 可以链接c++11特性;
+
+2.c++11新增原始字符串(raw),其将 "( 和 )" 用作界定符，并使用前缀R来标识;
+  若要在原始字符串中包含 "( 和 )" ,则需在 "与( 和 )与" 之间加上 +* ,即用 "+*( 和 )+*" 替代 "( 和 )" ;
+
+3.const修饰符限定了所修饰的变量的值不允许改变，使用const时应该在声明变量时为其赋值;
+
+4.array对象和数组存储在栈中，vector对象存储在堆中，array对象可以像string对象一样赋值;
+
+5.vector<typeName> vt(n_elem), array<typeName, n_elem> arr; vector是动态数组的替代品，array是定长数组的替代品;
+
+6. 按行输入字符串常用cin.getline(ArrName, Size);或者getline(cin, ArrName);
+
+复习：
+
+1.cin.get(name, Size)读取字符串，但是没有读取和丢弃换行符;为此，可以再次调用无参get()清除换行符，或者直接cin.get(name, Size).get();
+
+2.c++11的字符串和结构初始化可以省略 '=' ;
+
+3.getline(cin, name);cin.getline(name, Size);
+
+4.wchar_t, c++11的char16_t和char32_t分别使用前缀L、u和U表示;
+
+5.原始字符串，界定符"( 和 )"，前缀R;
+
+6.结构声明可以省略名称，但一般不采用，声明变量时可以省略struct;
+
+7.typeName * name = new typeName; 对应 delete name;
+  typeName * name = new typeName [Size]; 对应 delete [] name;
+
+8.对数组名取地址得到的是整个数组的地址，对其进行增1操作时将移到数组末尾;
+
+9.vector<typeName> name;或者 vector<typeName> name(Size);
+
+10.array<typeName, Size> name; (c++11)
+
+11.g++ -std=c++0x or g++ -std=gnu++0x.
+
+12.string类的对象可以使用成员函数size()来获取字符串长度;

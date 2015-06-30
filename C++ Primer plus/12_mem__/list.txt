@@ -1,0 +1,58 @@
+总结：
+
+1. 定义类的默认构造函数（动态内存分配）例：
+	className::className()
+	{
+		...;
+		pitem = new Item [SIZE];
+		...;
+	}
+
+2. 定义类的默认析构函数（动态内存分配）例：
+	className::~className()
+	{
+		...;
+		delete [] pitem;
+		...;
+	}
+
+3. 定义类的复制构造函数（动态内存分配）例：
+	className::className( const className & obj )
+	{
+		...;
+		pitem = new Item [SIZE];
+		...;
+	}
+
+4. 定义类的重载后的赋值运算符（动态内存分配）例：
+	className & operator=( const className & obj )
+	{
+		if ( &obj == this )
+		      return *this;
+		delete [] pitem;
+		...;
+		pitem = new Item [SIZE];
+		...;
+		return *this;
+	}
+
+5. 定义类的重载后的<<运算符 例：
+	ostream & operator<<( ostream & os, const className & obj )
+	{
+		os << ...;
+		return os;
+	}
+
+6. 调用构造函数初始化类指针
+	className * pclass = new className(value);
+
+7. 成员初始化列表
+	className::className( TypeName val ) : mem1(val), mem2(val), ...
+	{
+	}
+
+8. C++11的类内初始化
+	private:
+		TypeName1 	mem1 = val1;
+		TypeName2 	mem2 = val2;
+		...

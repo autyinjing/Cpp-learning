@@ -1,0 +1,19 @@
+// =====================================================================================
+//
+//       Filename:  query.cpp
+//
+//    Description:  
+//
+//        Version:  1.0
+//        Created:  2014年10月16日 11时20分51秒
+//       Revision:  none
+//       Compiler:  g++
+//
+//         Author:  aut (yinjing), linuxeryinjing@gmail.com
+//        Company:  Information and Computing Science 1201
+//
+// =====================================================================================
+
+#include "query.h"
+
+

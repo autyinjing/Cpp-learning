@@ -1,0 +1,46 @@
+1. a.自动; b.外部变量，链接性; c.静态全局变量，无链接性; d.静态局部变量，无链接性;
+
+2. 
+
+3. #include <iostream>
+   
+   int main()
+   {
+	   double 	x;
+	   std::cout << "Enter value: ";
+	   while ( !(std::cin >> x) )
+	   {
+		   std::cout << "Bad input.Please enter a number: ";
+		   std::cin.clear();
+		   while ( std::cin.get() != '\n' )
+			 continue;
+	   }
+	   std::cout << "Value = " << x << std::endl;
+	   return 0;
+   } //使用名称解析
+
+4. #include <iostream>
+   
+   int main()
+   {
+	   double 	x;
+	   using 	std::cout;
+	   using 	std::cin;
+	   using 	std::endl;
+	   ...
+   }
+
+5. 可以在每个文件中包含单独的静态函数定义。或者每个文件都在未命名的名称空间中定义一个合适的average()函数;
+
+6. 10
+   4
+   0
+   Other: 10, 1
+   another: 10, 4
+
+7. 1
+   4, 1, 2
+   2
+   2
+   4, 1, 2
+   2

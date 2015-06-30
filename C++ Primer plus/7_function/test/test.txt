@@ -1,0 +1,88 @@
+1. 使用函数的三个步骤：
+			①提供函数定义;
+			②提供函数原型;
+			③调用函数.
+
+2. a.void igor( void );
+   b.float tofu( int );
+   c.double mpg( double, double );
+   d.long summation( long *, int );
+   e.double doctor( const char * );
+   f.void ofcourse( boss );
+   g.char * plot( map * );
+
+3. void fun( int arr[], int size, int value )
+   {
+	   while ( size-- > 0 )
+		 arr[size] = value;
+   }
+
+4. void fun( int * head, int * tail, int value )
+   {
+	   while ( tail-- != head )
+		 *tail = value;
+   }
+
+5. double fun( const double arr[], int size )
+   {
+	   double  max = arr[--size];
+	   while ( size-- > 0 )
+		 if ( max < arr[size] )
+		       max = arr[size];
+	   return max;
+   }
+
+6. 因为基本类型是值传递，不会修改原始数据;
+
+7. 字符数组名，字符串指针，带双引号的字符串;
+
+8. int replace( char * str, char c1, char c2 );
+   {
+	   int 	count = 0;
+	   
+	   while ( *str )
+	   {
+		   if ( *str == c1 )
+		   {
+			   *str = c2;
+			   ++count;
+		   }
+		   str++;
+	   }
+	   return count;
+   }
+
+9. 字符 'p' ,字符 'c';
+
+10. 按值传递: 直接将它作为函数参数;
+    传递地址: 将&glitz作为函数参数;
+    
+    按值传递不会修改原始数据，但是如果该结构过大则会影响效率;
+    传递地址效率高，但是有可能错误地修改原始数据;
+
+11. int judge( int (*fp)(const char *) );
+
+12. a.void print( applicat app )
+      {
+	      std::cout << app.name << std::endl;
+	      for ( int i = 0; i < 3; ++i )
+		    std::cout << app.credit_ratings[i] << ' ';
+	      std::cout << std::endl;
+      }
+    b.void print( applicat *ap )
+      {
+	      using namespace std;
+	      cout << ap->name;
+	      for ( int i = 0; i < 3; ++i )
+		    cout << ap->creadit_ratings[i] << ' ';
+	      cout << endl;
+      }
+
+13. typedef void (*p_fun1)( applicant * );
+    typedef const char * (*p_fun2)( const applicat *, const applicat * );
+
+    p_fun1 	p1 = f1;
+    p_fun2 	p2 = f2;
+    
+    p_fun1 	*ap[5];
+    p_fun2 	(*pa)[10];

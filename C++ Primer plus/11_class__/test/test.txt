@@ -1,0 +1,24 @@
+1. 原型：Stonewt operator*( double mult ) ;
+
+   定义：Stonewt Stonewt::operator*( double n )
+   	 {
+		 return Stonewt(mult * pounds);
+   	 }
+
+2. 友元函数不是类方法，声明原型时要加上关键字friend,在定义时不必使用类限定符，但是可以访问类的私有数据;
+   成员函数是类方法，定义时要加上类限定符.
+
+3. 要访问私有成员，它必须是友元，但要访问公有成员，可以不是友元.
+
+4. 原型：friend Stonewt operator*( double n, const Stonewt & s );
+
+   定义：Stonewt operator*( double n, const Stonewt & st )
+   	 {
+		 return Stonewt(n * s.pounds);
+   	 }
+
+5. 不能重载的运算符：sizeof, :, *, ::, ?:, typeid, const_cast, dynamic_cast, reinterpret_cast, static_cast.
+
+6. 只能通过成员函数重载： =：赋值运算符，()：函数调用运算符，[]：下标运算符,->：通过指针访问类成员的运算符.
+
+7. operator double() { return mag; }

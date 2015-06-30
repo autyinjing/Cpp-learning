@@ -1,0 +1,31 @@
+1. 公有派生； 私有派生； 公有派生； 私有派生； 公有、私有派生。
+
+2. Gloam::Gloam(int g, const char * s) : fb(s), glip(g) {}
+   Gloam::Gloam(int g, const Frabjous & f) : fb(f), glip(g) {}
+   Gloam::tell() { fb.tell(); std::cout << glip; }
+
+3. Gloam::Gloam(int g, const char * s) : Frabjous(s), glip(g) {}
+   Gloam::Gloam(int g, const Frabjous & f) : Frabjous(f), glip(g) {}
+   Gloam::tell() { Frabjous::tell(); std::cout << glip; }
+
+4. template <class Worker*>
+   class Stack
+   {
+	   private:
+		   enum{ MAX = 10 };
+		   Worker 	* items[MAX];
+		   int 		top;
+	   public:
+		   Stack();
+		   bool isempty();
+		   bool isfull();
+		   bool push(const Worker *&);
+		   bool pop(Worker *&);
+   }
+
+5. ArrayTP<string> sa;
+   ArrayTP< ArrayTP<double> > stck_arr_db;
+   ArrayTP< StackTP<Worker *> > arr_stk_wpr;
+
+6. 如果两条继承路线有相同的祖先，则类中将包含祖先成员的两个拷贝。将祖先类
+	作为虚基类可以解决这种问题。

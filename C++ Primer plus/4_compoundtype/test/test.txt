@@ -1,0 +1,49 @@
+1.a.char actors[30];
+  b.short betsie[100];
+  c.float chuck[13];
+  d.long double dipsea[64];
+2.a.array<char, 30> actors;
+  b.array<short, 100> betsie;
+  c.array<float, 13> chuck;
+  d.array<long double, 64> dipsea;
+3.int arr[5]{1, 3, 5, 7, 9};
+4.auto even = arr[0] + arr[4];
+5.std::cout << ideas[1] << endl;
+6.char str[20] = "cheeseburger";
+7.string str = "Waldorf Salad";
+8.struct fish
+{
+	char 	type[10];
+	int 	weight;
+	double 	length;
+};
+9.fish f1 = {"cao", 20, 590.90}
+10.enum Response{No, Yes, Maybe};
+11.double *p = &ted;
+   std::cout << *p << std::endl;
+12.float *pf = treacle;
+   std::cout << pf[0] << pf[9] << std::endl;
+13.using namespace std;
+   void Input( void )
+   {
+	   int 		n;
+
+	   cout << "Enter the number of the integer: ";
+	   cin >> n;
+
+	   int *arr = new int [n];
+	   vector<int> arr(n);
+   }
+14.有效，将打印出后面那串字符串在内存中的地址值.
+15.fish *f1 = new fish;
+	f1->type;
+	(*f1).weight;
+	f1->length;
+16.在输入结束之后，最后输入的换行符将会留在缓冲区，遇到下一个cin时将不能输入，直接结束.
+17.#include <vector>
+   #include <array>
+   #include <string>
+ 
+   const int 	Num = 10;
+   vector<string> str(Num);
+   array<string, Num> str;

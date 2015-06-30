@@ -1,0 +1,25 @@
+1.为了适应多种实现,根据特定需求选择合适类型
+2.a.short  a = 80;
+  b.unsigned int b = 42110;
+  c.long c = 3e9;
+3.C++没有提供自动防止超出整型限制的功能，可以使用头文件climits来确定限制情况
+4.33L是long int型,33是int型
+5.不真正等价，对于某些系统是等效的，只有在ASCII码的系统上，第一句才会将的分设置为A，而第二条语句还可以用于其他的编码系统。其次，65是一个int型常量，而'A'是一个char常量.
+6.1)char c = 88; 
+    cout << c << endl;
+  2)cout.put(char(88));
+  3)cout << char(88) << endl;
+  4)cout << (char)88 << endl;
+7.不会，会
+8.a.74
+  b.4
+  c.0
+  d.4.50000
+  e.3
+9.int a = int (x1) + int (x2);
+  int b = int (x1 + x2);
+10.a.int
+   b.float
+   c.char
+   d.char32_t
+   e.double

@@ -1,0 +1,78 @@
+1. 代码简短，没有递归调用的函数;
+
+2. a.void song( const char * name, int times = 1 );
+   b.void song( const char * name, int times );不用修改定义
+   c.可以，但是要保留times的默认值;
+     void song( char * name = "O, My Papa", int times = 1 );
+
+3. #include <iostream>
+   void iquote( int n )
+   {
+	   cout << "\"" << n << "\"";
+   }
+   
+   void iquote( double x )
+   {
+	   cout << '"' << x << '"';
+   }
+
+   void iquote( const char * str )
+   {
+	   cout << "\"" << str << "\"";
+   }
+
+4. a.void Print( const box & b )
+     {
+	     using namespace std;
+	     cout << b.maker << b.height << b.length << b.volume << endl;
+     }
+   b.void set_volume( box & b )
+     {
+	     using namespace std;
+	     b.volume = b.height * b.width * b.length;
+     }
+
+5. 原型：void fill( std::array<double, Seasons> & pa );
+	 void show( const std::array<double, Seasons> & da );
+
+   定义：
+   void fill( std::array<double, Seasons> & pa )
+   {
+	   using namespace std;
+	   for ( int i = 0; i < Seasons; i++ )
+	   {
+		   cout << "Enter " << Snames[i] << " expenses: ";
+		   cin >> pa[i];
+	   }
+   }
+   
+   void show( const std::array<double, Seasons> & da );
+
+6. a.默认参数： double mass( double d, double v = 1.0 );
+     函数重载： double mass( double d, double v );
+
+   b.函数重载： void repeat( int times, const char * str );
+   	        void repeat( const char * str );
+   c.函数模板： template <typename T>
+   	     	T average( T a, T b );
+     函数重载： int average( int a, int b );
+     		double average( double a, double b );
+
+   d.函数模板： template <typename T>
+   		T mangle( T str );
+
+7. template <typename T>
+   T max( T t1, T t2 );
+
+   template <typename T>
+   T max( T t1, T t2 )
+   {
+	   return t1 > t2 ? t1 : t2;
+   }
+
+8. template <> box Max<box>( box b1, box b2 );
+   {
+	   return b1.volume > b2.volume ? b1 : b2;
+   }
+
+9. v1: float; 	v2: float &; 	v3: float &; 	v4: int; 	v5: double;

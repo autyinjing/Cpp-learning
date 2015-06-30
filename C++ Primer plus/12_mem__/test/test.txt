@@ -1,0 +1,62 @@
+1. a.没有为成员分配内存空间，没有初始化指针;
+   b.将一个const变量赋给一个普通变量，复制地址，在销毁对象时将出错;
+   c.没有申请空间;
+
+2. ①new [] 和delete []不配对的问题;
+   ②默认复制构造函数的浅复制;
+   ③默认赋值运算符的浅复制;
+
+3. 自动生成的类方法：①构造函数：无任何操作;
+		     ②析构函数：无任何操作;
+		     ③复制构造函数：复制成员的值，浅复制;
+		     ④默认的赋值运算符：浅复制;
+		     ⑤地址运算符：返回调用对象的地址（即this指针的值）;
+
+4. #include <iostream>
+   #include <cstring>
+   using namespace std;
+
+   class nifty
+   {
+	   private:
+		   char	* personality;
+		   int 	talents;
+	   public:
+		   nifty();
+		   nifty( const char * s );
+		   nifty( const nifty & n );
+		   ~nifty() { delete [] personality; }
+		   nifty & operator=( const nifty & n ) const;
+		   friend ostream & operator<<( ostream & os, const nifty & n );
+   }
+
+   nifty::nifty()
+   {
+	   personality = new char [1];
+	   personality[0] = '\0';
+	   talents = 0;
+   }
+
+   nifty::nifty( const char * s )
+   {
+	   personality = new char [std::strlen(s)];
+	   strcpy(personality, s);
+	   talents = 0;
+   }
+
+   ostream & operator<<( ostream & os, const nifty & n )
+   {
+	   os << n.personality << '\n';
+	   os << n.talent << '\n';
+	   return os;
+   }
+
+5. a.   #1: Golfer();
+	#2: Golfer(const char * name, int g = 0);
+	#3: Golfer(const char * name, int g = 0);
+	#4: Golfer();
+	#5: Golfer(const Golfer & g);
+	#6: Golfer(const char * name, int g = 0) and Golfer(const Golfer & g)
+	#7: Golfer(const Golfer & g);
+	#8: Golfer(const char * name, int g = 0) and Golfer(const Golfer & g)
+   b. 重载的赋值运算符，重载后的输出运算符;

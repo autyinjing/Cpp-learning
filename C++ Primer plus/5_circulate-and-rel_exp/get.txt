@@ -1,0 +1,18 @@
+知识点：
+
+1.可以在for循环的第一条语句声明新变量并初始化;(c不行)
+
+2.函数重载示例：cin.get(); cin.get(ch); cin.get(str_addr, Size);
+
+3.单个字符输入：while ( cin.get(ch) )
+		{
+			...
+		}
+
+4.ch = cin.get(); cout.put(ch);
+
+5.cin.getline(str_addr, Size); getline(cin, str_addr);
+
+6.用类成员函数cin.eof()和cin.fail()可以检测是否达到文件末尾(EOF);
+
+7.cin.get(char)的返回值是一个cin对象(bool转换后为true或者false),cin.get()的返回值是读取到的字符;

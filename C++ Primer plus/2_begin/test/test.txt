@@ -1,0 +1,21 @@
+1.函数
+2.包含头文件<iostream>,使得在编译之前，用iostream文件的内容替换该指令
+3.声明变量使用空间,使得程序可以使用std名称空间中的定义
+4.using namespace std;
+  cout << "Hello, world" << endl;
+  or 
+  using std::cout;
+  using std::endl;
+  cout << "Hello, world" << endl;
+  or 
+  std::cout << "Hello, world" << std::endl;
+5.int 	cheeses;
+6.cheeses = 32;
+7.cin >> cheeses;
+8.cout << "We have " << cheeses << varieties of cheese\n";
+9.返回值类型， 形式参数类型， 
+10.当函数的返回值为void 类型时,如果不提供返回值，也可以使用 return;
+11.原因：没有using namespace std;
+   修复方法：1)该语句前加上语句：using namespace std;
+   	     2)将cout换成std::cout;
+	     3)该语句前加上语句:using std::cout;
