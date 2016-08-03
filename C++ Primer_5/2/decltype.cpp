@@ -24,6 +24,7 @@ int main()
         decltype(a = b)   d = a;
         //++c;
         //++d;
+        decltype((a)) f;
 
         cout << a << " " << b << ' ' << c << ' ' << d << endl;
 
