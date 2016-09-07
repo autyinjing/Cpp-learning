@@ -23,7 +23,7 @@
 int main(int argc, char *argv[])
 {
         using namespace std;
-        list<const char *>    clst{"i am", " a ", "student!\n"};
+        list<const char *>    clst{"i am", " a ", "student!"};
         //list<const char *>::iterator  beg = clst.begin(), end = clst.end();
         vector<string>  svec;
 
