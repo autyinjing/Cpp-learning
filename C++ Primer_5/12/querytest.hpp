@@ -28,7 +28,7 @@ class TextQuery
 {
 public:
     TextQuery(ifstream&);
-    QueryResult query(string&) const;
+    QueryResult query(const string&) const;
 
 private:
     shared_ptr<vector<string>> file;
@@ -83,7 +83,7 @@ ostream& print(ostream& os, const QueryResult& qr)
     return os;
 }
 
-QueryResult TextQuery::query(string &word) const
+QueryResult TextQuery::query(const string &word) const
 {
     static shared_ptr<set<line_no>> nodata(new set<line_no>);
     auto loc = wm.find(word);

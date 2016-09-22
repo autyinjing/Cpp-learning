@@ -1,0 +1,1531 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AndQuery	./15/query.h	/^        AndQuery(const Query &left, const Query &right) :$/;"	f	class:AndQuery	access:private	signature:(const Query &left, const Query &right)
+AndQuery	./15/query.h	/^class AndQuery : public BinaryQuery$/;"	c	inherits:BinaryQuery
+AndQuery	./15/query_2.hpp	/^    AndQuery(const Query &left, const Query &right)$/;"	f	class:AndQuery	access:private	signature:(const Query &left, const Query &right)
+AndQuery	./15/query_2.hpp	/^class AndQuery : public BinaryQuery$/;"	c	inherits:BinaryQuery
+AndQuery::AndQuery	./15/query.h	/^        AndQuery(const Query &left, const Query &right) :$/;"	f	class:AndQuery	access:private	signature:(const Query &left, const Query &right)
+AndQuery::AndQuery	./15/query_2.hpp	/^    AndQuery(const Query &left, const Query &right)$/;"	f	class:AndQuery	access:private	signature:(const Query &left, const Query &right)
+AndQuery::eval	./15/query.h	/^        QueryResult eval(const TextQuery &) const;$/;"	p	class:AndQuery	access:private	signature:(const TextQuery &) const
+AndQuery::eval	./15/query.h	/^QueryResult AndQuery::eval(const TextQuery& text) const$/;"	f	class:AndQuery	signature:(const TextQuery& text) const
+AndQuery::eval	./15/query_2.hpp	/^    QueryResult eval(const TextQuery&) const;$/;"	p	class:AndQuery	access:private	signature:(const TextQuery&) const
+AndQuery::eval	./15/query_2.hpp	/^QueryResult AndQuery::eval(const TextQuery& text) const$/;"	f	class:AndQuery	signature:(const TextQuery& text) const
+AndQuery::operator &	./15/query.h	/^        friend Query operator&(const Query &, const Query &);$/;"	p	class:AndQuery	access:friend	signature:(const Query &, const Query &)
+AndQuery::operator &	./15/query_2.hpp	/^    friend Query operator&(const Query&, const Query&);$/;"	p	class:AndQuery	access:friend	signature:(const Query&, const Query&)
+BLOB_H	./12/blob.h	18;"	d
+BLOB_H	./13/blob.h	18;"	d
+BLOB_H	./16/blob.h	18;"	d
+Base1	./18/18.25.cpp	/^class Base1$/;"	c	file:
+Base1::print	./18/18.25.cpp	/^                virtual void print() { std::cout << "Base1->print" << std::endl; }$/;"	f	class:Base1	access:public	signature:()
+Base1::~Base1	./18/18.25.cpp	/^                virtual ~Base1();$/;"	p	class:Base1	file:	access:public	signature:()
+Base2	./18/18.25.cpp	/^class Base2$/;"	c	file:
+Base2::print	./18/18.25.cpp	/^                virtual void print() { std::cout << "Base2->print" << std::endl; }$/;"	f	class:Base2	access:public	signature:()
+Base2::~Base2	./18/18.25.cpp	/^                virtual ~Base2();$/;"	p	class:Base2	file:	access:public	signature:()
+BinaryQuery	./15/query.h	/^                BinaryQuery(const Query &l, const Query &r, std::string s)$/;"	f	class:BinaryQuery	access:protected	signature:(const Query &l, const Query &r, std::string s)
+BinaryQuery	./15/query.h	/^class BinaryQuery : public Query_base$/;"	c	inherits:Query_base
+BinaryQuery	./15/query_2.hpp	/^    BinaryQuery(const Query &l, const Query &r, string s)$/;"	f	class:BinaryQuery	access:protected	signature:(const Query &l, const Query &r, string s)
+BinaryQuery	./15/query_2.hpp	/^class BinaryQuery : public Query_base$/;"	c	inherits:Query_base
+BinaryQuery::BinaryQuery	./15/query.h	/^                BinaryQuery(const Query &l, const Query &r, std::string s)$/;"	f	class:BinaryQuery	access:protected	signature:(const Query &l, const Query &r, std::string s)
+BinaryQuery::BinaryQuery	./15/query_2.hpp	/^    BinaryQuery(const Query &l, const Query &r, string s)$/;"	f	class:BinaryQuery	access:protected	signature:(const Query &l, const Query &r, string s)
+BinaryQuery::lhs	./15/query.h	/^                Query           lhs, rhs;       \/\/右侧对象和左侧对象$/;"	m	class:BinaryQuery	access:protected
+BinaryQuery::lhs	./15/query_2.hpp	/^    Query lhs, rhs;$/;"	m	class:BinaryQuery	access:protected
+BinaryQuery::opSym	./15/query.h	/^                std::string     opSym;          \/\/运算符的名字$/;"	m	class:BinaryQuery	access:protected
+BinaryQuery::opSym	./15/query_2.hpp	/^    string opSym;$/;"	m	class:BinaryQuery	access:protected
+BinaryQuery::rep	./15/query.h	/^                std::string rep() const { return "(" + lhs.rep() + " " $/;"	f	class:BinaryQuery	access:protected	signature:() const
+BinaryQuery::rep	./15/query_2.hpp	/^    string rep() const { return "(" + lhs.rep() + " " + opSym + " " + rhs.rep() + ")"; }$/;"	f	class:BinaryQuery	access:protected	signature:() const
+BinaryQuery::rhs	./15/query.h	/^                Query           lhs, rhs;       \/\/右侧对象和左侧对象$/;"	m	class:BinaryQuery	access:protected
+BinaryQuery::rhs	./15/query_2.hpp	/^    Query lhs, rhs;$/;"	m	class:BinaryQuery	access:protected
+Blob	./16/blob.h	/^                Blob();$/;"	p	class:Blob	access:public	signature:()
+Blob	./16/blob.h	/^                Blob(std::initializer_list<T> il);$/;"	p	class:Blob	access:public	signature:(std::initializer_list<T> il)
+Blob	./16/blob.h	/^                Blob(typename T::iterator beg, typename T::iterator end);$/;"	p	class:Blob	access:public	signature:(typename T::iterator beg, typename T::iterator end)
+Blob	./16/blob.h	/^Blob<T>::Blob() : data(nullptr) { }$/;"	f	class:Blob	signature:()
+Blob	./16/blob.h	/^Blob<T>::Blob(initializer_list<T> il) : data(make_shared<vector<T>>(il)) { }$/;"	f	class:Blob	signature:(initializer_list<T> il)
+Blob	./16/blob.h	/^Blob<T>::Blob(typename T::iterator beg, typename T::iterator end)$/;"	f	class:Blob	signature:(typename T::iterator beg, typename T::iterator end)
+Blob	./16/blob.h	/^template <typename T> class Blob$/;"	c
+Blob::Blob	./16/blob.h	/^                Blob();$/;"	p	class:Blob	access:public	signature:()
+Blob::Blob	./16/blob.h	/^                Blob(std::initializer_list<T> il);$/;"	p	class:Blob	access:public	signature:(std::initializer_list<T> il)
+Blob::Blob	./16/blob.h	/^                Blob(typename T::iterator beg, typename T::iterator end);$/;"	p	class:Blob	access:public	signature:(typename T::iterator beg, typename T::iterator end)
+Blob::Blob	./16/blob.h	/^Blob<T>::Blob() : data(nullptr) { }$/;"	f	class:Blob	signature:()
+Blob::Blob	./16/blob.h	/^Blob<T>::Blob(initializer_list<T> il) : data(make_shared<vector<T>>(il)) { }$/;"	f	class:Blob	signature:(initializer_list<T> il)
+Blob::Blob	./16/blob.h	/^Blob<T>::Blob(typename T::iterator beg, typename T::iterator end)$/;"	f	class:Blob	signature:(typename T::iterator beg, typename T::iterator end)
+Blob::back	./16/blob.h	/^                T& back();$/;"	p	class:Blob	access:public	signature:()
+Blob::back	./16/blob.h	/^                const T& back() const;$/;"	p	class:Blob	access:public	signature:() const
+Blob::back	./16/blob.h	/^T& Blob<T>::back()$/;"	f	class:Blob	signature:()
+Blob::back	./16/blob.h	/^const T& Blob<T>::back() const$/;"	f	class:Blob	signature:() const
+Blob::check	./16/blob.h	/^                void check(size_type i, const std::string &msg) const;$/;"	p	class:Blob	access:private	signature:(size_type i, const std::string &msg) const
+Blob::check	./16/blob.h	/^void Blob<T>::check(size_type i, const string &msg) const$/;"	f	class:Blob	signature:(size_type i, const string &msg) const
+Blob::data	./16/blob.h	/^                std::shared_ptr<std::vector<T>>         data;$/;"	m	class:Blob	access:private
+Blob::empty	./16/blob.h	/^                bool empty() const { return data->empty(); }$/;"	f	class:Blob	access:public	signature:() const
+Blob::front	./16/blob.h	/^                T& front();$/;"	p	class:Blob	access:public	signature:()
+Blob::front	./16/blob.h	/^                const T& front() const;$/;"	p	class:Blob	access:public	signature:() const
+Blob::front	./16/blob.h	/^T& Blob<T>::front()$/;"	f	class:Blob	signature:()
+Blob::front	./16/blob.h	/^const T& Blob<T>::front() const$/;"	f	class:Blob	signature:() const
+Blob::operator []	./16/blob.h	/^                T& operator[](size_type i);$/;"	p	class:Blob	access:public	signature:(size_type i)
+Blob::operator []	./16/blob.h	/^                const T& operator[](size_type i) const;$/;"	p	class:Blob	access:public	signature:(size_type i) const
+Blob::operator []	./16/blob.h	/^T& Blob<T>::operator[](size_type i)$/;"	f	class:Blob	signature:(size_type i)
+Blob::operator []	./16/blob.h	/^const T& Blob<T>::operator[](size_type i) const$/;"	f	class:Blob	signature:(size_type i) const
+Blob::pop_back	./16/blob.h	/^                void pop_back();$/;"	p	class:Blob	access:public	signature:()
+Blob::pop_back	./16/blob.h	/^void Blob<T>::pop_back()$/;"	f	class:Blob	signature:()
+Blob::push_back	./16/blob.h	/^                void push_back(const T &t) { data->push_back(t); }$/;"	f	class:Blob	access:public	signature:(const T &t)
+Blob::size	./16/blob.h	/^                size_type size() const { return data->size(); }$/;"	f	class:Blob	access:public	signature:() const
+Blob::size_type	./16/blob.h	/^                typedef typename std::vector<T>::size_type size_type;$/;"	t	class:Blob	access:public
+Blob::value_type	./16/blob.h	/^                typedef T        value_type;$/;"	t	class:Blob	access:public
+BlobPtr	./16/blob.h	/^                BlobPtr() : curr(0) { }$/;"	f	class:BlobPtr	access:public	signature:()
+BlobPtr	./16/blob.h	/^                BlobPtr(Blob<T> &a, size_t sz = 0) :$/;"	f	class:BlobPtr	access:public	signature:(Blob<T> &a, size_t sz = 0)
+BlobPtr	./16/blob.h	/^template <typename T> class BlobPtr$/;"	c
+BlobPtr::BlobPtr	./16/blob.h	/^                BlobPtr() : curr(0) { }$/;"	f	class:BlobPtr	access:public	signature:()
+BlobPtr::BlobPtr	./16/blob.h	/^                BlobPtr(Blob<T> &a, size_t sz = 0) :$/;"	f	class:BlobPtr	access:public	signature:(Blob<T> &a, size_t sz = 0)
+BlobPtr::check	./16/blob.h	/^                        check(std::size_t, const std::string&) const;$/;"	p	class:BlobPtr	access:private	signature:(std::size_t, const std::string&) const
+BlobPtr::curr	./16/blob.h	/^                std::size_t     curr;   \/\/在数组中的当前位置$/;"	m	class:BlobPtr	access:private
+BlobPtr::operator *	./16/blob.h	/^                T& operator*() const$/;"	f	class:BlobPtr	access:public	signature:() const
+BlobPtr::operator ++	./16/blob.h	/^                BlobPtr operator++(int);$/;"	p	class:BlobPtr	access:public	signature:(int)
+BlobPtr::operator ++	./16/blob.h	/^                BlobPtr& operator++();$/;"	p	class:BlobPtr	access:public	signature:()
+BlobPtr::operator ++	./16/blob.h	/^BlobPtr<T> BlobPtr<T>::operator++(int)  \/\/后置递增$/;"	f	class:BlobPtr	signature:(int)
+BlobPtr::operator ++	./16/blob.h	/^BlobPtr<T>& BlobPtr<T>::operator++()    \/\/前置递增，返回引用$/;"	f	class:BlobPtr	signature:()
+BlobPtr::operator --	./16/blob.h	/^                BlobPtr operator--(int);$/;"	p	class:BlobPtr	access:public	signature:(int)
+BlobPtr::operator --	./16/blob.h	/^                BlobPtr& operator--();$/;"	p	class:BlobPtr	access:public	signature:()
+BlobPtr::operator --	./16/blob.h	/^BlobPtr<T> BlobPtr<T>::operator--(int)  \/\/后置递减$/;"	f	class:BlobPtr	signature:(int)
+BlobPtr::operator --	./16/blob.h	/^BlobPtr<T>& BlobPtr<T>::operator--()    \/\/后置递减，返回引用$/;"	f	class:BlobPtr	signature:()
+BlobPtr::wptr	./16/blob.h	/^                std::weak_ptr<std::vector<T>>   wptr;$/;"	m	class:BlobPtr	access:private
+Bule_quote	./15/quote.h	/^                Bule_quote(const std::string &book, double price,$/;"	f	class:Bulk_quote	access:public	signature:(const std::string &book, double price, std::size_t qty, double disc)
+Bulk_quote	./15/quote.h	/^                Bulk_quote() = default;$/;"	p	class:Bulk_quote	access:public	signature:()
+Bulk_quote	./15/quote.h	/^class Bulk_quote : public Disc_quote$/;"	c	inherits:Disc_quote
+Bulk_quote	./15/quote.hpp	/^    Bulk_quote() = default;$/;"	p	class:Bulk_quote	access:public	signature:()
+Bulk_quote	./15/quote.hpp	/^    Bulk_quote(const string&, double, size_t, double);$/;"	p	class:Bulk_quote	access:public	signature:(const string&, double, size_t, double)
+Bulk_quote	./15/quote.hpp	/^Bulk_quote::Bulk_quote(const string& book, double p, size_t qty, double disc)$/;"	f	class:Bulk_quote	signature:(const string& book, double p, size_t qty, double disc)
+Bulk_quote	./15/quote.hpp	/^class Bulk_quote : public Quote$/;"	c	inherits:Quote
+Bulk_quote::Bule_quote	./15/quote.h	/^                Bule_quote(const std::string &book, double price,$/;"	f	class:Bulk_quote	access:public	signature:(const std::string &book, double price, std::size_t qty, double disc)
+Bulk_quote::Bulk_quote	./15/quote.h	/^                Bulk_quote() = default;$/;"	p	class:Bulk_quote	access:public	signature:()
+Bulk_quote::Bulk_quote	./15/quote.hpp	/^    Bulk_quote() = default;$/;"	p	class:Bulk_quote	access:public	signature:()
+Bulk_quote::Bulk_quote	./15/quote.hpp	/^    Bulk_quote(const string&, double, size_t, double);$/;"	p	class:Bulk_quote	access:public	signature:(const string&, double, size_t, double)
+Bulk_quote::Bulk_quote	./15/quote.hpp	/^Bulk_quote::Bulk_quote(const string& book, double p, size_t qty, double disc)$/;"	f	class:Bulk_quote	signature:(const string& book, double p, size_t qty, double disc)
+Bulk_quote::debug	./15/quote.hpp	/^    void debug() { Quote::debug(); cout << "min_qty: " << min_qty << ", discount: " << discount << endl; }$/;"	f	class:Bulk_quote	access:public	signature:()
+Bulk_quote::discount	./15/quote.hpp	/^    double discount = 0.0;$/;"	m	class:Bulk_quote	access:private
+Bulk_quote::min_qty	./15/quote.hpp	/^    size_t min_qty = 0;$/;"	m	class:Bulk_quote	access:private
+Bulk_quote::net_price	./15/quote.h	/^double Bulk_quote::net_price(size_t cnt) const$/;"	f	class:Bulk_quote	signature:(size_t cnt) const
+Bulk_quote::net_price	./15/quote.hpp	/^double Bulk_quote::net_price(size_t cnt) const$/;"	f	class:Bulk_quote	signature:(size_t cnt) const
+Bulk_quote::override	./15/quote.h	/^                double net_price(std::size_t) const override;$/;"	m	class:Bulk_quote	access:public
+Bulk_quote::override	./15/quote.hpp	/^    double net_price(size_t) const override;$/;"	m	class:Bulk_quote	access:public
+CBLOB_H	./12/cblob.h	18;"	d
+D1	./18/18.25.cpp	/^class D1 : public Base1 { \/*public: ~D1() { std::cout << "~D1()" << std::endl; }*\/ };$/;"	c	file:	inherits:Base1
+D2	./18/18.25.cpp	/^class D2 : public Base2 { \/*public: ~D2() { std::cout << "~D2()" << std::endl; }*\/ };$/;"	c	file:	inherits:Base2
+DATE_H_	./9/date.h	18;"	d
+DEBUGDELETE_H	./16/debugdelete.h	18;"	d
+Date	./9/9.51.cc	/^    Date(const string str);$/;"	p	class:Date	file:	access:public	signature:(const string str)
+Date	./9/9.51.cc	/^Date::Date(const string str)$/;"	f	class:Date	signature:(const string str)
+Date	./9/9.51.cc	/^class Date$/;"	c	file:
+Date	./9/date.h	/^                Date() = default;`$/;"	p	class:Date	access:public	signature:()
+Date	./9/date.h	/^                Date(const string &date);$/;"	p	class:Date	access:public	signature:(const string &date)
+Date	./9/date.h	/^Date::Date(const string &date)$/;"	f	class:Date	signature:(const string &date)
+Date	./9/date.h	/^class Date$/;"	c
+Date::Date	./9/9.51.cc	/^    Date(const string str);$/;"	p	class:Date	file:	access:public	signature:(const string str)
+Date::Date	./9/9.51.cc	/^Date::Date(const string str)$/;"	f	class:Date	signature:(const string str)
+Date::Date	./9/date.h	/^                Date() = default;`$/;"	p	class:Date	access:public	signature:()
+Date::Date	./9/date.h	/^                Date(const string &date);$/;"	p	class:Date	access:public	signature:(const string &date)
+Date::Date	./9/date.h	/^Date::Date(const string &date)$/;"	f	class:Date	signature:(const string &date)
+Date::day	./9/date.h	/^                unsigned long   day;$/;"	m	class:Date	access:private
+Date::m_day	./9/9.51.cc	/^    unsigned int m_day;$/;"	m	class:Date	file:	access:private
+Date::m_month	./9/9.51.cc	/^    unsigned int m_month;$/;"	m	class:Date	file:	access:private
+Date::m_year	./9/9.51.cc	/^    unsigned int m_year;$/;"	m	class:Date	file:	access:private
+Date::month	./9/date.h	/^                unsigned long   month;$/;"	m	class:Date	access:private
+Date::print	./9/9.51.cc	/^    void print();$/;"	p	class:Date	file:	access:public	signature:()
+Date::print	./9/9.51.cc	/^void Date::print()$/;"	f	class:Date	signature:()
+Date::year	./9/date.h	/^                unsigned long   year;$/;"	m	class:Date	access:private
+DebugDelete	./16/debugdelete.h	/^                DebugDelete(std::ostream &s = std::cerr) : os(s) { }$/;"	f	class:DebugDelete	access:public	signature:(std::ostream &s = std::cerr)
+DebugDelete	./16/debugdelete.h	/^class DebugDelete$/;"	c
+DebugDelete::DebugDelete	./16/debugdelete.h	/^                DebugDelete(std::ostream &s = std::cerr) : os(s) { }$/;"	f	class:DebugDelete	access:public	signature:(std::ostream &s = std::cerr)
+DebugDelete::operator ()	./16/debugdelete.h	/^                template <typename T> void operator()(T *p) const$/;"	f	class:DebugDelete	access:public	signature:(T *p) const
+DebugDelete::os	./16/debugdelete.h	/^                std::ostream &os;$/;"	m	class:DebugDelete	access:private
+Disc_quote	./15/quote.h	/^                Disc_quote() = default;$/;"	p	class:Disc_quote	access:public	signature:()
+Disc_quote	./15/quote.h	/^                Disc_quote(const std::string &book, double p, std::size_t n, double dis)$/;"	f	class:Disc_quote	access:public	signature:(const std::string &book, double p, std::size_t n, double dis)
+Disc_quote	./15/quote.h	/^class Disc_quote : public Quote$/;"	c	inherits:Quote
+Disc_quote::Disc_quote	./15/quote.h	/^                Disc_quote() = default;$/;"	p	class:Disc_quote	access:public	signature:()
+Disc_quote::Disc_quote	./15/quote.h	/^                Disc_quote(const std::string &book, double p, std::size_t n, double dis)$/;"	f	class:Disc_quote	access:public	signature:(const std::string &book, double p, std::size_t n, double dis)
+Disc_quote::discount	./15/quote.h	/^                double          discount = 0.0;$/;"	m	class:Disc_quote	access:protected
+Disc_quote::net_price	./15/quote.h	/^                double net_price(std::size_t) const = 0;$/;"	p	class:Disc_quote	access:public	signature:(std::size_t) const
+Disc_quote::quantity	./15/quote.h	/^                std::size_t     quantity = 0;$/;"	m	class:Disc_quote	access:protected
+EMPLOYEE_H	./13/employee.h	18;"	d
+Employee	./13/employee.h	/^                Employee() = default;$/;"	p	class:Employee	access:public	signature:()
+Employee	./13/employee.h	/^                Employee(const Employee& e) : name(e.name), no(++number) { }$/;"	f	class:Employee	access:public	signature:(const Employee& e)
+Employee	./13/employee.h	/^                Employee(const std::string& n) : name(n), no(++number) { }$/;"	f	class:Employee	access:public	signature:(const std::string& n)
+Employee	./13/employee.h	/^class Employee$/;"	c
+Employee::Employee	./13/employee.h	/^                Employee() = default;$/;"	p	class:Employee	access:public	signature:()
+Employee::Employee	./13/employee.h	/^                Employee(const Employee& e) : name(e.name), no(++number) { }$/;"	f	class:Employee	access:public	signature:(const Employee& e)
+Employee::Employee	./13/employee.h	/^                Employee(const std::string& n) : name(n), no(++number) { }$/;"	f	class:Employee	access:public	signature:(const std::string& n)
+Employee::f	./13/employee.h	/^                friend void f(const Employee&);$/;"	p	class:Employee	access:friend	signature:(const Employee&)
+Employee::name	./13/employee.h	/^                std::string     name;$/;"	m	class:Employee	access:private
+Employee::no	./13/employee.h	/^                int             no;$/;"	m	class:Employee	access:private
+Employee::number	./13/employee.h	/^                static int      number;$/;"	m	class:Employee	access:public
+Employee::number	./13/employee.h	/^int Employee::number = 0;$/;"	m	class:Employee
+Employee::operator =	./13/employee.h	/^                Employee &operator=(const Employee &e);$/;"	p	class:Employee	access:public	signature:(const Employee &e)
+Employee::operator =	./13/employee.h	/^Employee& Employee::operator=(const Employee &e)$/;"	f	class:Employee	signature:(const Employee &e)
+Employee::~Employee	./13/employee.h	/^                ~Employee() = default;$/;"	p	class:Employee	access:public	signature:()
+Exercise	./18/18.16.cpp	/^namespace Exercise$/;"	n	file:
+Exercise	./7/test.cpp	/^class Exercise$/;"	c	file:
+Exercise::Type	./7/test.cpp	/^                typedef double Type;$/;"	t	class:Exercise	file:	access:public
+Exercise::dvar	./18/18.16.cpp	/^        double  dvar = 0;$/;"	m	namespace:Exercise	file:
+Exercise::initval	./7/test.cpp	/^                Type initval();$/;"	p	class:Exercise	file:	access:public	signature:()
+Exercise::ivar	./18/18.16.cpp	/^        int     ivar = 0;$/;"	m	namespace:Exercise	file:
+Exercise::limit	./18/18.16.cpp	/^        const int       limit = 1000;$/;"	m	namespace:Exercise	file:
+Exercise::setval	./7/test.cpp	/^                Type setval(Type);$/;"	p	class:Exercise	file:	access:public	signature:(Type)
+Exercise::setval	./7/test.cpp	/^Type Exercise::setval(Type parm)$/;"	f	class:Exercise	signature:(Type parm)
+Exercise::val	./7/test.cpp	/^                int val;$/;"	m	class:Exercise	file:	access:private
+Folder	./13/message.h	/^                Folder() { }$/;"	f	class:Folder	access:public	signature:()
+Folder	./13/message.h	/^                Folder(const Folder &);$/;"	p	class:Folder	access:public	signature:(const Folder &)
+Folder	./13/message.h	/^Folder::Folder(const Folder &f)$/;"	f	class:Folder	signature:(const Folder &f)
+Folder	./13/message.h	/^class Folder$/;"	c
+Folder	./13/msg.hpp	/^    Folder(const Folder&);$/;"	p	class:Folder	access:public	signature:(const Folder&)
+Folder	./13/msg.hpp	/^    Folder(const string n = "") : name(n) {}$/;"	f	class:Folder	access:public	signature:(const string n = �)
+Folder	./13/msg.hpp	/^Folder::Folder(const Folder& f) : name(f.name), msgs(f.msgs)$/;"	f	class:Folder	signature:(const Folder& f)
+Folder	./13/msg.hpp	/^class Folder$/;"	c
+Folder::Folder	./13/message.h	/^                Folder() { }$/;"	f	class:Folder	access:public	signature:()
+Folder::Folder	./13/message.h	/^                Folder(const Folder &);$/;"	p	class:Folder	access:public	signature:(const Folder &)
+Folder::Folder	./13/message.h	/^Folder::Folder(const Folder &f)$/;"	f	class:Folder	signature:(const Folder &f)
+Folder::Folder	./13/msg.hpp	/^    Folder(const Folder&);$/;"	p	class:Folder	access:public	signature:(const Folder&)
+Folder::Folder	./13/msg.hpp	/^    Folder(const string n = "") : name(n) {}$/;"	f	class:Folder	access:public	signature:(const string n = �)
+Folder::Folder	./13/msg.hpp	/^Folder::Folder(const Folder& f) : name(f.name), msgs(f.msgs)$/;"	f	class:Folder	signature:(const Folder& f)
+Folder::addMsg	./13/message.h	/^                void addMsg(Message &);$/;"	p	class:Folder	access:public	signature:(Message &)
+Folder::addMsg	./13/message.h	/^void Folder::addMsg(Message &m)$/;"	f	class:Folder	signature:(Message &m)
+Folder::addMsg	./13/msg.hpp	/^    void addMsg(Msg*);$/;"	p	class:Folder	access:public	signature:(Msg*)
+Folder::addMsg	./13/msg.hpp	/^void Folder::addMsg(Msg* m)$/;"	f	class:Folder	signature:(Msg* m)
+Folder::messages	./13/message.h	/^                std::set<Message *>     messages;       \/\/保存指向所包含的所有message的指针$/;"	m	class:Folder	access:private
+Folder::msgs	./13/msg.hpp	/^    set<Msg*> msgs;$/;"	m	class:Folder	access:private
+Folder::name	./13/msg.hpp	/^    string name;$/;"	m	class:Folder	access:private
+Folder::operator =	./13/message.h	/^                Folder& operator=(const Folder&);$/;"	p	class:Folder	access:public	signature:(const Folder&)
+Folder::operator =	./13/message.h	/^Folder& Folder::operator=(const Folder &f)$/;"	f	class:Folder	signature:(const Folder &f)
+Folder::operator =	./13/msg.hpp	/^    Folder& operator=(const Folder&);$/;"	p	class:Folder	access:public	signature:(const Folder&)
+Folder::operator =	./13/msg.hpp	/^Folder& Folder::operator=(const Folder& f)$/;"	f	class:Folder	signature:(const Folder& f)
+Folder::print	./13/message.h	/^                void print();$/;"	p	class:Folder	access:public	signature:()
+Folder::print	./13/message.h	/^void Folder::print()$/;"	f	class:Folder	signature:()
+Folder::remMsg	./13/message.h	/^                void remMsg(Message &);$/;"	p	class:Folder	access:public	signature:(Message &)
+Folder::remMsg	./13/message.h	/^void Folder::remMsg(Message &m)$/;"	f	class:Folder	signature:(Message &m)
+Folder::remMsg	./13/msg.hpp	/^    void remMsg(Msg*);$/;"	p	class:Folder	access:public	signature:(Msg*)
+Folder::remMsg	./13/msg.hpp	/^void Folder::remMsg(Msg* m)$/;"	f	class:Folder	signature:(Msg* m)
+Folder::showInfo	./13/msg.hpp	/^    void showInfo();$/;"	p	class:Folder	access:public	signature:()
+Folder::showInfo	./13/msg.hpp	/^void Folder::showInfo()$/;"	f	class:Folder	signature:()
+Folder::swap	./13/message.h	/^        friend void swap(Folder &, Folder &);$/;"	p	class:Folder	access:friend	signature:(Folder &, Folder &)
+Folder::~Folder	./13/message.h	/^                ~Folder();$/;"	p	class:Folder	access:public	signature:()
+Folder::~Folder	./13/message.h	/^Folder::~Folder()$/;"	f	class:Folder	signature:()
+Folder::~Folder	./13/msg.hpp	/^    ~Folder();$/;"	p	class:Folder	access:public	signature:()
+Folder::~Folder	./13/msg.hpp	/^Folder::~Folder()$/;"	f	class:Folder	signature:()
+HASPTR_H	./13/13.27.h	18;"	d
+HASPTR_H	./13/hasptr.h	18;"	d
+HasPtr	./13/13.27.h	/^                HasPtr(const HasPtr &p) :$/;"	f	class:HasPtr	access:public	signature:(const HasPtr &p)
+HasPtr	./13/13.27.h	/^                HasPtr(const std::string &s = std::string()) :$/;"	f	class:HasPtr	access:public	signature:(const std::string &s = std::string())
+HasPtr	./13/13.27.h	/^class HasPtr$/;"	c
+HasPtr	./13/hasptr.h	/^                HasPtr(const HasPtr &p) :$/;"	f	class:HasPtr	access:public	signature:(const HasPtr &p)
+HasPtr	./13/hasptr.h	/^                HasPtr(const std::string &s = std::string()) :$/;"	f	class:HasPtr	access:public	signature:(const std::string &s = std::string())
+HasPtr	./13/hasptr.h	/^class HasPtr$/;"	c
+HasPtr::HasPtr	./13/13.27.h	/^                HasPtr(const HasPtr &p) :$/;"	f	class:HasPtr	access:public	signature:(const HasPtr &p)
+HasPtr::HasPtr	./13/13.27.h	/^                HasPtr(const std::string &s = std::string()) :$/;"	f	class:HasPtr	access:public	signature:(const std::string &s = std::string())
+HasPtr::HasPtr	./13/hasptr.h	/^                HasPtr(const HasPtr &p) :$/;"	f	class:HasPtr	access:public	signature:(const HasPtr &p)
+HasPtr::HasPtr	./13/hasptr.h	/^                HasPtr(const std::string &s = std::string()) :$/;"	f	class:HasPtr	access:public	signature:(const std::string &s = std::string())
+HasPtr::i	./13/13.27.h	/^                int     i;$/;"	m	class:HasPtr	access:private
+HasPtr::i	./13/hasptr.h	/^                int     i;$/;"	m	class:HasPtr	access:private
+HasPtr::operator <	./13/hasptr.h	/^                bool operator<(const HasPtr& p)$/;"	f	class:HasPtr	access:public	signature:(const HasPtr& p)
+HasPtr::operator =	./13/13.27.h	/^                HasPtr& operator=(const HasPtr&);$/;"	p	class:HasPtr	access:public	signature:(const HasPtr&)
+HasPtr::operator =	./13/13.27.h	/^HasPtr& HasPtr::operator=(const HasPtr &rhs)$/;"	f	class:HasPtr	signature:(const HasPtr &rhs)
+HasPtr::operator =	./13/hasptr.h	/^                HasPtr& operator=(const HasPtr&);$/;"	p	class:HasPtr	access:public	signature:(const HasPtr&)
+HasPtr::operator =	./13/hasptr.h	/^HasPtr& HasPtr::operator=(const HasPtr& p)$/;"	f	class:HasPtr	signature:(const HasPtr& p)
+HasPtr::print	./13/hasptr.h	/^                void print() const { std::cout << *ps << ' ' << i << ' ' << *use << std::endl; }$/;"	f	class:HasPtr	access:public	signature:() const
+HasPtr::ps	./13/13.27.h	/^                std::string     *ps;$/;"	m	class:HasPtr	access:private
+HasPtr::ps	./13/hasptr.h	/^                std::string     *ps;$/;"	m	class:HasPtr	access:private
+HasPtr::swap	./13/hasptr.h	/^                friend void swap(HasPtr&, HasPtr&);$/;"	p	class:HasPtr	access:friend	signature:(HasPtr&, HasPtr&)
+HasPtr::use	./13/13.27.h	/^                std::size_t     *use;$/;"	m	class:HasPtr	access:private
+HasPtr::use	./13/hasptr.h	/^                std::size_t     *use;   \/\/用来记录有多少个对象共享*ps的成员$/;"	m	class:HasPtr	access:private
+HasPtr::~HasPtr	./13/13.27.h	/^                ~HasPtr();$/;"	p	class:HasPtr	access:public	signature:()
+HasPtr::~HasPtr	./13/13.27.h	/^HasPtr::~HasPtr()$/;"	f	class:HasPtr	signature:()
+HasPtr::~HasPtr	./13/hasptr.h	/^                ~HasPtr();$/;"	p	class:HasPtr	access:public	signature:()
+HasPtr::~HasPtr	./13/hasptr.h	/^HasPtr::~HasPtr()$/;"	f	class:HasPtr	signature:()
+MESSAGE_H	./13/message.h	18;"	d
+MI	./18/18.25.cpp	/^class MI : public D1, public D2 {};$/;"	c	file:	inherits:D1,D2
+MSG_HPP	./13/msg.hpp	11;"	d
+Message	./13/message.h	/^                Message(const Message& );$/;"	p	class:Message	access:public	signature:(const Message& )
+Message	./13/message.h	/^                explicit Message(const std::string& s = "") :$/;"	f	class:Message	access:public	signature:(const std::string& s = �)
+Message	./13/message.h	/^Message::Message(const Message &m) : $/;"	f	class:Message	signature:(const Message &m)
+Message	./13/message.h	/^class Message$/;"	c
+Message::Message	./13/message.h	/^                Message(const Message& );$/;"	p	class:Message	access:public	signature:(const Message& )
+Message::Message	./13/message.h	/^                explicit Message(const std::string& s = "") :$/;"	f	class:Message	access:public	signature:(const std::string& s = �)
+Message::Message	./13/message.h	/^Message::Message(const Message &m) : $/;"	f	class:Message	signature:(const Message &m)
+Message::add_to_Folders	./13/message.h	/^                void add_to_Folders(const Message &);$/;"	p	class:Message	access:private	signature:(const Message &)
+Message::add_to_Folders	./13/message.h	/^void Message::add_to_Folders(const Message &m)   \/\/将本message添加到所有包含本message的folder中$/;"	f	class:Message	signature:(const Message &m)
+Message::contents	./13/message.h	/^                std::string     contents;       \/\/保存信息文本$/;"	m	class:Message	access:private
+Message::folders	./13/message.h	/^                std::set<Folder *>      folders;\/\/保存所有包含该信息的Folder$/;"	m	class:Message	access:private
+Message::operator =	./13/message.h	/^                Message& operator=(const Message&);$/;"	p	class:Message	access:public	signature:(const Message&)
+Message::operator =	./13/message.h	/^Message& Message::operator=(const Message &m)$/;"	f	class:Message	signature:(const Message &m)
+Message::remove	./13/message.h	/^                void remove(Folder &);$/;"	p	class:Message	access:public	signature:(Folder &)
+Message::remove	./13/message.h	/^void Message::remove(Folder &f) \/\/将本message从指定的folder中删除$/;"	f	class:Message	signature:(Folder &f)
+Message::remove_from_Folders	./13/message.h	/^                void remove_from_Folders();$/;"	p	class:Message	access:private	signature:()
+Message::remove_from_Folders	./13/message.h	/^void Message::remove_from_Folders() \/\/从所有包含本message的folder中删除本message$/;"	f	class:Message	signature:()
+Message::save	./13/message.h	/^                void save(Folder &);$/;"	p	class:Message	access:public	signature:(Folder &)
+Message::save	./13/message.h	/^void Message::save(Folder &f)   \/\/将本message添加到指定的folder中$/;"	f	class:Message	signature:(Folder &f)
+Message::swap	./13/message.h	/^        friend void swap(Message &, Message &);$/;"	p	class:Message	access:friend	signature:(Message &, Message &)
+Message::~Message	./13/message.h	/^                ~Message();$/;"	p	class:Message	access:public	signature:()
+Message::~Message	./13/message.h	/^Message::~Message()$/;"	f	class:Message	signature:()
+Msg	./13/msg.hpp	/^    Msg(const Msg&);$/;"	p	class:Msg	access:public	signature:(const Msg&)
+Msg	./13/msg.hpp	/^    explicit Msg(const string& c = "") : contents(c) {}$/;"	f	class:Msg	access:public	signature:(const string& c = �)
+Msg	./13/msg.hpp	/^Msg::Msg(const Msg& m) : contents(m.contents), folders(m.folders)$/;"	f	class:Msg	signature:(const Msg& m)
+Msg	./13/msg.hpp	/^class Msg$/;"	c
+Msg::Msg	./13/msg.hpp	/^    Msg(const Msg&);$/;"	p	class:Msg	access:public	signature:(const Msg&)
+Msg::Msg	./13/msg.hpp	/^    explicit Msg(const string& c = "") : contents(c) {}$/;"	f	class:Msg	access:public	signature:(const string& c = �)
+Msg::Msg	./13/msg.hpp	/^Msg::Msg(const Msg& m) : contents(m.contents), folders(m.folders)$/;"	f	class:Msg	signature:(const Msg& m)
+Msg::add_to_folders	./13/msg.hpp	/^    void add_to_folders(const Msg&);$/;"	p	class:Msg	access:private	signature:(const Msg&)
+Msg::add_to_folders	./13/msg.hpp	/^void Msg::add_to_folders(const Msg &m)$/;"	f	class:Msg	signature:(const Msg &m)
+Msg::contents	./13/msg.hpp	/^    string contents;$/;"	m	class:Msg	access:private
+Msg::folders	./13/msg.hpp	/^    set<Folder*> folders;$/;"	m	class:Msg	access:private
+Msg::operator =	./13/msg.hpp	/^    Msg& operator=(const Msg&);$/;"	p	class:Msg	access:public	signature:(const Msg&)
+Msg::operator =	./13/msg.hpp	/^Msg& Msg::operator=(const Msg& m)$/;"	f	class:Msg	signature:(const Msg& m)
+Msg::remove	./13/msg.hpp	/^    void remove(Folder&);$/;"	p	class:Msg	access:public	signature:(Folder&)
+Msg::remove	./13/msg.hpp	/^void Msg::remove(Folder& f)$/;"	f	class:Msg	signature:(Folder& f)
+Msg::remove_from_folders	./13/msg.hpp	/^    void remove_from_folders();$/;"	p	class:Msg	access:private	signature:()
+Msg::remove_from_folders	./13/msg.hpp	/^void Msg::remove_from_folders()$/;"	f	class:Msg	signature:()
+Msg::save	./13/msg.hpp	/^    void save(Folder&);$/;"	p	class:Msg	access:public	signature:(Folder&)
+Msg::save	./13/msg.hpp	/^void Msg::save(Folder& f)$/;"	f	class:Msg	signature:(Folder& f)
+Msg::showInfo	./13/msg.hpp	/^    void showInfo();$/;"	p	class:Msg	access:public	signature:()
+Msg::showInfo	./13/msg.hpp	/^void Msg::showInfo()$/;"	f	class:Msg	signature:()
+Msg::~Msg	./13/msg.hpp	/^    ~Msg();$/;"	p	class:Msg	access:public	signature:()
+Msg::~Msg	./13/msg.hpp	/^Msg::~Msg()$/;"	f	class:Msg	signature:()
+NotQuery	./15/query.h	/^        NotQuery(const Query &q) : query(q) { }$/;"	f	class:NotQuery	access:private	signature:(const Query &q)
+NotQuery	./15/query.h	/^class NotQuery : public Query_base$/;"	c	inherits:Query_base
+NotQuery	./15/query_2.hpp	/^    NotQuery(const Query &q) : query(q) {  }$/;"	f	class:NotQuery	access:private	signature:(const Query &q)
+NotQuery	./15/query_2.hpp	/^class NotQuery : public Query_base$/;"	c	inherits:Query_base
+NotQuery::NotQuery	./15/query.h	/^        NotQuery(const Query &q) : query(q) { }$/;"	f	class:NotQuery	access:private	signature:(const Query &q)
+NotQuery::NotQuery	./15/query_2.hpp	/^    NotQuery(const Query &q) : query(q) {  }$/;"	f	class:NotQuery	access:private	signature:(const Query &q)
+NotQuery::eval	./15/query.h	/^        QueryResult eval(const TextQuery &) const;$/;"	p	class:NotQuery	access:private	signature:(const TextQuery &) const
+NotQuery::eval	./15/query.h	/^QueryResult NotQuery::eval(const TextQuery& text) const$/;"	f	class:NotQuery	signature:(const TextQuery& text) const
+NotQuery::eval	./15/query_2.hpp	/^    QueryResult eval(const TextQuery &) const;$/;"	p	class:NotQuery	access:private	signature:(const TextQuery &) const
+NotQuery::eval	./15/query_2.hpp	/^QueryResult NotQuery::eval(const TextQuery& text) const$/;"	f	class:NotQuery	signature:(const TextQuery& text) const
+NotQuery::operator ~	./15/query.h	/^        friend Query operator~(const Query &);$/;"	p	class:NotQuery	access:friend	signature:(const Query &)
+NotQuery::operator ~	./15/query_2.hpp	/^    friend Query operator~(const Query &);$/;"	p	class:NotQuery	access:friend	signature:(const Query &)
+NotQuery::query	./15/query.h	/^        Query   query;$/;"	m	class:NotQuery	access:private
+NotQuery::query	./15/query_2.hpp	/^    Query query;$/;"	m	class:NotQuery	access:private
+NotQuery::rep	./15/query.h	/^        std::string rep() const { return "~(" + query.rep() + ")"; }$/;"	f	class:NotQuery	access:private	signature:() const
+NotQuery::rep	./15/query_2.hpp	/^    string rep() const { return "~(" + query.rep() + ")"; }$/;"	f	class:NotQuery	access:private	signature:() const
+OrQuery	./15/query.h	/^        OrQuery(const Query &left, const Query &right) :$/;"	f	class:OrQuery	access:private	signature:(const Query &left, const Query &right)
+OrQuery	./15/query.h	/^class OrQuery : public BinaryQuery$/;"	c	inherits:BinaryQuery
+OrQuery	./15/query_2.hpp	/^    OrQuery(const Query &left, const Query &right)$/;"	f	class:OrQuery	access:private	signature:(const Query &left, const Query &right)
+OrQuery	./15/query_2.hpp	/^class OrQuery : public BinaryQuery$/;"	c	inherits:BinaryQuery
+OrQuery::OrQuery	./15/query.h	/^        OrQuery(const Query &left, const Query &right) :$/;"	f	class:OrQuery	access:private	signature:(const Query &left, const Query &right)
+OrQuery::OrQuery	./15/query_2.hpp	/^    OrQuery(const Query &left, const Query &right)$/;"	f	class:OrQuery	access:private	signature:(const Query &left, const Query &right)
+OrQuery::eval	./15/query.h	/^        QueryResult eval(const TextQuery &) const;$/;"	p	class:OrQuery	access:private	signature:(const TextQuery &) const
+OrQuery::eval	./15/query.h	/^QueryResult OrQuery::eval(const TextQuery& text) const$/;"	f	class:OrQuery	signature:(const TextQuery& text) const
+OrQuery::eval	./15/query_2.hpp	/^    QueryResult eval(const TextQuery&) const;$/;"	p	class:OrQuery	access:private	signature:(const TextQuery&) const
+OrQuery::eval	./15/query_2.hpp	/^QueryResult OrQuery::eval(const TextQuery& text) const$/;"	f	class:OrQuery	signature:(const TextQuery& text) const
+OrQuery::operator |	./15/query.h	/^        friend Query operator|(const Query &, const Query &);$/;"	p	class:OrQuery	access:friend	signature:(const Query &, const Query &)
+OrQuery::operator |	./15/query_2.hpp	/^    friend Query operator|(const Query&, const Query&);$/;"	p	class:OrQuery	access:friend	signature:(const Query&, const Query&)
+PERSON_H_	./7/person.h	18;"	d
+Person	./7/person.h	/^        Person(const string &name = "nobody", const string &addr = "naddr");$/;"	p	struct:Person	access:public	signature:(const string &name = �, const string &addr = �)
+Person	./7/person.h	/^Person::Person(const string &na, const string &ad) : name(na), addr(ad) {}$/;"	f	class:Person	signature:(const string &na, const string &ad)
+Person	./7/person.h	/^struct Person$/;"	s
+Person::Person	./7/person.h	/^        Person(const string &name = "nobody", const string &addr = "naddr");$/;"	p	struct:Person	access:public	signature:(const string &name = �, const string &addr = �)
+Person::Person	./7/person.h	/^Person::Person(const string &na, const string &ad) : name(na), addr(ad) {}$/;"	f	class:Person	signature:(const string &na, const string &ad)
+Person::addr	./7/person.h	/^        string     addr;$/;"	m	struct:Person	access:public
+Person::get_addr	./7/person.h	/^        const string &get_addr() const { return addr; }$/;"	f	struct:Person	access:public	signature:() const
+Person::get_name	./7/person.h	/^        const string &get_name() const { return name; }$/;"	f	struct:Person	access:public	signature:() const
+Person::name	./7/person.h	/^        string     name;$/;"	m	struct:Person	access:public
+QUERYTEXT_HPP	./12/querytest.hpp	11;"	d
+QUERY_2_HPP	./15/query_2.hpp	11;"	d
+QUERY_H	./12/__query.h	18;"	d
+QUERY_H	./12/_query.h	18;"	d
+QUERY_H	./12/query.h	18;"	d
+QUERY_H	./15/query.h	18;"	d
+QUOTE_H	./15/quote.h	18;"	d
+QUOTE_HPP	./15/quote.hpp	11;"	d
+Query	./15/query.h	/^        Query(const std::string&);      \/\/构建一个新的WordQuery$/;"	p	class:Query	access:public	signature:(const std::string&)
+Query	./15/query.h	/^        Query(std::shared_ptr<Query_base> query) : q(query) { }$/;"	f	class:Query	access:private	signature:(std::shared_ptr<Query_base> query)
+Query	./15/query.h	/^class Query$/;"	c
+Query	./15/query.h	/^inline Query::Query(const string &s) : q(new WordQuery(s)) { }$/;"	f	class:Query	signature:(const string &s)
+Query	./15/query_2.hpp	/^    Query(const string&);$/;"	p	class:Query	access:public	signature:(const string&)
+Query	./15/query_2.hpp	/^    Query(shared_ptr<Query_base> query) : q(query) {  }$/;"	f	class:Query	access:private	signature:(shared_ptr<Query_base> query)
+Query	./15/query_2.hpp	/^class Query $/;"	c
+Query::Query	./15/query.h	/^        Query(const std::string&);      \/\/构建一个新的WordQuery$/;"	p	class:Query	access:public	signature:(const std::string&)
+Query::Query	./15/query.h	/^        Query(std::shared_ptr<Query_base> query) : q(query) { }$/;"	f	class:Query	access:private	signature:(std::shared_ptr<Query_base> query)
+Query::Query	./15/query.h	/^inline Query::Query(const string &s) : q(new WordQuery(s)) { }$/;"	f	class:Query	signature:(const string &s)
+Query::Query	./15/query_2.hpp	/^    Query(const string&);$/;"	p	class:Query	access:public	signature:(const string&)
+Query::Query	./15/query_2.hpp	/^    Query(shared_ptr<Query_base> query) : q(query) {  }$/;"	f	class:Query	access:private	signature:(shared_ptr<Query_base> query)
+Query::eval	./15/query.h	/^        QueryResult eval(const TextQuery &t) const$/;"	f	class:Query	access:public	signature:(const TextQuery &t) const
+Query::eval	./15/query_2.hpp	/^    QueryResult eval(const TextQuery &t) const { return q->eval(t); }$/;"	f	class:Query	access:public	signature:(const TextQuery &t) const
+Query::operator &	./15/query.h	/^        friend Query operator&(const Query &, const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &, const Query &)
+Query::operator &	./15/query_2.hpp	/^    friend Query operator&(const Query &, const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &, const Query &)
+Query::operator |	./15/query.h	/^        friend Query operator|(const Query &, const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &, const Query &)
+Query::operator |	./15/query_2.hpp	/^    friend Query operator|(const Query &, const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &, const Query &)
+Query::operator ~	./15/query.h	/^        friend Query operator~(const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &)
+Query::operator ~	./15/query_2.hpp	/^    friend Query operator~(const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &)
+Query::q	./15/query.h	/^        std::shared_ptr<Query_base>     q;$/;"	m	class:Query	access:private
+Query::q	./15/query_2.hpp	/^    shared_ptr<Query_base> q;$/;"	m	class:Query	access:private
+Query::rep	./15/query.h	/^        std::string rep() const { return q->rep(); }$/;"	f	class:Query	access:public	signature:() const
+Query::rep	./15/query_2.hpp	/^    string rep() const { return q->rep(); }$/;"	f	class:Query	access:public	signature:() const
+QueryResult	./12/__query.h	/^        QueryResult(std::string w,$/;"	f	class:QueryResult	access:public	signature:(std::string w, std::shared_ptr<std::vector<std::string>> f, std::shared_ptr<std::set<line_no>> line)
+QueryResult	./12/__query.h	/^class QueryResult$/;"	c
+QueryResult	./12/_query.h	/^        QueryResult(std::string s,$/;"	f	class:QueryResult	access:public	signature:(std::string s, std::shared_ptr<std::set<line_no>> p, std::shared_ptr<std::vector<std::string>> f)
+QueryResult	./12/_query.h	/^class QueryResult$/;"	c
+QueryResult	./12/query.h	/^                QueryResult(string w, int t, map<int, string> m)$/;"	f	class:QueryResult	access:public	signature:(string w, int t, map<int, string> m)
+QueryResult	./12/query.h	/^class QueryResult$/;"	c
+QueryResult	./12/querytest.hpp	/^    QueryResult(string s,$/;"	f	class:QueryResult	access:public	signature:(string s, shared_ptr<vector<string>> p, shared_ptr<set<line_no>> l)
+QueryResult	./12/querytest.hpp	/^class QueryResult$/;"	c
+QueryResult	./12/tquery.h	/^        QueryResult(std::string s,$/;"	f	class:QueryResult	access:public	signature:(std::string s, std::shared_ptr<std::set<line_no>> p, std::shared_ptr<std::vector<std::string>> f)
+QueryResult	./12/tquery.h	/^class QueryResult$/;"	c
+QueryResult	./15/query.h	/^        QueryResult(std::string s,$/;"	f	class:QueryResult	access:public	signature:(std::string s, std::shared_ptr<std::set<line_no>> p, std::shared_ptr<std::vector<std::string>> f)
+QueryResult	./15/query.h	/^class QueryResult$/;"	c
+QueryResult::QueryResult	./12/__query.h	/^        QueryResult(std::string w,$/;"	f	class:QueryResult	access:public	signature:(std::string w, std::shared_ptr<std::vector<std::string>> f, std::shared_ptr<std::set<line_no>> line)
+QueryResult::QueryResult	./12/_query.h	/^        QueryResult(std::string s,$/;"	f	class:QueryResult	access:public	signature:(std::string s, std::shared_ptr<std::set<line_no>> p, std::shared_ptr<std::vector<std::string>> f)
+QueryResult::QueryResult	./12/query.h	/^                QueryResult(string w, int t, map<int, string> m)$/;"	f	class:QueryResult	access:public	signature:(string w, int t, map<int, string> m)
+QueryResult::QueryResult	./12/querytest.hpp	/^    QueryResult(string s,$/;"	f	class:QueryResult	access:public	signature:(string s, shared_ptr<vector<string>> p, shared_ptr<set<line_no>> l)
+QueryResult::QueryResult	./12/tquery.h	/^        QueryResult(std::string s,$/;"	f	class:QueryResult	access:public	signature:(std::string s, std::shared_ptr<std::set<line_no>> p, std::shared_ptr<std::vector<std::string>> f)
+QueryResult::QueryResult	./15/query.h	/^        QueryResult(std::string s,$/;"	f	class:QueryResult	access:public	signature:(std::string s, std::shared_ptr<std::set<line_no>> p, std::shared_ptr<std::vector<std::string>> f)
+QueryResult::begin	./12/_query.h	/^        std::set<line_no>::iterator     begin() { return lines->begin(); }$/;"	f	class:QueryResult	access:public	signature:()
+QueryResult::begin	./12/querytest.hpp	/^    set<line_no>::const_iterator begin() const { return lines->cbegin(); }$/;"	f	class:QueryResult	access:public	signature:() const
+QueryResult::begin	./12/tquery.h	/^        std::set<line_no>::const_iterator begin() { return (*lines).cbegin(); }$/;"	f	class:QueryResult	access:public	signature:()
+QueryResult::begin	./15/query.h	/^                begin() { return lines->begin(); }$/;"	f	class:QueryResult	access:public	signature:()
+QueryResult::end	./12/_query.h	/^        std::set<line_no>::iterator     end() { return lines->end(); }$/;"	f	class:QueryResult	access:public	signature:()
+QueryResult::end	./12/querytest.hpp	/^    set<line_no>::const_iterator end() const { return lines->cend(); }$/;"	f	class:QueryResult	access:public	signature:() const
+QueryResult::end	./12/tquery.h	/^        std::set<line_no>::const_iterator end() { return (*lines).cend(); }$/;"	f	class:QueryResult	access:public	signature:()
+QueryResult::end	./15/query.h	/^                end() { return lines->end(); }$/;"	f	class:QueryResult	access:public	signature:()
+QueryResult::file	./12/__query.h	/^        std::shared_ptr<std::vector<std::string>> file; \/\/指向输入文件的vector$/;"	m	class:QueryResult	access:private
+QueryResult::file	./12/_query.h	/^        std::shared_ptr<std::vector<std::string>>       file; \/\/指向要查询的文件$/;"	m	class:QueryResult	access:private
+QueryResult::file	./12/querytest.hpp	/^    shared_ptr<vector<string>> file;$/;"	m	class:QueryResult	access:private
+QueryResult::file	./12/tquery.h	/^        std::shared_ptr<std::vector<std::string>>       file; \/\/输入文件$/;"	m	class:QueryResult	access:private
+QueryResult::file	./15/query.h	/^        std::shared_ptr<std::vector<std::string>>       file;   \/\/输入文件$/;"	m	class:QueryResult	access:private
+QueryResult::get_file	./12/_query.h	/^        std::shared_ptr<std::vector<std::string>> get_file()$/;"	f	class:QueryResult	access:public	signature:()
+QueryResult::get_file	./12/querytest.hpp	/^    shared_ptr<vector<string>> get_file() { return file; }$/;"	f	class:QueryResult	access:public	signature:()
+QueryResult::get_file	./15/query.h	/^                get_file() { return std::shared_ptr<std::vector<std::string>>(file); }$/;"	f	class:QueryResult	access:public	signature:()
+QueryResult::lines	./12/__query.h	/^        std::shared_ptr<std::set<line_no>> lines;        \/\/指向单词对应的行号set$/;"	m	class:QueryResult	access:private
+QueryResult::lines	./12/_query.h	/^        std::shared_ptr<std::set<line_no>>      lines;  \/\/出现的行号$/;"	m	class:QueryResult	access:private
+QueryResult::lines	./12/querytest.hpp	/^    shared_ptr<set<line_no>> lines;$/;"	m	class:QueryResult	access:private
+QueryResult::lines	./12/tquery.h	/^        std::shared_ptr<std::set<line_no>>      lines;  \/\/行号$/;"	m	class:QueryResult	access:private
+QueryResult::lines	./15/query.h	/^        std::shared_ptr<std::set<line_no>>      lines;  \/\/行号的set$/;"	m	class:QueryResult	access:private
+QueryResult::print	./12/__query.h	/^        friend std::ostream& print(std::ostream &os, const QueryResult &qr);$/;"	p	class:QueryResult	access:friend	signature:(std::ostream &os, const QueryResult &qr)
+QueryResult::print	./12/_query.h	/^        friend std::ostream& print(std::ostream &, const QueryResult &);$/;"	p	class:QueryResult	access:friend	signature:(std::ostream &, const QueryResult &)
+QueryResult::print	./12/query.cpp	/^void QueryResult::print(ostream& os) const$/;"	f	class:QueryResult	signature:(ostream& os) const
+QueryResult::print	./12/query.h	/^                void print(ostream& os) const;$/;"	p	class:QueryResult	access:public	signature:(ostream& os) const
+QueryResult::print	./12/querytest.hpp	/^    friend ostream& print(ostream&, const QueryResult&);$/;"	p	class:QueryResult	access:friend	signature:(ostream&, const QueryResult&)
+QueryResult::print	./12/tquery.h	/^        friend std::ostream& print(std::ostream&, const QueryResult&);$/;"	p	class:QueryResult	access:friend	signature:(std::ostream&, const QueryResult&)
+QueryResult::print	./15/query.h	/^        friend std::ostream& print(std::ostream&, const QueryResult&);$/;"	p	class:QueryResult	access:friend	signature:(std::ostream&, const QueryResult&)
+QueryResult::query_word	./12/querytest.hpp	/^    string query_word;$/;"	m	class:QueryResult	access:private
+QueryResult::result_map	./12/query.h	/^                map<int, string>        result_map; \/\/出现行与行内容的map$/;"	m	class:QueryResult	access:private
+QueryResult::sought	./12/_query.h	/^        std::string     sought; \/\/要查询的单词$/;"	m	class:QueryResult	access:private
+QueryResult::sought	./12/tquery.h	/^        std::string     sought;         \/\/要查询的单词$/;"	m	class:QueryResult	access:private
+QueryResult::sought	./15/query.h	/^        std::string     sought;         \/\/要查询的单词$/;"	m	class:QueryResult	access:private
+QueryResult::times	./12/query.h	/^                int             times;  \/\/出现的次数$/;"	m	class:QueryResult	access:private
+QueryResult::word	./12/__query.h	/^        std::string     word;   \/\/要查询的单词$/;"	m	class:QueryResult	access:private
+QueryResult::word	./12/query.h	/^                const string    word;   \/\/要查询的单词$/;"	m	class:QueryResult	access:private
+Query_base	./15/query.h	/^class Query_base$/;"	c
+Query_base	./15/query_2.hpp	/^class Query_base$/;"	c
+Query_base::eval	./15/query.h	/^        virtual QueryResult eval(const TextQuery &) const = 0;$/;"	p	class:Query_base	access:private	signature:(const TextQuery &) const
+Query_base::eval	./15/query_2.hpp	/^    virtual QueryResult eval(const TextQuery&) const = 0;$/;"	p	class:Query_base	access:private	signature:(const TextQuery&) const
+Query_base::rep	./15/query.h	/^        virtual std::string rep() const = 0;$/;"	p	class:Query_base	access:private	signature:() const
+Query_base::rep	./15/query_2.hpp	/^    virtual string rep() const = 0;$/;"	p	class:Query_base	access:private	signature:() const
+Query_base::~Query_base	./15/query.h	/^        virtual ~Query_base() = default;$/;"	p	class:Query_base	access:protected	signature:()
+Query_base::~Query_base	./15/query_2.hpp	/^    virtual ~Query_base() = default;$/;"	p	class:Query_base	access:protected	signature:()
+Quote	./15/quote.h	/^                Quote() = default;$/;"	p	class:Quote	access:public	signature:()
+Quote	./15/quote.h	/^                Quote(const std::string &book, double p) :$/;"	f	class:Quote	access:public	signature:(const std::string &book, double p)
+Quote	./15/quote.h	/^class Quote$/;"	c
+Quote	./15/quote.hpp	/^    Quote() = default;$/;"	p	class:Quote	access:public	signature:()
+Quote	./15/quote.hpp	/^    Quote(const string &book, double sales_price)$/;"	f	class:Quote	access:public	signature:(const string &book, double sales_price)
+Quote	./15/quote.hpp	/^class Quote$/;"	c
+Quote::Quote	./15/quote.h	/^                Quote() = default;$/;"	p	class:Quote	access:public	signature:()
+Quote::Quote	./15/quote.h	/^                Quote(const std::string &book, double p) :$/;"	f	class:Quote	access:public	signature:(const std::string &book, double p)
+Quote::Quote	./15/quote.hpp	/^    Quote() = default;$/;"	p	class:Quote	access:public	signature:()
+Quote::Quote	./15/quote.hpp	/^    Quote(const string &book, double sales_price)$/;"	f	class:Quote	access:public	signature:(const string &book, double sales_price)
+Quote::bookNo	./15/quote.h	/^                std::string     bookNo;$/;"	m	class:Quote	access:private
+Quote::bookNo	./15/quote.hpp	/^    string bookNo;$/;"	m	class:Quote	access:private
+Quote::debug	./15/quote.h	/^                virtual void debug() const $/;"	f	class:Quote	access:public	signature:() const
+Quote::debug	./15/quote.hpp	/^    virtual void debug() { cout << "bookNo: " << bookNo << ", price: " << price << endl; }$/;"	f	class:Quote	access:public	signature:()
+Quote::isbn	./15/quote.h	/^                std::string isbn() const { return bookNo; }$/;"	f	class:Quote	access:public	signature:() const
+Quote::isbn	./15/quote.hpp	/^    string isbn() const { return bookNo; }$/;"	f	class:Quote	access:public	signature:() const
+Quote::net_price	./15/quote.h	/^                virtual double net_price(std::size_t n) const$/;"	f	class:Quote	access:public	signature:(std::size_t n) const
+Quote::net_price	./15/quote.hpp	/^    virtual double net_price(size_t n) const { return n * price; }$/;"	f	class:Quote	access:public	signature:(size_t n) const
+Quote::price	./15/quote.h	/^                double          price = 0.0;    \/\/代表普通状态下不打折的价格$/;"	m	class:Quote	access:protected
+Quote::price	./15/quote.hpp	/^    double price = 0.0;$/;"	m	class:Quote	access:protected
+Quote::~Quote	./15/quote.h	/^                virtual ~Quote() = default;     \/\/对析构函数进行动态绑定$/;"	p	class:Quote	access:public	signature:()
+Quote::~Quote	./15/quote.hpp	/^    virtual ~Quote() = default;$/;"	p	class:Quote	access:public	signature:()
+Replace	./9/9.43_.cpp	/^void Replace(string &, const string &, const string &);$/;"	p	file:	signature:(string &, const string &, const string &)
+Replace	./9/9.43_.cpp	/^void Replace(string &s, const string &oldVal, const string &newVal)$/;"	f	signature:(string &s, const string &oldVal, const string &newVal)
+SALES_H_	./7/sales.h	18;"	d
+SCREEN_H_	./7/screen.h	18;"	d
+STRBLOB_HPP	./12/strblob.hpp	11;"	d
+Sales_data	./7/sales.h	/^struct Sales_data$/;"	s
+Sales_data::avg_price	./7/sales.h	/^        double avg_price() const;$/;"	p	struct:Sales_data	access:public	signature:() const
+Sales_data::bookNo	./7/sales.h	/^        std::string     bookNo;$/;"	m	struct:Sales_data	access:public
+Sales_data::combine	./7/sales.h	/^        Sales_data &combine(const Sales_data &);$/;"	p	struct:Sales_data	access:public	signature:(const Sales_data &)
+Sales_data::isbn	./7/sales.h	/^        std::string isbn() const { return bookNo; }$/;"	f	struct:Sales_data	access:public	signature:() const
+Sales_data::revenue	./7/sales.h	/^        double          revenue = 0.0;$/;"	m	struct:Sales_data	access:public
+Sales_data::units_sold	./7/sales.h	/^        unsigned        units_sold = 0;$/;"	m	struct:Sales_data	access:public
+Screen	./7/screen.h	/^                Screen() = default;$/;"	p	class:Screen	access:public	signature:()
+Screen	./7/screen.h	/^                Screen(pos ht, pos wd) : height(ht), width(wd), contents(ht * wd, ' ') {}$/;"	f	class:Screen	access:public	signature:(pos ht, pos wd)
+Screen	./7/screen.h	/^                Screen(pos ht, pos wd, char c) : height(ht), width(wd), contents(ht * wd, c) {}$/;"	f	class:Screen	access:public	signature:(pos ht, pos wd, char c)
+Screen	./7/screen.h	/^class Screen$/;"	c
+Screen::Screen	./7/screen.h	/^                Screen() = default;$/;"	p	class:Screen	access:public	signature:()
+Screen::Screen	./7/screen.h	/^                Screen(pos ht, pos wd) : height(ht), width(wd), contents(ht * wd, ' ') {}$/;"	f	class:Screen	access:public	signature:(pos ht, pos wd)
+Screen::Screen	./7/screen.h	/^                Screen(pos ht, pos wd, char c) : height(ht), width(wd), contents(ht * wd, c) {}$/;"	f	class:Screen	access:public	signature:(pos ht, pos wd, char c)
+Screen::Window_mgr::clear	./7/screen.h	/^                friend void Window_mgr::clear(ScreenIndex);$/;"	p	class:Screen::Window_mgr	access:friend	signature:(ScreenIndex)
+Screen::contents	./7/screen.h	/^                std::string contents;$/;"	m	class:Screen	access:private
+Screen::cursor	./7/screen.h	/^                pos     cursor = 0;$/;"	m	class:Screen	access:private
+Screen::display	./7/screen.h	/^                Screen &display(std::ostream &os) { do_display(os); return *this; }$/;"	f	class:Screen	access:public	signature:(std::ostream &os)
+Screen::display	./7/screen.h	/^                const Screen &display(std::ostream &os) const { do_display(os); return *this; }$/;"	f	class:Screen	access:public	signature:(std::ostream &os) const
+Screen::do_display	./7/screen.h	/^                void do_display(std::ostream &os) const { os << contents; }$/;"	f	class:Screen	access:private	signature:(std::ostream &os) const
+Screen::get	./7/screen.h	/^                char get() const { return contents[cursor]; }$/;"	f	class:Screen	access:public	signature:() const
+Screen::get	./7/screen.h	/^                inline char get(pos ht, pos wd) const;$/;"	p	class:Screen	access:public	signature:(pos ht, pos wd) const
+Screen::get	./7/screen.h	/^char Screen::get(pos r, pos c) const$/;"	f	class:Screen	signature:(pos r, pos c) const
+Screen::height	./7/screen.h	/^                pos     height = 0, width = 0;$/;"	m	class:Screen	access:private
+Screen::move	./7/screen.h	/^                Screen &move(pos r, pos c);$/;"	p	class:Screen	access:public	signature:(pos r, pos c)
+Screen::move	./7/screen.h	/^inline Screen &Screen::move(pos r, pos c)$/;"	f	class:Screen	signature:(pos r, pos c)
+Screen::pos	./7/screen.h	/^                typedef std::string::size_type   pos;$/;"	t	class:Screen	access:public
+Screen::set	./7/screen.h	/^                Screen &set(char);$/;"	p	class:Screen	access:public	signature:(char)
+Screen::set	./7/screen.h	/^                Screen &set(pos, pos, char);$/;"	p	class:Screen	access:public	signature:(pos, pos, char)
+Screen::set	./7/screen.h	/^inline Screen &Screen::set(char c)$/;"	f	class:Screen	signature:(char c)
+Screen::set	./7/screen.h	/^inline Screen &Screen::set(pos r, pos col, char ch)$/;"	f	class:Screen	signature:(pos r, pos col, char ch)
+Screen::width	./7/screen.h	/^                pos     height = 0, width = 0;$/;"	m	class:Screen	access:private
+Search	./9/9.43_.cpp	/^string::const_iterator Search(const string::iterator &it_beg,$/;"	f	signature:(const string::iterator &it_beg, const string::iterator &it_end, const string &sub)
+StrBlob	./12/blob.h	/^                StrBlob();$/;"	p	class:StrBlob	access:public	signature:()
+StrBlob	./12/blob.h	/^                StrBlob(std::initializer_list<std::string> il);$/;"	p	class:StrBlob	access:public	signature:(std::initializer_list<std::string> il)
+StrBlob	./12/blob.h	/^StrBlob::StrBlob() : data(make_shared<vector<string>>) {}$/;"	f	class:StrBlob	signature:()
+StrBlob	./12/blob.h	/^StrBlob::StrBlob(initializer_list<string> il) : data(make_shared<vector<string>>(il)) {}$/;"	f	class:StrBlob	signature:(initializer_list<string> il)
+StrBlob	./12/blob.h	/^class StrBlob$/;"	c
+StrBlob	./12/cblob.h	/^                StrBlob();$/;"	p	class:StrBlob	access:public	signature:()
+StrBlob	./12/cblob.h	/^                StrBlob(std::initializer_list<std::string> il);$/;"	p	class:StrBlob	access:public	signature:(std::initializer_list<std::string> il)
+StrBlob	./12/cblob.h	/^StrBlob::StrBlob() : data(std::make_shared<vector<string>>()) {}$/;"	f	class:StrBlob	signature:()
+StrBlob	./12/cblob.h	/^StrBlob::StrBlob(std::initializer_list<string> il) : data(std::make_shared<vector<string>>(il)) {}$/;"	f	class:StrBlob	signature:(std::initializer_list<string> il)
+StrBlob	./12/cblob.h	/^class StrBlob$/;"	c
+StrBlob	./12/strblob.hpp	/^    StrBlob(initializer_list<string> il);$/;"	p	class:StrBlob	access:public	signature:(initializer_list<string> il)
+StrBlob	./12/strblob.hpp	/^StrBlob::StrBlob() : data(make_shared<vector<string>>()) {}$/;"	f	class:StrBlob	signature:()
+StrBlob	./12/strblob.hpp	/^StrBlob::StrBlob(initializer_list<string> il)$/;"	f	class:StrBlob	signature:(initializer_list<string> il)
+StrBlob	./12/strblob.hpp	/^class StrBlob$/;"	c
+StrBlob	./13/blob.h	/^                StrBlob(const StrBlob& sb) : $/;"	f	class:StrBlob	access:public	signature:(const StrBlob& sb)
+StrBlob	./13/blob.h	/^                StrBlob(std::initializer_list<std::string> il) : $/;"	f	class:StrBlob	access:public	signature:(std::initializer_list<std::string> il)
+StrBlob	./13/blob.h	/^class StrBlob$/;"	c
+StrBlob::StrBlob	./12/blob.h	/^                StrBlob();$/;"	p	class:StrBlob	access:public	signature:()
+StrBlob::StrBlob	./12/blob.h	/^                StrBlob(std::initializer_list<std::string> il);$/;"	p	class:StrBlob	access:public	signature:(std::initializer_list<std::string> il)
+StrBlob::StrBlob	./12/blob.h	/^StrBlob::StrBlob() : data(make_shared<vector<string>>) {}$/;"	f	class:StrBlob	signature:()
+StrBlob::StrBlob	./12/blob.h	/^StrBlob::StrBlob(initializer_list<string> il) : data(make_shared<vector<string>>(il)) {}$/;"	f	class:StrBlob	signature:(initializer_list<string> il)
+StrBlob::StrBlob	./12/cblob.h	/^                StrBlob();$/;"	p	class:StrBlob	access:public	signature:()
+StrBlob::StrBlob	./12/cblob.h	/^                StrBlob(std::initializer_list<std::string> il);$/;"	p	class:StrBlob	access:public	signature:(std::initializer_list<std::string> il)
+StrBlob::StrBlob	./12/cblob.h	/^StrBlob::StrBlob() : data(std::make_shared<vector<string>>()) {}$/;"	f	class:StrBlob	signature:()
+StrBlob::StrBlob	./12/cblob.h	/^StrBlob::StrBlob(std::initializer_list<string> il) : data(std::make_shared<vector<string>>(il)) {}$/;"	f	class:StrBlob	signature:(std::initializer_list<string> il)
+StrBlob::StrBlob	./12/strblob.hpp	/^    StrBlob(initializer_list<string> il);$/;"	p	class:StrBlob	access:public	signature:(initializer_list<string> il)
+StrBlob::StrBlob	./12/strblob.hpp	/^StrBlob::StrBlob() : data(make_shared<vector<string>>()) {}$/;"	f	class:StrBlob	signature:()
+StrBlob::StrBlob	./12/strblob.hpp	/^StrBlob::StrBlob(initializer_list<string> il)$/;"	f	class:StrBlob	signature:(initializer_list<string> il)
+StrBlob::StrBlob	./13/blob.h	/^                StrBlob(const StrBlob& sb) : $/;"	f	class:StrBlob	access:public	signature:(const StrBlob& sb)
+StrBlob::StrBlob	./13/blob.h	/^                StrBlob(std::initializer_list<std::string> il) : $/;"	f	class:StrBlob	access:public	signature:(std::initializer_list<std::string> il)
+StrBlob::back	./12/blob.h	/^                const std::string& back() const;$/;"	p	class:StrBlob	access:public	signature:() const
+StrBlob::back	./12/blob.h	/^                std::string& back();$/;"	p	class:StrBlob	access:public	signature:()
+StrBlob::back	./12/blob.h	/^const string& StrBlob::back() const$/;"	f	class:StrBlob	signature:() const
+StrBlob::back	./12/blob.h	/^string& StrBlob::back()$/;"	f	class:StrBlob	signature:()
+StrBlob::back	./12/cblob.h	/^                const std::string& back() const;$/;"	p	class:StrBlob	access:public	signature:() const
+StrBlob::back	./12/cblob.h	/^                std::string& back();$/;"	p	class:StrBlob	access:public	signature:()
+StrBlob::back	./12/cblob.h	/^const string& StrBlob::back() const$/;"	f	class:StrBlob	signature:() const
+StrBlob::back	./12/cblob.h	/^string& StrBlob::back()$/;"	f	class:StrBlob	signature:()
+StrBlob::back	./12/strblob.hpp	/^    const string& back() const;$/;"	p	class:StrBlob	access:public	signature:() const
+StrBlob::back	./12/strblob.hpp	/^    string& back();$/;"	p	class:StrBlob	access:public	signature:()
+StrBlob::back	./12/strblob.hpp	/^const string &StrBlob::back() const$/;"	f	class:StrBlob	signature:() const
+StrBlob::back	./12/strblob.hpp	/^string &StrBlob::back()$/;"	f	class:StrBlob	signature:()
+StrBlob::begin	./12/blob.h	/^                StrBlobPtr begin(); \/\/{ return StrBlobPtr(*this); }$/;"	p	class:StrBlob	access:public	signature:()
+StrBlob::begin	./12/blob.h	/^inline StrBlobPtr StrBlob::begin()$/;"	f	class:StrBlob	signature:()
+StrBlob::begin	./12/cblob.h	/^                StrBlobPtr begin();$/;"	p	class:StrBlob	access:public	signature:()
+StrBlob::begin	./12/cblob.h	/^StrBlobPtr StrBlob::begin()$/;"	f	class:StrBlob	signature:()
+StrBlob::begin	./12/strblob.hpp	/^    StrBlobPtr begin();$/;"	p	class:StrBlob	access:public	signature:()
+StrBlob::begin	./12/strblob.hpp	/^StrBlobPtr StrBlob::begin()$/;"	f	class:StrBlob	signature:()
+StrBlob::check	./12/blob.h	/^                void check(size_type i, const std::string &msg) const;$/;"	p	class:StrBlob	access:private	signature:(size_type i, const std::string &msg) const
+StrBlob::check	./12/blob.h	/^void StrBlob::check(size_type i, const string &msg) const$/;"	f	class:StrBlob	signature:(size_type i, const string &msg) const
+StrBlob::check	./12/cblob.h	/^                void check(size_type i, const std::string &msg) const;$/;"	p	class:StrBlob	access:private	signature:(size_type i, const std::string &msg) const
+StrBlob::check	./12/cblob.h	/^void StrBlob::check(size_type i, const string &msg) const$/;"	f	class:StrBlob	signature:(size_type i, const string &msg) const
+StrBlob::check	./12/strblob.hpp	/^    void check(size_type i, const string &msg) const;$/;"	p	class:StrBlob	access:private	signature:(size_type i, const string &msg) const
+StrBlob::check	./12/strblob.hpp	/^void StrBlob::check(size_type i, const string &msg) const$/;"	f	class:StrBlob	signature:(size_type i, const string &msg) const
+StrBlob::data	./12/blob.h	/^                std::shared_ptr<std::vector<std::string>> data;$/;"	m	class:StrBlob	access:private
+StrBlob::data	./12/cblob.h	/^                std::shared_ptr<std::vector<std::string>>       data;$/;"	m	class:StrBlob	access:private
+StrBlob::data	./12/strblob.hpp	/^    shared_ptr<vector<string>> data;$/;"	m	class:StrBlob	access:private
+StrBlob::data	./13/blob.h	/^                std::shared_ptr<std::vector<std::string>>       data;$/;"	m	class:StrBlob	access:private
+StrBlob::empty	./12/blob.h	/^                bool empty() const { return data->empty(); }$/;"	f	class:StrBlob	access:public	signature:() const
+StrBlob::empty	./12/cblob.h	/^                bool empty() const { return data->empty(); }$/;"	f	class:StrBlob	access:public	signature:() const
+StrBlob::empty	./12/strblob.hpp	/^    bool empty() const { return data->empty(); }$/;"	f	class:StrBlob	access:public	signature:() const
+StrBlob::end	./12/blob.h	/^                StrBlobPtr end(); \/\/{ auto ret = StrBlobPtr(*this, data->size()); return ret; }$/;"	p	class:StrBlob	access:public	signature:()
+StrBlob::end	./12/blob.h	/^inline StrBlobPtr StrBlob::end()$/;"	f	class:StrBlob	signature:()
+StrBlob::end	./12/cblob.h	/^                StrBlobPtr end();$/;"	p	class:StrBlob	access:public	signature:()
+StrBlob::end	./12/cblob.h	/^StrBlobPtr StrBlob::end()$/;"	f	class:StrBlob	signature:()
+StrBlob::end	./12/strblob.hpp	/^    StrBlobPtr end();$/;"	p	class:StrBlob	access:public	signature:()
+StrBlob::end	./12/strblob.hpp	/^StrBlobPtr StrBlob::end()$/;"	f	class:StrBlob	signature:()
+StrBlob::front	./12/blob.h	/^                const std::string& front() const;$/;"	p	class:StrBlob	access:public	signature:() const
+StrBlob::front	./12/blob.h	/^                std::string& front();$/;"	p	class:StrBlob	access:public	signature:()
+StrBlob::front	./12/blob.h	/^const string& StrBlob::front() const$/;"	f	class:StrBlob	signature:() const
+StrBlob::front	./12/blob.h	/^string& StrBlob::front()$/;"	f	class:StrBlob	signature:()
+StrBlob::front	./12/cblob.h	/^                const std::string& front() const;$/;"	p	class:StrBlob	access:public	signature:() const
+StrBlob::front	./12/cblob.h	/^                std::string& front();$/;"	p	class:StrBlob	access:public	signature:()
+StrBlob::front	./12/cblob.h	/^const string& StrBlob::front() const$/;"	f	class:StrBlob	signature:() const
+StrBlob::front	./12/cblob.h	/^string& StrBlob::front()$/;"	f	class:StrBlob	signature:()
+StrBlob::front	./12/strblob.hpp	/^    const string& front() const;$/;"	p	class:StrBlob	access:public	signature:() const
+StrBlob::front	./12/strblob.hpp	/^    string& front();$/;"	p	class:StrBlob	access:public	signature:()
+StrBlob::front	./12/strblob.hpp	/^const string &StrBlob::front() const$/;"	f	class:StrBlob	signature:() const
+StrBlob::front	./12/strblob.hpp	/^string &StrBlob::front()$/;"	f	class:StrBlob	signature:()
+StrBlob::operator =	./13/blob.h	/^                StrBlob operator=(const StrBlob&);$/;"	p	class:StrBlob	access:public	signature:(const StrBlob&)
+StrBlob::operator =	./13/blob.h	/^StrBlob StrBlob::operator=(const StrBlob& sb)$/;"	f	class:StrBlob	signature:(const StrBlob& sb)
+StrBlob::pop_back	./12/blob.h	/^                void pop_back();$/;"	p	class:StrBlob	access:public	signature:()
+StrBlob::pop_back	./12/blob.h	/^void StrBlob::pop_back()$/;"	f	class:StrBlob	signature:()
+StrBlob::pop_back	./12/cblob.h	/^                void pop_back();$/;"	p	class:StrBlob	access:public	signature:()
+StrBlob::pop_back	./12/cblob.h	/^void StrBlob::pop_back()$/;"	f	class:StrBlob	signature:()
+StrBlob::pop_back	./12/strblob.hpp	/^    void pop_back();$/;"	p	class:StrBlob	access:public	signature:()
+StrBlob::pop_back	./12/strblob.hpp	/^void StrBlob::pop_back()$/;"	f	class:StrBlob	signature:()
+StrBlob::push_back	./12/blob.h	/^                void push_back(const std::string &t) { data->push_back(t); }$/;"	f	class:StrBlob	access:public	signature:(const std::string &t)
+StrBlob::push_back	./12/cblob.h	/^                void push_back(const std::string &t) { data->push_back(t); }$/;"	f	class:StrBlob	access:public	signature:(const std::string &t)
+StrBlob::push_back	./12/strblob.hpp	/^    void push_back(const string &t) { data->push_back(t); }$/;"	f	class:StrBlob	access:public	signature:(const string &t)
+StrBlob::size	./12/blob.h	/^                size_type size() const { return data->size(); }$/;"	f	class:StrBlob	access:public	signature:() const
+StrBlob::size	./12/cblob.h	/^                size_type size() const { return data->size(); }$/;"	f	class:StrBlob	access:public	signature:() const
+StrBlob::size	./12/strblob.hpp	/^    size_type size() const { return data->size(); }$/;"	f	class:StrBlob	access:public	signature:() const
+StrBlob::size_type	./12/blob.h	/^                typedef std::vector<std::string>::size_type     size_type;$/;"	t	class:StrBlob	access:public
+StrBlob::size_type	./12/cblob.h	/^                typedef std::vector<std::string>::size_type     size_type;$/;"	t	class:StrBlob	access:public
+StrBlobPtr	./12/blob.h	/^                StrBlobPtr() : curr(0) {}$/;"	f	class:StrBlobPtr	access:public	signature:()
+StrBlobPtr	./12/blob.h	/^                StrBlobPtr(StrBlob &a, size_t sz = 0) : wptr(a.data), curr(sz) {}$/;"	f	class:StrBlobPtr	access:public	signature:(StrBlob &a, size_t sz = 0)
+StrBlobPtr	./12/blob.h	/^class StrBlobPtr$/;"	c
+StrBlobPtr	./12/cblob.h	/^                StrBlobPtr() : curr(0) {}$/;"	f	class:StrBlobPtr	access:public	signature:()
+StrBlobPtr	./12/cblob.h	/^                StrBlobPtr(StrBlob &a, size_t sz = 0) :$/;"	f	class:StrBlobPtr	access:public	signature:(StrBlob &a, size_t sz = 0)
+StrBlobPtr	./12/cblob.h	/^class StrBlobPtr$/;"	c
+StrBlobPtr	./12/strblob.hpp	/^    StrBlobPtr() : curr(0) {  }$/;"	f	class:StrBlobPtr	access:public	signature:()
+StrBlobPtr	./12/strblob.hpp	/^    StrBlobPtr(StrBlob &a, size_t sz = 0)$/;"	f	class:StrBlobPtr	access:public	signature:(StrBlob &a, size_t sz = 0)
+StrBlobPtr	./12/strblob.hpp	/^class StrBlobPtr$/;"	c
+StrBlobPtr::StrBlobPtr	./12/blob.h	/^                StrBlobPtr() : curr(0) {}$/;"	f	class:StrBlobPtr	access:public	signature:()
+StrBlobPtr::StrBlobPtr	./12/blob.h	/^                StrBlobPtr(StrBlob &a, size_t sz = 0) : wptr(a.data), curr(sz) {}$/;"	f	class:StrBlobPtr	access:public	signature:(StrBlob &a, size_t sz = 0)
+StrBlobPtr::StrBlobPtr	./12/cblob.h	/^                StrBlobPtr() : curr(0) {}$/;"	f	class:StrBlobPtr	access:public	signature:()
+StrBlobPtr::StrBlobPtr	./12/cblob.h	/^                StrBlobPtr(StrBlob &a, size_t sz = 0) :$/;"	f	class:StrBlobPtr	access:public	signature:(StrBlob &a, size_t sz = 0)
+StrBlobPtr::StrBlobPtr	./12/strblob.hpp	/^    StrBlobPtr() : curr(0) {  }$/;"	f	class:StrBlobPtr	access:public	signature:()
+StrBlobPtr::StrBlobPtr	./12/strblob.hpp	/^    StrBlobPtr(StrBlob &a, size_t sz = 0)$/;"	f	class:StrBlobPtr	access:public	signature:(StrBlob &a, size_t sz = 0)
+StrBlobPtr::check	./12/blob.h	/^                        check(std::size_t, const std::string&) const;$/;"	p	class:StrBlobPtr	access:private	signature:(std::size_t, const std::string&) const
+StrBlobPtr::check	./12/blob.h	/^StrBlobPtr::check(size_t i, const string &msg) const$/;"	f	class:StrBlobPtr	signature:(size_t i, const string &msg) const
+StrBlobPtr::check	./12/cblob.h	/^                        check(std::size_t, const std::string&) const;$/;"	p	class:StrBlobPtr	access:private	signature:(std::size_t, const std::string&) const
+StrBlobPtr::check	./12/cblob.h	/^StrBlobPtr::check(size_t i, const string &msg) const$/;"	f	class:StrBlobPtr	signature:(size_t i, const string &msg) const
+StrBlobPtr::check	./12/strblob.hpp	/^        check(size_t, const string&) const;$/;"	p	class:StrBlobPtr	access:private	signature:(size_t, const string&) const
+StrBlobPtr::check	./12/strblob.hpp	/^StrBlobPtr::check(size_t i, const string &msg) const$/;"	f	class:StrBlobPtr	signature:(size_t i, const string &msg) const
+StrBlobPtr::curr	./12/blob.h	/^                std::size_t     curr;   \/\/在数组中的当前位置$/;"	m	class:StrBlobPtr	access:private
+StrBlobPtr::curr	./12/cblob.h	/^                std::size_t     curr;$/;"	m	class:StrBlobPtr	access:private
+StrBlobPtr::curr	./12/strblob.hpp	/^    size_t curr;$/;"	m	class:StrBlobPtr	access:private
+StrBlobPtr::deref	./12/blob.h	/^                std::string& deref() const;$/;"	p	class:StrBlobPtr	access:public	signature:() const
+StrBlobPtr::deref	./12/blob.h	/^string & StrBlobPtr::deref() const$/;"	f	class:StrBlobPtr	signature:() const
+StrBlobPtr::deref	./12/cblob.h	/^                std::string& deref() const;     \/\/访问元素$/;"	p	class:StrBlobPtr	access:public	signature:() const
+StrBlobPtr::deref	./12/cblob.h	/^string& StrBlobPtr::deref() const$/;"	f	class:StrBlobPtr	signature:() const
+StrBlobPtr::deref	./12/strblob.hpp	/^    string& deref() const;$/;"	p	class:StrBlobPtr	access:public	signature:() const
+StrBlobPtr::deref	./12/strblob.hpp	/^string &StrBlobPtr::deref() const$/;"	f	class:StrBlobPtr	signature:() const
+StrBlobPtr::incr	./12/blob.h	/^                StrBlobPtr& incr();     \/\/前缀递增$/;"	p	class:StrBlobPtr	access:public	signature:()
+StrBlobPtr::incr	./12/blob.h	/^StrBlobPtr& StrBlobPtr::incr()$/;"	f	class:StrBlobPtr	signature:()
+StrBlobPtr::incr	./12/cblob.h	/^                StrBlobPtr& incr();             \/\/前缀递增$/;"	p	class:StrBlobPtr	access:public	signature:()
+StrBlobPtr::incr	./12/cblob.h	/^StrBlobPtr& StrBlobPtr::incr()$/;"	f	class:StrBlobPtr	signature:()
+StrBlobPtr::incr	./12/strblob.hpp	/^    StrBlobPtr& incr(); \/\/前缀递增$/;"	p	class:StrBlobPtr	access:public	signature:()
+StrBlobPtr::incr	./12/strblob.hpp	/^StrBlobPtr& StrBlobPtr::incr()$/;"	f	class:StrBlobPtr	signature:()
+StrBlobPtr::is_end	./12/cblob.h	/^                bool is_end();$/;"	p	class:StrBlobPtr	access:public	signature:()
+StrBlobPtr::is_end	./12/cblob.h	/^bool StrBlobPtr::is_end()$/;"	f	class:StrBlobPtr	signature:()
+StrBlobPtr::operator !=	./12/strblob.hpp	/^    bool operator!=(const StrBlobPtr &sb);$/;"	p	class:StrBlobPtr	access:public	signature:(const StrBlobPtr &sb)
+StrBlobPtr::operator !=	./12/strblob.hpp	/^bool StrBlobPtr::operator!=(const StrBlobPtr &sb)$/;"	f	class:StrBlobPtr	signature:(const StrBlobPtr &sb)
+StrBlobPtr::wptr	./12/blob.h	/^                std::weak_ptr<std::vector<std::string>> wptr;$/;"	m	class:StrBlobPtr	access:private
+StrBlobPtr::wptr	./12/cblob.h	/^                std::weak_ptr<std::vector<std::string>> wptr;$/;"	m	class:StrBlobPtr	access:private
+StrBlobPtr::wptr	./12/strblob.hpp	/^    weak_ptr<vector<string>> wptr;$/;"	m	class:StrBlobPtr	access:private
+TQUERY_H	./12/tquery.h	18;"	d
+Test	./14/overload.cc	/^class Test$/;"	c	file:
+Test::a	./14/overload.cc	/^    int a;$/;"	m	class:Test	file:	access:private
+Test::operator ++	./14/overload.cc	/^    int operator++() { cout << "Test::++operator" << endl; return 0; }$/;"	f	class:Test	access:public	signature:()
+Test::operator ++	./14/overload.cc	/^    int operator++(int) { cout << "Test::operator++" << endl; return 0; }$/;"	f	class:Test	access:public	signature:(int)
+Test::operator []	./14/overload.cc	/^    const int operator[](uint32_t idx) const { cout << "const Test::operator[]" << endl; return 0; }$/;"	f	class:Test	access:public	signature:(uint32_t idx) const
+Test::operator []	./14/overload.cc	/^    int operator[](uint32_t idx) { cout << "Test::operator[]" << endl; return 0; }$/;"	f	class:Test	access:public	signature:(uint32_t idx)
+TextQuery	./12/__query.h	/^                TextQuery(std::ifstream &infile);$/;"	p	class:TextQuery	access:public	signature:(std::ifstream &infile)
+TextQuery	./12/__query.h	/^TextQuery::TextQuery(ifstream &is) : file(new vector<string>)$/;"	f	class:TextQuery	signature:(ifstream &is)
+TextQuery	./12/__query.h	/^class TextQuery$/;"	c
+TextQuery	./12/_query.h	/^                TextQuery(std::ifstream &);$/;"	p	class:TextQuery	access:public	signature:(std::ifstream &)
+TextQuery	./12/_query.h	/^TextQuery::TextQuery(ifstream &infile) : file(new vector<string>)$/;"	f	class:TextQuery	signature:(ifstream &infile)
+TextQuery	./12/_query.h	/^class TextQuery$/;"	c
+TextQuery	./12/query.cpp	/^TextQuery::TextQuery(ifstream &infile)$/;"	f	class:TextQuery	signature:(ifstream &infile)
+TextQuery	./12/query.h	/^                TextQuery(ifstream &infile);  \/\/设为默认构造函数$/;"	p	class:TextQuery	access:public	signature:(ifstream &infile)
+TextQuery	./12/query.h	/^class TextQuery$/;"	c
+TextQuery	./12/querytest.hpp	/^    TextQuery(ifstream&);$/;"	p	class:TextQuery	access:public	signature:(ifstream&)
+TextQuery	./12/querytest.hpp	/^TextQuery::TextQuery(ifstream& ifile) : file(new vector<string>)$/;"	f	class:TextQuery	signature:(ifstream& ifile)
+TextQuery	./12/querytest.hpp	/^class TextQuery$/;"	c
+TextQuery	./12/tquery.h	/^                TextQuery(std::ifstream&);$/;"	p	class:TextQuery	access:public	signature:(std::ifstream&)
+TextQuery	./12/tquery.h	/^TextQuery::TextQuery(ifstream &is) : file(new vector<string>)$/;"	f	class:TextQuery	signature:(ifstream &is)
+TextQuery	./12/tquery.h	/^class TextQuery$/;"	c
+TextQuery	./15/query.h	/^                TextQuery(std::ifstream&);$/;"	p	class:TextQuery	access:public	signature:(std::ifstream&)
+TextQuery	./15/query.h	/^TextQuery::TextQuery(ifstream &is) : file(new vector<string>)$/;"	f	class:TextQuery	signature:(ifstream &is)
+TextQuery	./15/query.h	/^class   TextQuery$/;"	c
+TextQuery::TextQuery	./12/__query.h	/^                TextQuery(std::ifstream &infile);$/;"	p	class:TextQuery	access:public	signature:(std::ifstream &infile)
+TextQuery::TextQuery	./12/__query.h	/^TextQuery::TextQuery(ifstream &is) : file(new vector<string>)$/;"	f	class:TextQuery	signature:(ifstream &is)
+TextQuery::TextQuery	./12/_query.h	/^                TextQuery(std::ifstream &);$/;"	p	class:TextQuery	access:public	signature:(std::ifstream &)
+TextQuery::TextQuery	./12/_query.h	/^TextQuery::TextQuery(ifstream &infile) : file(new vector<string>)$/;"	f	class:TextQuery	signature:(ifstream &infile)
+TextQuery::TextQuery	./12/query.cpp	/^TextQuery::TextQuery(ifstream &infile)$/;"	f	class:TextQuery	signature:(ifstream &infile)
+TextQuery::TextQuery	./12/query.h	/^                TextQuery(ifstream &infile);  \/\/设为默认构造函数$/;"	p	class:TextQuery	access:public	signature:(ifstream &infile)
+TextQuery::TextQuery	./12/querytest.hpp	/^    TextQuery(ifstream&);$/;"	p	class:TextQuery	access:public	signature:(ifstream&)
+TextQuery::TextQuery	./12/querytest.hpp	/^TextQuery::TextQuery(ifstream& ifile) : file(new vector<string>)$/;"	f	class:TextQuery	signature:(ifstream& ifile)
+TextQuery::TextQuery	./12/tquery.h	/^                TextQuery(std::ifstream&);$/;"	p	class:TextQuery	access:public	signature:(std::ifstream&)
+TextQuery::TextQuery	./12/tquery.h	/^TextQuery::TextQuery(ifstream &is) : file(new vector<string>)$/;"	f	class:TextQuery	signature:(ifstream &is)
+TextQuery::TextQuery	./15/query.h	/^                TextQuery(std::ifstream&);$/;"	p	class:TextQuery	access:public	signature:(std::ifstream&)
+TextQuery::TextQuery	./15/query.h	/^TextQuery::TextQuery(ifstream &is) : file(new vector<string>)$/;"	f	class:TextQuery	signature:(ifstream &is)
+TextQuery::file	./12/__query.h	/^                std::shared_ptr<std::vector<std::string>>       file; \/\/保存输入文件$/;"	m	class:TextQuery	access:private
+TextQuery::file	./12/_query.h	/^                std::shared_ptr<std::vector<std::string>>       file;   \/\/输入文件$/;"	m	class:TextQuery	access:private
+TextQuery::file	./12/querytest.hpp	/^    shared_ptr<vector<string>> file;$/;"	m	class:TextQuery	access:private
+TextQuery::file	./12/tquery.h	/^                std::shared_ptr<std::vector<std::string>>       file;   \/\/输入文件$/;"	m	class:TextQuery	access:private
+TextQuery::file	./15/query.h	/^                std::shared_ptr<std::vector<std::string>>       file;   \/\/保存要查询的文件$/;"	m	class:TextQuery	access:private
+TextQuery::query	./12/__query.h	/^                QueryResult query(const std::string& word);$/;"	p	class:TextQuery	access:public	signature:(const std::string& word)
+TextQuery::query	./12/__query.h	/^QueryResult TextQuery::query(const string &word)$/;"	f	class:TextQuery	signature:(const string &word)
+TextQuery::query	./12/_query.h	/^                QueryResult query(const std::string &);$/;"	p	class:TextQuery	access:public	signature:(const std::string &)
+TextQuery::query	./12/_query.h	/^QueryResult TextQuery::query(const string &word)$/;"	f	class:TextQuery	signature:(const string &word)
+TextQuery::query	./12/query.cpp	/^QueryResult TextQuery::query(const string &word)$/;"	f	class:TextQuery	signature:(const string &word)
+TextQuery::query	./12/query.h	/^                QueryResult query(const string &word);$/;"	p	class:TextQuery	access:public	signature:(const string &word)
+TextQuery::query	./12/querytest.hpp	/^    QueryResult query(string&) const;$/;"	p	class:TextQuery	access:public	signature:(string&) const
+TextQuery::query	./12/querytest.hpp	/^QueryResult TextQuery::query(string &word) const$/;"	f	class:TextQuery	signature:(string &word) const
+TextQuery::query	./12/tquery.h	/^                QueryResult query(const std::string&) const;$/;"	p	class:TextQuery	access:public	signature:(const std::string&) const
+TextQuery::query	./12/tquery.h	/^QueryResult TextQuery::query(const string &sought) const$/;"	f	class:TextQuery	signature:(const string &sought) const
+TextQuery::query	./15/query.h	/^                QueryResult query(const std::string&) const;$/;"	p	class:TextQuery	access:public	signature:(const std::string&) const
+TextQuery::query	./15/query.h	/^QueryResult TextQuery::query(const string &sought) const$/;"	f	class:TextQuery	signature:(const string &sought) const
+TextQuery::text	./12/query.h	/^                vector<string>          text;$/;"	m	class:TextQuery	access:private
+TextQuery::wm	./12/__query.h	/^                std::map<std::string, std::shared_ptr<std::set<line_no>>> wm; \/\/保存各单词及出现行号的set$/;"	m	class:TextQuery	access:private
+TextQuery::wm	./12/_query.h	/^                         std::shared_ptr<std::set<line_no>>>    wm;     \/\/单词与行号set的map$/;"	m	class:TextQuery	access:private
+TextQuery::wm	./12/querytest.hpp	/^    map<string, shared_ptr<set<line_no>>> wm;$/;"	m	class:TextQuery	access:private
+TextQuery::wm	./12/tquery.h	/^                         std::shared_ptr<std::set<line_no>>> wm;$/;"	m	class:TextQuery	access:private
+TextQuery::wm	./15/query.h	/^                         std::shared_ptr<std::set<line_no>>>    wm;     \/\/每个单词和它所在行号的set$/;"	m	class:TextQuery	access:private
+TextQuery::word_info	./12/query.h	/^                map<string, set<int>>   word_info;$/;"	m	class:TextQuery	access:private
+Tree	./13/tree.cc	/^    Tree(int d) : data(d), left(nullptr), right(nullptr) {}$/;"	f	struct:Tree	access:public	signature:(int d)
+Tree	./13/tree.cc	/^struct Tree$/;"	s	file:
+Tree::Tree	./13/tree.cc	/^    Tree(int d) : data(d), left(nullptr), right(nullptr) {}$/;"	f	struct:Tree	access:public	signature:(int d)
+Tree::data	./13/tree.cc	/^    int data;$/;"	m	struct:Tree	file:	access:public
+Tree::left	./13/tree.cc	/^    Tree *left, *right;$/;"	m	struct:Tree	file:	access:public
+Tree::right	./13/tree.cc	/^    Tree *left, *right;$/;"	m	struct:Tree	file:	access:public
+Type	./7/test.cpp	/^                typedef double Type;$/;"	t	class:Exercise	file:	access:public
+Type	./7/test.cpp	/^typedef std::string  Type;$/;"	t	file:
+Window_mgr	./7/screen.h	/^class Window_mgr$/;"	c
+Window_mgr::addScreen	./7/screen.h	/^                ScreenIndex addScreen(const Screen&);$/;"	p	class:Window_mgr	access:public	signature:(const Screen&)
+Window_mgr::addScreen	./7/screen.h	/^Window_mgr::addScreen(const Screen &s)$/;"	f	class:Window_mgr	signature:(const Screen &s)
+Window_mgr::clear	./7/screen.h	/^                void clear(ScreenIndex);$/;"	p	class:Window_mgr	access:public	signature:(ScreenIndex)
+Window_mgr::clear	./7/screen.h	/^void Window_mgr::clear(ScreenIndex i)$/;"	f	class:Window_mgr	signature:(ScreenIndex i)
+Window_mgr::screens	./7/screen.h	/^                std::vector<Screen> screens;\/\/{Screen(24, 80, ' ')};$/;"	m	class:Window_mgr	access:private
+WordQuery	./15/query.h	/^        WordQuery(const std::string &s) : query_word(s) { }$/;"	f	class:WordQuery	access:private	signature:(const std::string &s)
+WordQuery	./15/query.h	/^class WordQuery : public Query_base$/;"	c	inherits:Query_base
+WordQuery	./15/query_2.hpp	/^    WordQuery(const string &s) : query_word(s) {  }$/;"	f	class:WordQuery	access:private	signature:(const string &s)
+WordQuery	./15/query_2.hpp	/^class WordQuery : public Query_base$/;"	c	inherits:Query_base
+WordQuery::WordQuery	./15/query.h	/^        WordQuery(const std::string &s) : query_word(s) { }$/;"	f	class:WordQuery	access:private	signature:(const std::string &s)
+WordQuery::WordQuery	./15/query_2.hpp	/^    WordQuery(const string &s) : query_word(s) {  }$/;"	f	class:WordQuery	access:private	signature:(const string &s)
+WordQuery::eval	./15/query.h	/^        QueryResult eval(const TextQuery &t) const$/;"	f	class:WordQuery	access:private	signature:(const TextQuery &t) const
+WordQuery::eval	./15/query_2.hpp	/^    QueryResult eval(const TextQuery &t) const { return t.query(query_word); }$/;"	f	class:WordQuery	access:private	signature:(const TextQuery &t) const
+WordQuery::query_word	./15/query.h	/^        std::string     query_word;$/;"	m	class:WordQuery	access:private
+WordQuery::query_word	./15/query_2.hpp	/^    string query_word;$/;"	m	class:WordQuery	access:private
+WordQuery::rep	./15/query.h	/^        std::string rep() const { return query_word; }$/;"	f	class:WordQuery	access:private	signature:() const
+WordQuery::rep	./15/query_2.hpp	/^    string rep() const { return query_word; }$/;"	f	class:WordQuery	access:private	signature:() const
+X	./13/13.13.cpp	/^        X() { std::cout << "X()" << std::endl; }$/;"	f	struct:X	access:public	signature:()
+X	./13/13.13.cpp	/^        X(const X&) { std::cout << "X(const X&)" << std::endl; }$/;"	f	struct:X	access:public	signature:(const X&)
+X	./13/13.13.cpp	/^struct X$/;"	s	file:
+X::X	./13/13.13.cpp	/^        X() { std::cout << "X()" << std::endl; }$/;"	f	struct:X	access:public	signature:()
+X::X	./13/13.13.cpp	/^        X(const X&) { std::cout << "X(const X&)" << std::endl; }$/;"	f	struct:X	access:public	signature:(const X&)
+X::operator =	./13/13.13.cpp	/^        X& operator=(const X& x) { std::cout << "X& operator=(const X& x)" << std::endl; $/;"	f	struct:X	access:public	signature:(const X& x)
+X::~X	./13/13.13.cpp	/^        ~X() { std::cout << "~X()" << std::endl; }$/;"	f	struct:X	access:public	signature:()
+a	./14/overload.cc	/^    int a;$/;"	m	class:Test	file:	access:private
+aa	./7/constr.cc	/^    int aa;$/;"	m	class:constr	file:	access:private
+add	./7/sales.h	/^Sales_data add(const Sales_data &, const Sales_data &);$/;"	p	signature:(const Sales_data &, const Sales_data &)
+addMsg	./13/message.h	/^                void addMsg(Message &);$/;"	p	class:Folder	access:public	signature:(Message &)
+addMsg	./13/message.h	/^void Folder::addMsg(Message &m)$/;"	f	class:Folder	signature:(Message &m)
+addMsg	./13/msg.hpp	/^    void addMsg(Msg*);$/;"	p	class:Folder	access:public	signature:(Msg*)
+addMsg	./13/msg.hpp	/^void Folder::addMsg(Msg* m)$/;"	f	class:Folder	signature:(Msg* m)
+addScreen	./7/screen.h	/^                ScreenIndex addScreen(const Screen&);$/;"	p	class:Window_mgr	access:public	signature:(const Screen&)
+addScreen	./7/screen.h	/^Window_mgr::addScreen(const Screen &s)$/;"	f	class:Window_mgr	signature:(const Screen &s)
+add_child	./11/11.7.cc	/^    void add_child(string firstname, string lastname);$/;"	p	class:family	file:	access:public	signature:(string firstname, string lastname)
+add_child	./11/11.7.cc	/^void family::add_child(string firstname, string lastname)$/;"	f	class:family	signature:(string firstname, string lastname)
+add_family	./11/11.7.cc	/^    void add_family(string firstname, string lastname);$/;"	p	class:family	file:	access:public	signature:(string firstname, string lastname)
+add_family	./11/11.7.cc	/^void family::add_family(string firstname, string lastname)$/;"	f	class:family	signature:(string firstname, string lastname)
+add_to_Folders	./13/message.h	/^                void add_to_Folders(const Message &);$/;"	p	class:Message	access:private	signature:(const Message &)
+add_to_Folders	./13/message.h	/^void Message::add_to_Folders(const Message &m)   \/\/将本message添加到所有包含本message的folder中$/;"	f	class:Message	signature:(const Message &m)
+add_to_folders	./13/msg.hpp	/^    void add_to_folders(const Msg&);$/;"	p	class:Msg	access:private	signature:(const Msg&)
+add_to_folders	./13/msg.hpp	/^void Msg::add_to_folders(const Msg &m)$/;"	f	class:Msg	signature:(const Msg &m)
+addr	./7/person.h	/^        string     addr;$/;"	m	struct:Person	access:public
+avg_price	./7/sales.h	/^        double avg_price() const;$/;"	p	struct:Sales_data	access:public	signature:() const
+back	./12/blob.h	/^                const std::string& back() const;$/;"	p	class:StrBlob	access:public	signature:() const
+back	./12/blob.h	/^                std::string& back();$/;"	p	class:StrBlob	access:public	signature:()
+back	./12/blob.h	/^const string& StrBlob::back() const$/;"	f	class:StrBlob	signature:() const
+back	./12/blob.h	/^string& StrBlob::back()$/;"	f	class:StrBlob	signature:()
+back	./12/cblob.h	/^                const std::string& back() const;$/;"	p	class:StrBlob	access:public	signature:() const
+back	./12/cblob.h	/^                std::string& back();$/;"	p	class:StrBlob	access:public	signature:()
+back	./12/cblob.h	/^const string& StrBlob::back() const$/;"	f	class:StrBlob	signature:() const
+back	./12/cblob.h	/^string& StrBlob::back()$/;"	f	class:StrBlob	signature:()
+back	./12/strblob.hpp	/^    const string& back() const;$/;"	p	class:StrBlob	access:public	signature:() const
+back	./12/strblob.hpp	/^    string& back();$/;"	p	class:StrBlob	access:public	signature:()
+back	./12/strblob.hpp	/^const string &StrBlob::back() const$/;"	f	class:StrBlob	signature:() const
+back	./12/strblob.hpp	/^string &StrBlob::back()$/;"	f	class:StrBlob	signature:()
+back	./16/blob.h	/^                T& back();$/;"	p	class:Blob	access:public	signature:()
+back	./16/blob.h	/^                const T& back() const;$/;"	p	class:Blob	access:public	signature:() const
+back	./16/blob.h	/^T& Blob<T>::back()$/;"	f	class:Blob	signature:()
+back	./16/blob.h	/^const T& Blob<T>::back() const$/;"	f	class:Blob	signature:() const
+bb	./7/constr.cc	/^    int bb;$/;"	m	class:constr	file:	access:private
+begin	./12/_query.h	/^        std::set<line_no>::iterator     begin() { return lines->begin(); }$/;"	f	class:QueryResult	access:public	signature:()
+begin	./12/blob.h	/^                StrBlobPtr begin(); \/\/{ return StrBlobPtr(*this); }$/;"	p	class:StrBlob	access:public	signature:()
+begin	./12/blob.h	/^inline StrBlobPtr StrBlob::begin()$/;"	f	class:StrBlob	signature:()
+begin	./12/cblob.h	/^                StrBlobPtr begin();$/;"	p	class:StrBlob	access:public	signature:()
+begin	./12/cblob.h	/^StrBlobPtr StrBlob::begin()$/;"	f	class:StrBlob	signature:()
+begin	./12/querytest.hpp	/^    set<line_no>::const_iterator begin() const { return lines->cbegin(); }$/;"	f	class:QueryResult	access:public	signature:() const
+begin	./12/strblob.hpp	/^    StrBlobPtr begin();$/;"	p	class:StrBlob	access:public	signature:()
+begin	./12/strblob.hpp	/^StrBlobPtr StrBlob::begin()$/;"	f	class:StrBlob	signature:()
+begin	./12/tquery.h	/^        std::set<line_no>::const_iterator begin() { return (*lines).cbegin(); }$/;"	f	class:QueryResult	access:public	signature:()
+begin	./15/query.h	/^                begin() { return lines->begin(); }$/;"	f	class:QueryResult	access:public	signature:()
+biggies	./10/10.16.cpp	/^void biggies(vector<string> &words, vector<string>::size_type sz)$/;"	f	signature:(vector<string> &words, vector<string>::size_type sz)
+biggies	./10/10.16_.cpp	/^void biggies(vector<string> &vec, vector<string>::size_type sz)$/;"	f	signature:(vector<string> &vec, vector<string>::size_type sz)
+bookNo	./15/quote.h	/^                std::string     bookNo;$/;"	m	class:Quote	access:private
+bookNo	./15/quote.hpp	/^    string bookNo;$/;"	m	class:Quote	access:private
+bookNo	./7/sales.h	/^        std::string     bookNo;$/;"	m	struct:Sales_data	access:public
+buildMap	./11/11.33.cpp	/^map<string, string> buildMap(ifstream &map_file)$/;"	f	signature:(ifstream &map_file)
+buildMap	./11/11.33.cpp	/^map<string, string> buildMap(ifstream &map_file);$/;"	p	file:	signature:(ifstream &map_file)
+buildMap	./11/11.33_.cpp	/^map<string, string> buildMap(ifstream &map_file)$/;"	f	signature:(ifstream &map_file)
+buildMap	./11/11.33_.cpp	/^map<string, string> buildMap(ifstream &map_file);$/;"	p	file:	signature:(ifstream &map_file)
+buildMap	./11/11.33__.cpp	/^map<string, string> buildMap(ifstream &map_file)$/;"	f	signature:(ifstream &map_file)
+buildMap	./11/11.33__.cpp	/^map<string, string> buildMap(ifstream &map_file);$/;"	p	file:	signature:(ifstream &map_file)
+buildMap	./11/11.38.cpp	/^unordered_map<string, string> buildMap(ifstream &map_file)$/;"	f	signature:(ifstream &map_file)
+buildMap	./11/11.38.cpp	/^unordered_map<string, string> buildMap(ifstream &map_file);$/;"	p	file:	signature:(ifstream &map_file)
+buildMap	./11/multi_word_trans.cc	/^unordered_map<string, string> buildMap(ifstream& trans_file)$/;"	f	signature:(ifstream& trans_file)
+buildMap	./11/replace.cpp	/^map<string, string> buildMap(ifstream &map_file)$/;"	f	signature:(ifstream &map_file)
+buildMap	./11/replace.cpp	/^map<string, string> buildMap(ifstream &map_file);$/;"	p	file:	signature:(ifstream &map_file)
+buildMap	./11/trans_word.cc	/^map<string, string> buildMap(ifstream &map_file)$/;"	f	signature:(ifstream &map_file)
+calculate	./9/9.52.cpp	/^int     calculate(int, int, char);$/;"	p	file:	signature:(int, int, char)
+calculate	./9/9.52.cpp	/^int calculate(int a, int b, char op)$/;"	f	signature:(int a, int b, char op)
+cc	./7/constr.cc	/^    int cc;$/;"	m	class:constr	file:	access:private
+check	./12/blob.h	/^                        check(std::size_t, const std::string&) const;$/;"	p	class:StrBlobPtr	access:private	signature:(std::size_t, const std::string&) const
+check	./12/blob.h	/^                void check(size_type i, const std::string &msg) const;$/;"	p	class:StrBlob	access:private	signature:(size_type i, const std::string &msg) const
+check	./12/blob.h	/^StrBlobPtr::check(size_t i, const string &msg) const$/;"	f	class:StrBlobPtr	signature:(size_t i, const string &msg) const
+check	./12/blob.h	/^void StrBlob::check(size_type i, const string &msg) const$/;"	f	class:StrBlob	signature:(size_type i, const string &msg) const
+check	./12/cblob.h	/^                        check(std::size_t, const std::string&) const;$/;"	p	class:StrBlobPtr	access:private	signature:(std::size_t, const std::string&) const
+check	./12/cblob.h	/^                void check(size_type i, const std::string &msg) const;$/;"	p	class:StrBlob	access:private	signature:(size_type i, const std::string &msg) const
+check	./12/cblob.h	/^StrBlobPtr::check(size_t i, const string &msg) const$/;"	f	class:StrBlobPtr	signature:(size_t i, const string &msg) const
+check	./12/cblob.h	/^void StrBlob::check(size_type i, const string &msg) const$/;"	f	class:StrBlob	signature:(size_type i, const string &msg) const
+check	./12/strblob.hpp	/^        check(size_t, const string&) const;$/;"	p	class:StrBlobPtr	access:private	signature:(size_t, const string&) const
+check	./12/strblob.hpp	/^    void check(size_type i, const string &msg) const;$/;"	p	class:StrBlob	access:private	signature:(size_type i, const string &msg) const
+check	./12/strblob.hpp	/^StrBlobPtr::check(size_t i, const string &msg) const$/;"	f	class:StrBlobPtr	signature:(size_t i, const string &msg) const
+check	./12/strblob.hpp	/^void StrBlob::check(size_type i, const string &msg) const$/;"	f	class:StrBlob	signature:(size_type i, const string &msg) const
+check	./16/blob.h	/^                        check(std::size_t, const std::string&) const;$/;"	p	class:BlobPtr	access:private	signature:(std::size_t, const std::string&) const
+check	./16/blob.h	/^                void check(size_type i, const std::string &msg) const;$/;"	p	class:Blob	access:private	signature:(size_type i, const std::string &msg) const
+check	./16/blob.h	/^void Blob<T>::check(size_type i, const string &msg) const$/;"	f	class:Blob	signature:(size_type i, const string &msg) const
+check_size	./10/10.16_.cpp	/^bool check_size(const string &str, unsigned sz)$/;"	f	signature:(const string &str, unsigned sz)
+check_size	./10/10.24.cpp	/^bool check_size(const string &s, unsigned sz)$/;"	f	signature:(const string &s, unsigned sz)
+clear	./7/screen.h	/^                friend void Window_mgr::clear(ScreenIndex);$/;"	p	class:Screen::Window_mgr	access:friend	signature:(ScreenIndex)
+clear	./7/screen.h	/^                void clear(ScreenIndex);$/;"	p	class:Window_mgr	access:public	signature:(ScreenIndex)
+clear	./7/screen.h	/^void Window_mgr::clear(ScreenIndex i)$/;"	f	class:Window_mgr	signature:(ScreenIndex i)
+combine	./7/sales.h	/^        Sales_data &combine(const Sales_data &);$/;"	p	struct:Sales_data	access:public	signature:(const Sales_data &)
+compare	./9/9.52.cpp	/^char    compare(char, char);$/;"	p	file:	signature:(char, char)
+compare	./9/9.52.cpp	/^char compare(char c1, char c2)$/;"	f	signature:(char c1, char c2)
+compute	./18/18.20.cpp	/^        void compute() { cout << "compute()" << endl; }$/;"	f	namespace:primerLib	signature:()
+compute	./18/18.20.cpp	/^        void compute(const void *) { cout << "compute(const void *)" << endl; }$/;"	f	namespace:primerLib	signature:(const void *)
+compute	./18/18.20.cpp	/^void compute(char *, char * = 0) { cout << "compute(char *, char * = 0)" << endl; }$/;"	f	signature:(char *, char * = 0)
+compute	./18/18.20.cpp	/^void compute(double, double = 3.4) { cout << "compute(double, double = 3.4)" << endl; }$/;"	f	signature:(double, double = 3.4)
+constr	./7/constr.cc	/^    constr() : constr(0, 0, 0) { cout << "0 0 0" << endl; }$/;"	f	class:constr	access:public	signature:()
+constr	./7/constr.cc	/^    constr(int a, int b) : constr(0, a, b) { cout << "0 a b" << endl; }$/;"	f	class:constr	access:public	signature:(int a, int b)
+constr	./7/constr.cc	/^    constr(int a, int b, int c) : aa(a), bb(b), cc(c) { cout << "a b c" << endl; }$/;"	f	class:constr	access:public	signature:(int a, int b, int c)
+constr	./7/constr.cc	/^class constr$/;"	c	file:
+constr::aa	./7/constr.cc	/^    int aa;$/;"	m	class:constr	file:	access:private
+constr::bb	./7/constr.cc	/^    int bb;$/;"	m	class:constr	file:	access:private
+constr::cc	./7/constr.cc	/^    int cc;$/;"	m	class:constr	file:	access:private
+constr::constr	./7/constr.cc	/^    constr() : constr(0, 0, 0) { cout << "0 0 0" << endl; }$/;"	f	class:constr	access:public	signature:()
+constr::constr	./7/constr.cc	/^    constr(int a, int b) : constr(0, a, b) { cout << "0 a b" << endl; }$/;"	f	class:constr	access:public	signature:(int a, int b)
+constr::constr	./7/constr.cc	/^    constr(int a, int b, int c) : aa(a), bb(b), cc(c) { cout << "a b c" << endl; }$/;"	f	class:constr	access:public	signature:(int a, int b, int c)
+contents	./13/message.h	/^                std::string     contents;       \/\/保存信息文本$/;"	m	class:Message	access:private
+contents	./13/msg.hpp	/^    string contents;$/;"	m	class:Msg	access:private
+contents	./7/screen.h	/^                std::string contents;$/;"	m	class:Screen	access:private
+cout_int	./6/init.cc	/^void cout_int(initializer_list<int> i_init)$/;"	f	signature:(initializer_list<int> i_init)
+create_vector	./12/newdele.cc	/^vector<int>* create_vector()$/;"	f	signature:()
+create_vector	./12/sharvect.cc	/^shared_ptr<vector<int>> create_vector()$/;"	f	signature:()
+curr	./12/blob.h	/^                std::size_t     curr;   \/\/在数组中的当前位置$/;"	m	class:StrBlobPtr	access:private
+curr	./12/cblob.h	/^                std::size_t     curr;$/;"	m	class:StrBlobPtr	access:private
+curr	./12/strblob.hpp	/^    size_t curr;$/;"	m	class:StrBlobPtr	access:private
+curr	./16/blob.h	/^                std::size_t     curr;   \/\/在数组中的当前位置$/;"	m	class:BlobPtr	access:private
+cursor	./7/screen.h	/^                pos     cursor = 0;$/;"	m	class:Screen	access:private
+data	./12/blob.h	/^                std::shared_ptr<std::vector<std::string>> data;$/;"	m	class:StrBlob	access:private
+data	./12/cblob.h	/^                std::shared_ptr<std::vector<std::string>>       data;$/;"	m	class:StrBlob	access:private
+data	./12/strblob.hpp	/^    shared_ptr<vector<string>> data;$/;"	m	class:StrBlob	access:private
+data	./13/blob.h	/^                std::shared_ptr<std::vector<std::string>>       data;$/;"	m	class:StrBlob	access:private
+data	./13/tree.cc	/^    int data;$/;"	m	struct:Tree	file:	access:public
+data	./16/blob.h	/^                std::shared_ptr<std::vector<T>>         data;$/;"	m	class:Blob	access:private
+day	./9/date.h	/^                unsigned long   day;$/;"	m	class:Date	access:private
+debug	./15/quote.h	/^                virtual void debug() const $/;"	f	class:Quote	access:public	signature:() const
+debug	./15/quote.hpp	/^    virtual void debug() { cout << "bookNo: " << bookNo << ", price: " << price << endl; }$/;"	f	class:Quote	access:public	signature:()
+debug	./15/quote.hpp	/^    void debug() { Quote::debug(); cout << "min_qty: " << min_qty << ", discount: " << discount << endl; }$/;"	f	class:Bulk_quote	access:public	signature:()
+del	./6/6.55.cpp	/^int del(int a, int b)$/;"	f	signature:(int a, int b)
+delete_vector	./12/newdele.cc	/^void delete_vector(vector<int> *vp)$/;"	f	signature:(vector<int> *vp)
+deref	./12/blob.h	/^                std::string& deref() const;$/;"	p	class:StrBlobPtr	access:public	signature:() const
+deref	./12/blob.h	/^string & StrBlobPtr::deref() const$/;"	f	class:StrBlobPtr	signature:() const
+deref	./12/cblob.h	/^                std::string& deref() const;     \/\/访问元素$/;"	p	class:StrBlobPtr	access:public	signature:() const
+deref	./12/cblob.h	/^string& StrBlobPtr::deref() const$/;"	f	class:StrBlobPtr	signature:() const
+deref	./12/strblob.hpp	/^    string& deref() const;$/;"	p	class:StrBlobPtr	access:public	signature:() const
+deref	./12/strblob.hpp	/^string &StrBlobPtr::deref() const$/;"	f	class:StrBlobPtr	signature:() const
+discount	./15/quote.h	/^                double          discount = 0.0;$/;"	m	class:Disc_quote	access:protected
+discount	./15/quote.hpp	/^    double discount = 0.0;$/;"	m	class:Bulk_quote	access:private
+display	./7/screen.h	/^                Screen &display(std::ostream &os) { do_display(os); return *this; }$/;"	f	class:Screen	access:public	signature:(std::ostream &os)
+display	./7/screen.h	/^                const Screen &display(std::ostream &os) const { do_display(os); return *this; }$/;"	f	class:Screen	access:public	signature:(std::ostream &os) const
+do_display	./7/screen.h	/^                void do_display(std::ostream &os) const { os << contents; }$/;"	f	class:Screen	access:private	signature:(std::ostream &os) const
+dvar	./18/18.16.cpp	/^        double  dvar = 0;$/;"	m	namespace:Exercise	file:
+elimDups	./10/10.11.cpp	/^void elimDups(vector<string> &words)$/;"	f	signature:(vector<string> &words)
+elimDups	./10/10.13.cpp	/^void elimDups(vector<string> &s)$/;"	f	signature:(vector<string> &s)
+elimDups	./10/10.16.cpp	/^void elimDups(vector<string> &s)$/;"	f	signature:(vector<string> &s)
+elimDups	./10/10.16_.cpp	/^void elimDups(vector<string> &vec)$/;"	f	signature:(vector<string> &vec)
+elimDups	./10/10.9.cc	/^void elimDups(vector<string>& str_vec)$/;"	f	signature:(vector<string>& str_vec)
+elimDups	./10/10.9.cpp	/^void elimDups(vector<string> &words)$/;"	f	signature:(vector<string> &words)
+elimDups	./10/10.9_.cpp	/^void elimDups(vector<string> &svec)$/;"	f	signature:(vector<string> &svec)
+empty	./12/blob.h	/^                bool empty() const { return data->empty(); }$/;"	f	class:StrBlob	access:public	signature:() const
+empty	./12/cblob.h	/^                bool empty() const { return data->empty(); }$/;"	f	class:StrBlob	access:public	signature:() const
+empty	./12/strblob.hpp	/^    bool empty() const { return data->empty(); }$/;"	f	class:StrBlob	access:public	signature:() const
+empty	./16/blob.h	/^                bool empty() const { return data->empty(); }$/;"	f	class:Blob	access:public	signature:() const
+end	./12/_query.h	/^        std::set<line_no>::iterator     end() { return lines->end(); }$/;"	f	class:QueryResult	access:public	signature:()
+end	./12/blob.h	/^                StrBlobPtr end(); \/\/{ auto ret = StrBlobPtr(*this, data->size()); return ret; }$/;"	p	class:StrBlob	access:public	signature:()
+end	./12/blob.h	/^inline StrBlobPtr StrBlob::end()$/;"	f	class:StrBlob	signature:()
+end	./12/cblob.h	/^                StrBlobPtr end();$/;"	p	class:StrBlob	access:public	signature:()
+end	./12/cblob.h	/^StrBlobPtr StrBlob::end()$/;"	f	class:StrBlob	signature:()
+end	./12/querytest.hpp	/^    set<line_no>::const_iterator end() const { return lines->cend(); }$/;"	f	class:QueryResult	access:public	signature:() const
+end	./12/strblob.hpp	/^    StrBlobPtr end();$/;"	p	class:StrBlob	access:public	signature:()
+end	./12/strblob.hpp	/^StrBlobPtr StrBlob::end()$/;"	f	class:StrBlob	signature:()
+end	./12/tquery.h	/^        std::set<line_no>::const_iterator end() { return (*lines).cend(); }$/;"	f	class:QueryResult	access:public	signature:()
+end	./15/query.h	/^                end() { return lines->end(); }$/;"	f	class:QueryResult	access:public	signature:()
+eval	./15/query.h	/^        QueryResult eval(const TextQuery &) const;$/;"	p	class:AndQuery	access:private	signature:(const TextQuery &) const
+eval	./15/query.h	/^        QueryResult eval(const TextQuery &) const;$/;"	p	class:NotQuery	access:private	signature:(const TextQuery &) const
+eval	./15/query.h	/^        QueryResult eval(const TextQuery &) const;$/;"	p	class:OrQuery	access:private	signature:(const TextQuery &) const
+eval	./15/query.h	/^        QueryResult eval(const TextQuery &t) const$/;"	f	class:Query	access:public	signature:(const TextQuery &t) const
+eval	./15/query.h	/^        QueryResult eval(const TextQuery &t) const$/;"	f	class:WordQuery	access:private	signature:(const TextQuery &t) const
+eval	./15/query.h	/^        virtual QueryResult eval(const TextQuery &) const = 0;$/;"	p	class:Query_base	access:private	signature:(const TextQuery &) const
+eval	./15/query.h	/^QueryResult AndQuery::eval(const TextQuery& text) const$/;"	f	class:AndQuery	signature:(const TextQuery& text) const
+eval	./15/query.h	/^QueryResult NotQuery::eval(const TextQuery& text) const$/;"	f	class:NotQuery	signature:(const TextQuery& text) const
+eval	./15/query.h	/^QueryResult OrQuery::eval(const TextQuery& text) const$/;"	f	class:OrQuery	signature:(const TextQuery& text) const
+eval	./15/query_2.hpp	/^    QueryResult eval(const TextQuery &) const;$/;"	p	class:NotQuery	access:private	signature:(const TextQuery &) const
+eval	./15/query_2.hpp	/^    QueryResult eval(const TextQuery &t) const { return q->eval(t); }$/;"	f	class:Query	access:public	signature:(const TextQuery &t) const
+eval	./15/query_2.hpp	/^    QueryResult eval(const TextQuery &t) const { return t.query(query_word); }$/;"	f	class:WordQuery	access:private	signature:(const TextQuery &t) const
+eval	./15/query_2.hpp	/^    QueryResult eval(const TextQuery&) const;$/;"	p	class:AndQuery	access:private	signature:(const TextQuery&) const
+eval	./15/query_2.hpp	/^    QueryResult eval(const TextQuery&) const;$/;"	p	class:OrQuery	access:private	signature:(const TextQuery&) const
+eval	./15/query_2.hpp	/^    virtual QueryResult eval(const TextQuery&) const = 0;$/;"	p	class:Query_base	access:private	signature:(const TextQuery&) const
+eval	./15/query_2.hpp	/^QueryResult AndQuery::eval(const TextQuery& text) const$/;"	f	class:AndQuery	signature:(const TextQuery& text) const
+eval	./15/query_2.hpp	/^QueryResult NotQuery::eval(const TextQuery& text) const$/;"	f	class:NotQuery	signature:(const TextQuery& text) const
+eval	./15/query_2.hpp	/^QueryResult OrQuery::eval(const TextQuery& text) const$/;"	f	class:OrQuery	signature:(const TextQuery& text) const
+exchange	./6/6.25.cpp	/^bool exchange(int *&pa, int *&pb)$/;"	f	signature:(int *&pa, int *&pb)
+ext	./6/6.55.cpp	/^int ext(int a, int b)$/;"	f	signature:(int a, int b)
+f	./11/11.7.cc	/^    map<string, vector<string>> f;$/;"	m	class:family	file:	access:private
+f	./13/13.14.cpp	/^void f(const numbered &n)$/;"	f	signature:(const numbered &n)
+f	./13/employee.h	/^                friend void f(const Employee&);$/;"	p	class:Employee	access:friend	signature:(const Employee&)
+f	./13/employee.h	/^void f(const Employee &e)$/;"	f	signature:(const Employee &e)
+f	./18/18.20.cpp	/^void f()$/;"	f	signature:()
+f	./6/6.51.cpp	/^void f()$/;"	f	signature:()
+f	./6/6.51.cpp	/^void f(double d1, double d2)$/;"	f	signature:(double d1, double d2)
+f	./6/6.51.cpp	/^void f(int a)$/;"	f	signature:(int a)
+f	./6/6.51.cpp	/^void f(int a, int b)$/;"	f	signature:(int a, int b)
+family	./11/11.7.cc	/^    family();$/;"	p	class:family	file:	access:public	signature:()
+family	./11/11.7.cc	/^class family$/;"	c	file:
+family	./11/11.7.cc	/^family::family()$/;"	f	class:family	signature:()
+family::add_child	./11/11.7.cc	/^    void add_child(string firstname, string lastname);$/;"	p	class:family	file:	access:public	signature:(string firstname, string lastname)
+family::add_child	./11/11.7.cc	/^void family::add_child(string firstname, string lastname)$/;"	f	class:family	signature:(string firstname, string lastname)
+family::add_family	./11/11.7.cc	/^    void add_family(string firstname, string lastname);$/;"	p	class:family	file:	access:public	signature:(string firstname, string lastname)
+family::add_family	./11/11.7.cc	/^void family::add_family(string firstname, string lastname)$/;"	f	class:family	signature:(string firstname, string lastname)
+family::f	./11/11.7.cc	/^    map<string, vector<string>> f;$/;"	m	class:family	file:	access:private
+family::family	./11/11.7.cc	/^    family();$/;"	p	class:family	file:	access:public	signature:()
+family::family	./11/11.7.cc	/^family::family()$/;"	f	class:family	signature:()
+family::print	./11/11.7.cc	/^    void print();$/;"	p	class:family	file:	access:public	signature:()
+family::print	./11/11.7.cc	/^void family::print()$/;"	f	class:family	signature:()
+family::~family	./11/11.7.cc	/^    ~family() {}$/;"	f	class:family	access:public	signature:()
+file	./12/__query.h	/^                std::shared_ptr<std::vector<std::string>>       file; \/\/保存输入文件$/;"	m	class:TextQuery	access:private
+file	./12/__query.h	/^        std::shared_ptr<std::vector<std::string>> file; \/\/指向输入文件的vector$/;"	m	class:QueryResult	access:private
+file	./12/_query.h	/^                std::shared_ptr<std::vector<std::string>>       file;   \/\/输入文件$/;"	m	class:TextQuery	access:private
+file	./12/_query.h	/^        std::shared_ptr<std::vector<std::string>>       file; \/\/指向要查询的文件$/;"	m	class:QueryResult	access:private
+file	./12/querytest.hpp	/^    shared_ptr<vector<string>> file;$/;"	m	class:QueryResult	access:private
+file	./12/querytest.hpp	/^    shared_ptr<vector<string>> file;$/;"	m	class:TextQuery	access:private
+file	./12/tquery.h	/^                std::shared_ptr<std::vector<std::string>>       file;   \/\/输入文件$/;"	m	class:TextQuery	access:private
+file	./12/tquery.h	/^        std::shared_ptr<std::vector<std::string>>       file; \/\/输入文件$/;"	m	class:QueryResult	access:private
+file	./15/query.h	/^                std::shared_ptr<std::vector<std::string>>       file;   \/\/保存要查询的文件$/;"	m	class:TextQuery	access:private
+file	./15/query.h	/^        std::shared_ptr<std::vector<std::string>>       file;   \/\/输入文件$/;"	m	class:QueryResult	access:private
+find	./16/16.4.cpp	/^It find(It beg, It end, const T &val)$/;"	f	signature:(It beg, It end, const T &val)
+five	./10/10.13.cpp	/^bool five(const string &s)$/;"	f	signature:(const string &s)
+folders	./13/message.h	/^                std::set<Folder *>      folders;\/\/保存所有包含该信息的Folder$/;"	m	class:Message	access:private
+folders	./13/msg.hpp	/^    set<Folder*> folders;$/;"	m	class:Msg	access:private
+front	./12/blob.h	/^                const std::string& front() const;$/;"	p	class:StrBlob	access:public	signature:() const
+front	./12/blob.h	/^                std::string& front();$/;"	p	class:StrBlob	access:public	signature:()
+front	./12/blob.h	/^const string& StrBlob::front() const$/;"	f	class:StrBlob	signature:() const
+front	./12/blob.h	/^string& StrBlob::front()$/;"	f	class:StrBlob	signature:()
+front	./12/cblob.h	/^                const std::string& front() const;$/;"	p	class:StrBlob	access:public	signature:() const
+front	./12/cblob.h	/^                std::string& front();$/;"	p	class:StrBlob	access:public	signature:()
+front	./12/cblob.h	/^const string& StrBlob::front() const$/;"	f	class:StrBlob	signature:() const
+front	./12/cblob.h	/^string& StrBlob::front()$/;"	f	class:StrBlob	signature:()
+front	./12/strblob.hpp	/^    const string& front() const;$/;"	p	class:StrBlob	access:public	signature:() const
+front	./12/strblob.hpp	/^    string& front();$/;"	p	class:StrBlob	access:public	signature:()
+front	./12/strblob.hpp	/^const string &StrBlob::front() const$/;"	f	class:StrBlob	signature:() const
+front	./12/strblob.hpp	/^string &StrBlob::front()$/;"	f	class:StrBlob	signature:()
+front	./16/blob.h	/^                T& front();$/;"	p	class:Blob	access:public	signature:()
+front	./16/blob.h	/^                const T& front() const;$/;"	p	class:Blob	access:public	signature:() const
+front	./16/blob.h	/^T& Blob<T>::front()$/;"	f	class:Blob	signature:()
+front	./16/blob.h	/^const T& Blob<T>::front() const$/;"	f	class:Blob	signature:() const
+func	./13/tree.cc	/^int func(Tree *t)$/;"	f	signature:(Tree *t)
+get	./6/6.32.cpp	/^int &get(int *array, int index)$/;"	f	signature:(int *array, int index)
+get	./6/6.32.cpp	/^int &get(int *array, int index);$/;"	p	file:	signature:(int *array, int index)
+get	./7/screen.h	/^                char get() const { return contents[cursor]; }$/;"	f	class:Screen	access:public	signature:() const
+get	./7/screen.h	/^                inline char get(pos ht, pos wd) const;$/;"	p	class:Screen	access:public	signature:(pos ht, pos wd) const
+get	./7/screen.h	/^char Screen::get(pos r, pos c) const$/;"	f	class:Screen	signature:(pos r, pos c) const
+get_addr	./7/person.h	/^        const string &get_addr() const { return addr; }$/;"	f	struct:Person	access:public	signature:() const
+get_file	./12/_query.h	/^        std::shared_ptr<std::vector<std::string>> get_file()$/;"	f	class:QueryResult	access:public	signature:()
+get_file	./12/querytest.hpp	/^    shared_ptr<vector<string>> get_file() { return file; }$/;"	f	class:QueryResult	access:public	signature:()
+get_file	./15/query.h	/^                get_file() { return std::shared_ptr<std::vector<std::string>>(file); }$/;"	f	class:QueryResult	access:public	signature:()
+get_input	./12/newdele.cc	/^void get_input(vector<int> *vp)$/;"	f	signature:(vector<int> *vp)
+get_input	./12/sharvect.cc	/^void get_input(shared_ptr<vector<int>> vp)$/;"	f	signature:(shared_ptr<vector<int>> vp)
+get_name	./7/person.h	/^        const string &get_name() const { return name; }$/;"	f	struct:Person	access:public	signature:() const
+get_rand	./17/17.28.cpp	/^unsigned get_rand( size_t seed, unsigned min, unsigned max )$/;"	f	signature:( size_t seed, unsigned min, unsigned max )
+get_ref	./6/init.cc	/^int& get_ref(vector<int>& i_vec, size_t pos)$/;"	f	signature:(vector<int>& i_vec, size_t pos)
+get_val	./6/init.cc	/^initializer_list<int> get_val()$/;"	f	signature:()
+global_int	./2/2.2.cpp	/^int     global_int;$/;"	v
+height	./7/screen.h	/^                pos     height = 0, width = 0;$/;"	m	class:Screen	access:private
+i	./13/13.27.h	/^                int     i;$/;"	m	class:HasPtr	access:private
+i	./13/hasptr.h	/^                int     i;$/;"	m	class:HasPtr	access:private
+incr	./12/blob.h	/^                StrBlobPtr& incr();     \/\/前缀递增$/;"	p	class:StrBlobPtr	access:public	signature:()
+incr	./12/blob.h	/^StrBlobPtr& StrBlobPtr::incr()$/;"	f	class:StrBlobPtr	signature:()
+incr	./12/cblob.h	/^                StrBlobPtr& incr();             \/\/前缀递增$/;"	p	class:StrBlobPtr	access:public	signature:()
+incr	./12/cblob.h	/^StrBlobPtr& StrBlobPtr::incr()$/;"	f	class:StrBlobPtr	signature:()
+incr	./12/strblob.hpp	/^    StrBlobPtr& incr(); \/\/前缀递增$/;"	p	class:StrBlobPtr	access:public	signature:()
+incr	./12/strblob.hpp	/^StrBlobPtr& StrBlobPtr::incr()$/;"	f	class:StrBlobPtr	signature:()
+initval	./7/test.cpp	/^                Type initval();$/;"	p	class:Exercise	file:	access:public	signature:()
+initval	./7/test.cpp	/^Type initval();$/;"	p	file:	signature:()
+input	./12/12.7.cpp	/^void input()$/;"	f	signature:()
+input	./12/12.7.cpp	/^void input();$/;"	p	file:	signature:()
+input	./8/8.1.cpp	/^istream &input(istream &is)$/;"	f	signature:(istream &is)
+input	./8/88.1.cpp	/^istream &input(istream &is)$/;"	f	signature:(istream &is)
+isGreator5	./10/10.9.cc	/^bool isGreator5(const string& s)$/;"	f	signature:(const string& s)
+isShorter	./10/10.11.cpp	/^bool isShorter(const string &s1, const string &s2)$/;"	f	signature:(const string &s1, const string &s2)
+isShorter	./10/10.13.cpp	/^bool isShorter(const string &s1, const string &s2)$/;"	f	signature:(const string &s1, const string &s2)
+isShorter	./10/10.9.cc	/^bool isShorter(const string& s1, const string& s2)$/;"	f	signature:(const string& s1, const string& s2)
+isShorter	./10/10.9_.cpp	/^bool isShorter(const string &s1, const string &s2)$/;"	f	signature:(const string &s1, const string &s2)
+is_end	./12/cblob.h	/^                bool is_end();$/;"	p	class:StrBlobPtr	access:public	signature:()
+is_end	./12/cblob.h	/^bool StrBlobPtr::is_end()$/;"	f	class:StrBlobPtr	signature:()
+is_number	./9/9.52.cpp	/^bool    is_number(char);$/;"	p	file:	signature:(char)
+is_number	./9/9.52.cpp	/^bool is_number(char ch)$/;"	f	signature:(char ch)
+is_optr	./9/9.52.cpp	/^bool    is_optr(char);$/;"	p	file:	signature:(char)
+is_optr	./9/9.52.cpp	/^bool is_optr(char ch)$/;"	f	signature:(char ch)
+isbn	./15/quote.h	/^                std::string isbn() const { return bookNo; }$/;"	f	class:Quote	access:public	signature:() const
+isbn	./15/quote.hpp	/^    string isbn() const { return bookNo; }$/;"	f	class:Quote	access:public	signature:() const
+isbn	./7/sales.h	/^        std::string isbn() const { return bookNo; }$/;"	f	struct:Sales_data	access:public	signature:() const
+ivar	./18/18.16.cpp	/^        int     ivar = 0;$/;"	m	namespace:Exercise	file:
+ivar	./18/18.16.cpp	/^int ivar = 0;$/;"	v
+left	./13/tree.cc	/^    Tree *left, *right;$/;"	m	struct:Tree	file:	access:public
+less	./10/10.22.cpp	/^bool less(const string &s, size_t sz)$/;"	f	signature:(const string &s, size_t sz)
+less_five	./10/10.13_.cpp	/^bool less_five(const string &s)$/;"	f	signature:(const string &s)
+lhs	./15/query.h	/^                Query           lhs, rhs;       \/\/右侧对象和左侧对象$/;"	m	class:BinaryQuery	access:protected
+lhs	./15/query_2.hpp	/^    Query lhs, rhs;$/;"	m	class:BinaryQuery	access:protected
+limit	./18/18.16.cpp	/^        const int       limit = 1000;$/;"	m	namespace:Exercise	file:
+lines	./12/__query.h	/^        std::shared_ptr<std::set<line_no>> lines;        \/\/指向单词对应的行号set$/;"	m	class:QueryResult	access:private
+lines	./12/_query.h	/^        std::shared_ptr<std::set<line_no>>      lines;  \/\/出现的行号$/;"	m	class:QueryResult	access:private
+lines	./12/querytest.hpp	/^    shared_ptr<set<line_no>> lines;$/;"	m	class:QueryResult	access:private
+lines	./12/tquery.h	/^        std::shared_ptr<std::set<line_no>>      lines;  \/\/行号$/;"	m	class:QueryResult	access:private
+lines	./15/query.h	/^        std::shared_ptr<std::set<line_no>>      lines;  \/\/行号的set$/;"	m	class:QueryResult	access:private
+m_day	./9/9.51.cc	/^    unsigned int m_day;$/;"	m	class:Date	file:	access:private
+m_month	./9/9.51.cc	/^    unsigned int m_month;$/;"	m	class:Date	file:	access:private
+m_year	./9/9.51.cc	/^    unsigned int m_year;$/;"	m	class:Date	file:	access:private
+main	./1/11.cpp	/^int main()$/;"	f	signature:()
+main	./1/test.cpp	/^int main()$/;"	f	signature:()
+main	./10/10.1.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./10/10.1.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.11.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.13.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.13_.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.14.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.16.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.16_.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.1_.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.2.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.20.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.21.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./10/10.21.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.22.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.24.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.27.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./10/10.27.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.28.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./10/10.28.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.29.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.2_.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.3.2.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./10/10.3.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./10/10.3.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.30.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.33.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.34.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.35.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.36.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.37.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.3_.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.42.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.5.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.6.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.6_.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.7.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.9.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./10/10.9.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/10.9_.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/back_insert.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./10/ioit.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./10/iterator.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./10/itoa.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./10/refcap.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./11/11.12.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./11/11.12.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./11/11.16.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./11/11.17.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./11/11.20.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./11/11.23.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./11/11.23.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./11/11.3.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./11/11.3.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./11/11.31.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./11/11.33.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./11/11.33_.cpp	/^int main(int aegc, char *argv[])$/;"	f	signature:(int aegc, char *argv[])
+main	./11/11.33__.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./11/11.37.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./11/11.38.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./11/11.7.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./11/11.7.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./11/multi_word_trans.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./11/replace.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./11/trans_word.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./11/uword_count.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./11/word_count.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./12/12.16.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./12/12.20.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./12/12.28.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./12/12.6.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./12/12.7.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./12/__main.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./12/_main.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./12/auto_copy.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./12/copy_unique.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./12/file.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./12/main.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./12/main.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./12/mshared.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./12/newdele.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./12/query.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./12/sharvect.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./12/test.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./12/testStrblob.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./12/textquery.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./12/tquery_main.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./13/13.13.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./13/13.14.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./13/13.19.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./13/13.30.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./13/13.31.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./13/mess_main.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./13/msg.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./13/test.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./13/tree.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./14/overload.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./15/query.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./15/quote.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./15/testquote.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./16/16.19.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./16/16.20.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./16/16.4.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./16/test.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./17/17.28.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./17/17.35.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./17/bit.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./17/bitset.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./17/equal.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./17/test.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./17/tuple.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./18/18.16.cpp	/^int main()$/;"	f	signature:()
+main	./18/18.20.cpp	/^int main()$/;"	f	signature:()
+main	./18/18.25.cpp	/^int main()$/;"	f	signature:()
+main	./2/2.16.cpp	/^int main()$/;"	f	signature:()
+main	./2/2.17.cpp	/^int main()$/;"	f	signature:()
+main	./2/2.2.cpp	/^int main()$/;"	f	signature:()
+main	./2/2.21.cpp	/^int main()$/;"	f	signature:()
+main	./2/2.28.cpp	/^int main()$/;"	f	signature:()
+main	./2/auto.cpp	/^int main()$/;"	f	signature:()
+main	./2/decltype.cpp	/^int main()$/;"	f	signature:()
+main	./2/init.cpp	/^int main()$/;"	f	signature:()
+main	./2/test.cpp	/^int main()$/;"	f	signature:()
+main	./2/unsigned.cpp	/^int main()$/;"	f	signature:()
+main	./2/unsignedtest.cpp	/^int main()$/;"	f	signature:()
+main	./3/3.14.cpp	/^int main()$/;"	f	signature:()
+main	./3/3.15.cpp	/^int main()$/;"	f	signature:()
+main	./3/3.16.cpp	/^int main()$/;"	f	signature:()
+main	./3/3.17.cpp	/^int main()$/;"	f	signature:()
+main	./3/3.2.cpp	/^int main()$/;"	f	signature:()
+main	./3/3.20.cpp	/^int main()$/;"	f	signature:()
+main	./3/3.21.cpp	/^int main()$/;"	f	signature:()
+main	./3/3.22.cpp	/^int main()$/;"	f	signature:()
+main	./3/3.23.cpp	/^int main()$/;"	f	signature:()
+main	./3/3.24.cpp	/^int main()$/;"	f	signature:()
+main	./3/3.25.cpp	/^int main()$/;"	f	signature:()
+main	./3/3.31.cpp	/^int main()$/;"	f	signature:()
+main	./3/3.36.cpp	/^int main()$/;"	f	signature:()
+main	./3/3.41.cpp	/^int main()$/;"	f	signature:()
+main	./3/3.42.cpp	/^int main()$/;"	f	signature:()
+main	./3/3.43.cpp	/^int main()$/;"	f	signature:()
+main	./3/3.5.cpp	/^int main()$/;"	f	signature:()
+main	./3/const.cpp	/^int main()$/;"	f	signature:()
+main	./3/for.cpp	/^int main()$/;"	f	signature:()
+main	./3/hex.cpp	/^int main()$/;"	f	signature:()
+main	./3/punct.cpp	/^int main()$/;"	f	signature:()
+main	./3/test.cpp	/^int main()$/;"	f	signature:()
+main	./3/xx.cpp	/^int main()$/;"	f	signature:()
+main	./3/xxx.cpp	/^int main()$/;"	f	signature:()
+main	./4/vec.cpp	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./5/5.23.cpp	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./5/5.6.3.cpp	/^int main()$/;"	f	signature:()
+main	./6/6.25.cpp	/^int main()$/;"	f	signature:()
+main	./6/6.27.cpp	/^int main()$/;"	f	signature:()
+main	./6/6.32.cpp	/^int main()$/;"	f	signature:()
+main	./6/6.33.cpp	/^int main()$/;"	f	signature:()
+main	./6/6.51.cpp	/^int main()$/;"	f	signature:()
+main	./6/6.55.cpp	/^int main()$/;"	f	signature:()
+main	./6/init.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./7/constr.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./7/test.cpp	/^int main()$/;"	f	signature:()
+main	./7/usescr.cpp	/^int main()$/;"	f	signature:()
+main	./8/8.1.cpp	/^int main()$/;"	f	signature:()
+main	./8/8.10.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./8/8.4.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./8/88.1.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./8/88.10.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./8/88.4.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./8/bad.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./8/file.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./8/ostrstr.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./8/stringstream.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./9/9.13.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./9/9.14.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./9/9.18.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./9/9.19.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./9/9.20.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./9/9.24.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./9/9.26.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./9/9.27.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./9/9.28.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./9/9.31.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./9/9.4.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./9/9.41.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./9/9.43.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./9/9.43_.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./9/9.47.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./9/9.5.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./9/9.50.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./9/9.50.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./9/9.51.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./9/9.52.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./9/swap.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./9/vstr.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./test.cpp	/^int main()$/;"	f	signature:()
+manip	./18/18.16.cpp	/^void manip()$/;"	f	signature:()
+messages	./13/message.h	/^                std::set<Message *>     messages;       \/\/保存指向所包含的所有message的指针$/;"	m	class:Folder	access:private
+min_qty	./15/quote.hpp	/^    size_t min_qty = 0;$/;"	m	class:Bulk_quote	access:private
+month	./9/date.h	/^                unsigned long   month;$/;"	m	class:Date	access:private
+move	./7/screen.h	/^                Screen &move(pos r, pos c);$/;"	p	class:Screen	access:public	signature:(pos r, pos c)
+move	./7/screen.h	/^inline Screen &Screen::move(pos r, pos c)$/;"	f	class:Screen	signature:(pos r, pos c)
+msgs	./13/msg.hpp	/^    set<Msg*> msgs;$/;"	m	class:Folder	access:private
+mul	./6/6.55.cpp	/^int mul(int a, int b)$/;"	f	signature:(int a, int b)
+mysn	./13/13.14.cpp	/^                int             mysn;$/;"	m	class:numbered	file:	access:public
+name	./13/employee.h	/^                std::string     name;$/;"	m	class:Employee	access:private
+name	./13/msg.hpp	/^    string name;$/;"	m	class:Folder	access:private
+name	./7/person.h	/^        string     name;$/;"	m	struct:Person	access:public
+net_price	./15/quote.h	/^                double net_price(std::size_t) const = 0;$/;"	p	class:Disc_quote	access:public	signature:(std::size_t) const
+net_price	./15/quote.h	/^                virtual double net_price(std::size_t n) const$/;"	f	class:Quote	access:public	signature:(std::size_t n) const
+net_price	./15/quote.h	/^double Bulk_quote::net_price(size_t cnt) const$/;"	f	class:Bulk_quote	signature:(size_t cnt) const
+net_price	./15/quote.hpp	/^    virtual double net_price(size_t n) const { return n * price; }$/;"	f	class:Quote	access:public	signature:(size_t n) const
+net_price	./15/quote.hpp	/^double Bulk_quote::net_price(size_t cnt) const$/;"	f	class:Bulk_quote	signature:(size_t cnt) const
+new_vector	./12/12.6.cpp	/^vector<int> *new_vector()$/;"	f	signature:()
+new_vector	./12/12.7.cpp	/^shared_ptr<vector<int>> new_vector()$/;"	f	signature:()
+no	./13/13.14.cpp	/^int     no = 1;$/;"	v
+no	./13/employee.h	/^                int             no;$/;"	m	class:Employee	access:private
+number	./13/employee.h	/^                static int      number;$/;"	m	class:Employee	access:public
+number	./13/employee.h	/^int Employee::number = 0;$/;"	m	class:Employee
+numbered	./13/13.14.cpp	/^                numbered() : mysn(no++) { }$/;"	f	class:numbered	access:public	signature:()
+numbered	./13/13.14.cpp	/^                numbered(const numbered &n) : mysn(no++) { }$/;"	f	class:numbered	access:public	signature:(const numbered &n)
+numbered	./13/13.14.cpp	/^class   numbered$/;"	c	file:
+numbered::mysn	./13/13.14.cpp	/^                int             mysn;$/;"	m	class:numbered	file:	access:public
+numbered::numbered	./13/13.14.cpp	/^                numbered() : mysn(no++) { }$/;"	f	class:numbered	access:public	signature:()
+numbered::numbered	./13/13.14.cpp	/^                numbered(const numbered &n) : mysn(no++) { }$/;"	f	class:numbered	access:public	signature:(const numbered &n)
+opSym	./15/query.h	/^                std::string     opSym;          \/\/运算符的名字$/;"	m	class:BinaryQuery	access:protected
+opSym	./15/query_2.hpp	/^    string opSym;$/;"	m	class:BinaryQuery	access:protected
+operator !=	./12/strblob.hpp	/^    bool operator!=(const StrBlobPtr &sb);$/;"	p	class:StrBlobPtr	access:public	signature:(const StrBlobPtr &sb)
+operator !=	./12/strblob.hpp	/^bool StrBlobPtr::operator!=(const StrBlobPtr &sb)$/;"	f	class:StrBlobPtr	signature:(const StrBlobPtr &sb)
+operator &	./15/query.h	/^        friend Query operator&(const Query &, const Query &);$/;"	p	class:AndQuery	access:friend	signature:(const Query &, const Query &)
+operator &	./15/query.h	/^        friend Query operator&(const Query &, const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &, const Query &)
+operator &	./15/query.h	/^inline Query operator&(const Query &lhs, const Query &rhs)$/;"	f	signature:(const Query &lhs, const Query &rhs)
+operator &	./15/query_2.hpp	/^    friend Query operator&(const Query &, const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &, const Query &)
+operator &	./15/query_2.hpp	/^    friend Query operator&(const Query&, const Query&);$/;"	p	class:AndQuery	access:friend	signature:(const Query&, const Query&)
+operator &	./15/query_2.hpp	/^inline Query operator&(const Query &lhs, const Query &rhs)$/;"	f	signature:(const Query &lhs, const Query &rhs)
+operator ()	./16/debugdelete.h	/^                template <typename T> void operator()(T *p) const$/;"	f	class:DebugDelete	access:public	signature:(T *p) const
+operator *	./16/blob.h	/^                T& operator*() const$/;"	f	class:BlobPtr	access:public	signature:() const
+operator ++	./14/overload.cc	/^    int operator++() { cout << "Test::++operator" << endl; return 0; }$/;"	f	class:Test	access:public	signature:()
+operator ++	./14/overload.cc	/^    int operator++(int) { cout << "Test::operator++" << endl; return 0; }$/;"	f	class:Test	access:public	signature:(int)
+operator ++	./16/blob.h	/^                BlobPtr operator++(int);$/;"	p	class:BlobPtr	access:public	signature:(int)
+operator ++	./16/blob.h	/^                BlobPtr& operator++();$/;"	p	class:BlobPtr	access:public	signature:()
+operator ++	./16/blob.h	/^BlobPtr<T> BlobPtr<T>::operator++(int)  \/\/后置递增$/;"	f	class:BlobPtr	signature:(int)
+operator ++	./16/blob.h	/^BlobPtr<T>& BlobPtr<T>::operator++()    \/\/前置递增，返回引用$/;"	f	class:BlobPtr	signature:()
+operator --	./16/blob.h	/^                BlobPtr operator--(int);$/;"	p	class:BlobPtr	access:public	signature:(int)
+operator --	./16/blob.h	/^                BlobPtr& operator--();$/;"	p	class:BlobPtr	access:public	signature:()
+operator --	./16/blob.h	/^BlobPtr<T> BlobPtr<T>::operator--(int)  \/\/后置递减$/;"	f	class:BlobPtr	signature:(int)
+operator --	./16/blob.h	/^BlobPtr<T>& BlobPtr<T>::operator--()    \/\/后置递减，返回引用$/;"	f	class:BlobPtr	signature:()
+operator <	./13/hasptr.h	/^                bool operator<(const HasPtr& p)$/;"	f	class:HasPtr	access:public	signature:(const HasPtr& p)
+operator <<	./15/query.h	/^std::ostream &operator<<(std::ostream &os, const Query &query)$/;"	f	signature:(std::ostream &os, const Query &query)
+operator <<	./15/query_2.hpp	/^ostream & operator<<(ostream &os, const Query &query)$/;"	f	signature:(ostream &os, const Query &query)
+operator =	./13/13.13.cpp	/^        X& operator=(const X& x) { std::cout << "X& operator=(const X& x)" << std::endl; $/;"	f	struct:X	access:public	signature:(const X& x)
+operator =	./13/13.27.h	/^                HasPtr& operator=(const HasPtr&);$/;"	p	class:HasPtr	access:public	signature:(const HasPtr&)
+operator =	./13/13.27.h	/^HasPtr& HasPtr::operator=(const HasPtr &rhs)$/;"	f	class:HasPtr	signature:(const HasPtr &rhs)
+operator =	./13/blob.h	/^                StrBlob operator=(const StrBlob&);$/;"	p	class:StrBlob	access:public	signature:(const StrBlob&)
+operator =	./13/blob.h	/^StrBlob StrBlob::operator=(const StrBlob& sb)$/;"	f	class:StrBlob	signature:(const StrBlob& sb)
+operator =	./13/employee.h	/^                Employee &operator=(const Employee &e);$/;"	p	class:Employee	access:public	signature:(const Employee &e)
+operator =	./13/employee.h	/^Employee& Employee::operator=(const Employee &e)$/;"	f	class:Employee	signature:(const Employee &e)
+operator =	./13/hasptr.h	/^                HasPtr& operator=(const HasPtr&);$/;"	p	class:HasPtr	access:public	signature:(const HasPtr&)
+operator =	./13/hasptr.h	/^HasPtr& HasPtr::operator=(const HasPtr& p)$/;"	f	class:HasPtr	signature:(const HasPtr& p)
+operator =	./13/message.h	/^                Folder& operator=(const Folder&);$/;"	p	class:Folder	access:public	signature:(const Folder&)
+operator =	./13/message.h	/^                Message& operator=(const Message&);$/;"	p	class:Message	access:public	signature:(const Message&)
+operator =	./13/message.h	/^Folder& Folder::operator=(const Folder &f)$/;"	f	class:Folder	signature:(const Folder &f)
+operator =	./13/message.h	/^Message& Message::operator=(const Message &m)$/;"	f	class:Message	signature:(const Message &m)
+operator =	./13/msg.hpp	/^    Folder& operator=(const Folder&);$/;"	p	class:Folder	access:public	signature:(const Folder&)
+operator =	./13/msg.hpp	/^    Msg& operator=(const Msg&);$/;"	p	class:Msg	access:public	signature:(const Msg&)
+operator =	./13/msg.hpp	/^Folder& Folder::operator=(const Folder& f)$/;"	f	class:Folder	signature:(const Folder& f)
+operator =	./13/msg.hpp	/^Msg& Msg::operator=(const Msg& m)$/;"	f	class:Msg	signature:(const Msg& m)
+operator []	./14/overload.cc	/^    const int operator[](uint32_t idx) const { cout << "const Test::operator[]" << endl; return 0; }$/;"	f	class:Test	access:public	signature:(uint32_t idx) const
+operator []	./14/overload.cc	/^    int operator[](uint32_t idx) { cout << "Test::operator[]" << endl; return 0; }$/;"	f	class:Test	access:public	signature:(uint32_t idx)
+operator []	./16/blob.h	/^                T& operator[](size_type i);$/;"	p	class:Blob	access:public	signature:(size_type i)
+operator []	./16/blob.h	/^                const T& operator[](size_type i) const;$/;"	p	class:Blob	access:public	signature:(size_type i) const
+operator []	./16/blob.h	/^T& Blob<T>::operator[](size_type i)$/;"	f	class:Blob	signature:(size_type i)
+operator []	./16/blob.h	/^const T& Blob<T>::operator[](size_type i) const$/;"	f	class:Blob	signature:(size_type i) const
+operator |	./15/query.h	/^        friend Query operator|(const Query &, const Query &);$/;"	p	class:OrQuery	access:friend	signature:(const Query &, const Query &)
+operator |	./15/query.h	/^        friend Query operator|(const Query &, const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &, const Query &)
+operator |	./15/query.h	/^inline Query operator|(const Query &lhs, const Query &rhs)$/;"	f	signature:(const Query &lhs, const Query &rhs)
+operator |	./15/query_2.hpp	/^    friend Query operator|(const Query &, const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &, const Query &)
+operator |	./15/query_2.hpp	/^    friend Query operator|(const Query&, const Query&);$/;"	p	class:OrQuery	access:friend	signature:(const Query&, const Query&)
+operator |	./15/query_2.hpp	/^inline Query operator|(const Query &lhs, const Query &rhs)$/;"	f	signature:(const Query &lhs, const Query &rhs)
+operator ~	./15/query.h	/^        friend Query operator~(const Query &);$/;"	p	class:NotQuery	access:friend	signature:(const Query &)
+operator ~	./15/query.h	/^        friend Query operator~(const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &)
+operator ~	./15/query.h	/^inline Query operator~(const Query &operand)$/;"	f	signature:(const Query &operand)
+operator ~	./15/query_2.hpp	/^    friend Query operator~(const Query &);$/;"	p	class:NotQuery	access:friend	signature:(const Query &)
+operator ~	./15/query_2.hpp	/^    friend Query operator~(const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &)
+operator ~	./15/query_2.hpp	/^inline Query operator~(const Query &operand)$/;"	f	signature:(const Query &operand)
+os	./16/debugdelete.h	/^                std::ostream &os;$/;"	m	class:DebugDelete	access:private
+override	./15/quote.h	/^                double net_price(std::size_t) const override;$/;"	m	class:Bulk_quote	access:public
+override	./15/quote.hpp	/^    double net_price(size_t) const override;$/;"	m	class:Bulk_quote	access:public
+pop_back	./12/blob.h	/^                void pop_back();$/;"	p	class:StrBlob	access:public	signature:()
+pop_back	./12/blob.h	/^void StrBlob::pop_back()$/;"	f	class:StrBlob	signature:()
+pop_back	./12/cblob.h	/^                void pop_back();$/;"	p	class:StrBlob	access:public	signature:()
+pop_back	./12/cblob.h	/^void StrBlob::pop_back()$/;"	f	class:StrBlob	signature:()
+pop_back	./12/strblob.hpp	/^    void pop_back();$/;"	p	class:StrBlob	access:public	signature:()
+pop_back	./12/strblob.hpp	/^void StrBlob::pop_back()$/;"	f	class:StrBlob	signature:()
+pop_back	./16/blob.h	/^                void pop_back();$/;"	p	class:Blob	access:public	signature:()
+pop_back	./16/blob.h	/^void Blob<T>::pop_back()$/;"	f	class:Blob	signature:()
+pos	./7/screen.h	/^                typedef std::string::size_type   pos;$/;"	t	class:Screen	access:public
+price	./15/quote.h	/^                double          price = 0.0;    \/\/代表普通状态下不打折的价格$/;"	m	class:Quote	access:protected
+price	./15/quote.hpp	/^    double price = 0.0;$/;"	m	class:Quote	access:protected
+primerLib	./18/18.20.cpp	/^namespace primerLib$/;"	n	file:
+primerLib::compute	./18/18.20.cpp	/^        void compute() { cout << "compute()" << endl; }$/;"	f	namespace:primerLib	signature:()
+primerLib::compute	./18/18.20.cpp	/^        void compute(const void *) { cout << "compute(const void *)" << endl; }$/;"	f	namespace:primerLib	signature:(const void *)
+print	./10/10.13_.cpp	/^void print(const vector<string> &svec)$/;"	f	signature:(const vector<string> &svec)
+print	./10/10.27.cpp	/^void print(const list<int> &ilst)$/;"	f	signature:(const list<int> &ilst)
+print	./10/10.27.cpp	/^void print(const vector<int> &ivec)$/;"	f	signature:(const vector<int> &ivec)
+print	./10/10.9.cc	/^void print(const vector<string>& vec)$/;"	f	signature:(const vector<string>& vec)
+print	./10/10.9_.cpp	/^void print(const vector<string> &svec)$/;"	f	signature:(const vector<string> &svec)
+print	./10/itoa.cc	/^void print(int a)$/;"	f	signature:(int a)
+print	./11/11.7.cc	/^    void print();$/;"	p	class:family	file:	access:public	signature:()
+print	./11/11.7.cc	/^void family::print()$/;"	f	class:family	signature:()
+print	./12/12.6.cpp	/^void print(vector<int> *vp)$/;"	f	signature:(vector<int> *vp)
+print	./12/12.6.cpp	/^void print(vector<int> *vp);$/;"	p	file:	signature:(vector<int> *vp)
+print	./12/12.7.cpp	/^void print(const shared_ptr<vector<int>> &sp)$/;"	f	signature:(const shared_ptr<vector<int>> &sp)
+print	./12/12.7.cpp	/^void print(const shared_ptr<vector<int>> &sp);$/;"	p	file:	signature:(const shared_ptr<vector<int>> &sp)
+print	./12/__query.h	/^        friend std::ostream& print(std::ostream &os, const QueryResult &qr);$/;"	p	class:QueryResult	access:friend	signature:(std::ostream &os, const QueryResult &qr)
+print	./12/__query.h	/^ostream& print(ostream &os, const QueryResult &qr)$/;"	f	signature:(ostream &os, const QueryResult &qr)
+print	./12/_query.h	/^        friend std::ostream& print(std::ostream &, const QueryResult &);$/;"	p	class:QueryResult	access:friend	signature:(std::ostream &, const QueryResult &)
+print	./12/_query.h	/^ostream &print(ostream &os, const QueryResult &qr)$/;"	f	signature:(ostream &os, const QueryResult &qr)
+print	./12/newdele.cc	/^void print(vector<int> *vp)$/;"	f	signature:(vector<int> *vp)
+print	./12/query.cpp	/^void QueryResult::print(ostream& os) const$/;"	f	class:QueryResult	signature:(ostream& os) const
+print	./12/query.h	/^                void print(ostream& os) const;$/;"	p	class:QueryResult	access:public	signature:(ostream& os) const
+print	./12/querytest.hpp	/^    friend ostream& print(ostream&, const QueryResult&);$/;"	p	class:QueryResult	access:friend	signature:(ostream&, const QueryResult&)
+print	./12/querytest.hpp	/^ostream& print(ostream& os, const QueryResult& qr)$/;"	f	signature:(ostream& os, const QueryResult& qr)
+print	./12/sharvect.cc	/^void print(shared_ptr<vector<int>> vp)$/;"	f	signature:(shared_ptr<vector<int>> vp)
+print	./12/tquery.h	/^        friend std::ostream& print(std::ostream&, const QueryResult&);$/;"	p	class:QueryResult	access:friend	signature:(std::ostream&, const QueryResult&)
+print	./12/tquery.h	/^ostream &print(ostream &os, const QueryResult &qr)$/;"	f	signature:(ostream &os, const QueryResult &qr)
+print	./13/hasptr.h	/^                void print() const { std::cout << *ps << ' ' << i << ' ' << *use << std::endl; }$/;"	f	class:HasPtr	access:public	signature:() const
+print	./13/message.h	/^                void print();$/;"	p	class:Folder	access:public	signature:()
+print	./13/message.h	/^void Folder::print()$/;"	f	class:Folder	signature:()
+print	./15/query.h	/^        friend std::ostream& print(std::ostream&, const QueryResult&);$/;"	p	class:QueryResult	access:friend	signature:(std::ostream&, const QueryResult&)
+print	./15/query.h	/^ostream &print(ostream &os, const QueryResult &qr)$/;"	f	signature:(ostream &os, const QueryResult &qr)
+print	./16/16.19.cpp	/^void print(const T &val)$/;"	f	signature:(const T &val)
+print	./16/16.19.cpp	/^void print(const T &val);$/;"	p	file:	signature:(const T &val)
+print	./16/16.20.cpp	/^void print(const T &val)$/;"	f	signature:(const T &val)
+print	./16/16.20.cpp	/^void print(const T &val);$/;"	p	file:	signature:(const T &val)
+print	./18/18.25.cpp	/^                virtual void print() { std::cout << "Base1->print" << std::endl; }$/;"	f	class:Base1	access:public	signature:()
+print	./18/18.25.cpp	/^                virtual void print() { std::cout << "Base2->print" << std::endl; }$/;"	f	class:Base2	access:public	signature:()
+print	./6/6.33.cpp	/^void print(vector<int> ivec, vector<int>::size_type size)$/;"	f	signature:(vector<int> ivec, vector<int>::size_type size)
+print	./7/person.h	/^std::ostream &print(std::ostream &os, const Person &item)$/;"	f	signature:(std::ostream &os, const Person &item)
+print	./7/sales.cpp	/^std::ostream &print(std::ostream &os, const Sales_data &item)$/;"	f	signature:(std::ostream &os, const Sales_data &item)
+print	./7/sales.h	/^std::ostream &print(std::ostream &, const Sales_data &);$/;"	p	signature:(std::ostream &, const Sales_data &)
+print	./9/9.51.cc	/^    void print();$/;"	p	class:Date	file:	access:public	signature:()
+print	./9/9.51.cc	/^void Date::print()$/;"	f	class:Date	signature:()
+print	./9/swap.cc	/^void print(vector<int> vec)$/;"	f	signature:(vector<int> vec)
+print_strblob	./12/testStrblob.cc	/^void print_strblob(StrBlob &sb)$/;"	f	signature:(StrBlob &sb)
+print_total	./15/quote.h	/^double print_total(ostream &os, const Quote &item, size_t n)$/;"	f	signature:(ostream &os, const Quote &item, size_t n)
+ps	./13/13.27.h	/^                std::string     *ps;$/;"	m	class:HasPtr	access:private
+ps	./13/hasptr.h	/^                std::string     *ps;$/;"	m	class:HasPtr	access:private
+push_back	./12/blob.h	/^                void push_back(const std::string &t) { data->push_back(t); }$/;"	f	class:StrBlob	access:public	signature:(const std::string &t)
+push_back	./12/cblob.h	/^                void push_back(const std::string &t) { data->push_back(t); }$/;"	f	class:StrBlob	access:public	signature:(const std::string &t)
+push_back	./12/strblob.hpp	/^    void push_back(const string &t) { data->push_back(t); }$/;"	f	class:StrBlob	access:public	signature:(const string &t)
+push_back	./16/blob.h	/^                void push_back(const T &t) { data->push_back(t); }$/;"	f	class:Blob	access:public	signature:(const T &t)
+q	./15/query.h	/^        std::shared_ptr<Query_base>     q;$/;"	m	class:Query	access:private
+q	./15/query_2.hpp	/^    shared_ptr<Query_base> q;$/;"	m	class:Query	access:private
+quantity	./15/quote.h	/^                std::size_t     quantity = 0;$/;"	m	class:Disc_quote	access:protected
+query	./12/__query.h	/^                QueryResult query(const std::string& word);$/;"	p	class:TextQuery	access:public	signature:(const std::string& word)
+query	./12/__query.h	/^QueryResult TextQuery::query(const string &word)$/;"	f	class:TextQuery	signature:(const string &word)
+query	./12/_query.h	/^                QueryResult query(const std::string &);$/;"	p	class:TextQuery	access:public	signature:(const std::string &)
+query	./12/_query.h	/^QueryResult TextQuery::query(const string &word)$/;"	f	class:TextQuery	signature:(const string &word)
+query	./12/query.cpp	/^QueryResult TextQuery::query(const string &word)$/;"	f	class:TextQuery	signature:(const string &word)
+query	./12/query.h	/^                QueryResult query(const string &word);$/;"	p	class:TextQuery	access:public	signature:(const string &word)
+query	./12/querytest.hpp	/^    QueryResult query(string&) const;$/;"	p	class:TextQuery	access:public	signature:(string&) const
+query	./12/querytest.hpp	/^QueryResult TextQuery::query(string &word) const$/;"	f	class:TextQuery	signature:(string &word) const
+query	./12/textquery.cc	/^void query(vector<string> &file_info, map<string, set<int>> words_info)$/;"	f	signature:(vector<string> &file_info, map<string, set<int>> words_info)
+query	./12/tquery.h	/^                QueryResult query(const std::string&) const;$/;"	p	class:TextQuery	access:public	signature:(const std::string&) const
+query	./12/tquery.h	/^QueryResult TextQuery::query(const string &sought) const$/;"	f	class:TextQuery	signature:(const string &sought) const
+query	./15/query.h	/^                QueryResult query(const std::string&) const;$/;"	p	class:TextQuery	access:public	signature:(const std::string&) const
+query	./15/query.h	/^        Query   query;$/;"	m	class:NotQuery	access:private
+query	./15/query.h	/^QueryResult TextQuery::query(const string &sought) const$/;"	f	class:TextQuery	signature:(const string &sought) const
+query	./15/query_2.hpp	/^    Query query;$/;"	m	class:NotQuery	access:private
+query_word	./12/querytest.hpp	/^    string query_word;$/;"	m	class:QueryResult	access:private
+query_word	./15/query.h	/^        std::string     query_word;$/;"	m	class:WordQuery	access:private
+query_word	./15/query_2.hpp	/^    string query_word;$/;"	m	class:WordQuery	access:private
+read	./7/person.h	/^std::istream &read(std::istream &is, Person &item)$/;"	f	signature:(std::istream &is, Person &item)
+read	./7/sales.cpp	/^std::istream &read(std::istream &is, Sales_data &item)$/;"	f	signature:(std::istream &is, Sales_data &item)
+read	./7/sales.h	/^std::istream &read(std::istream &, Sales_data &);$/;"	p	signature:(std::istream &, Sales_data &)
+read_from_file	./12/testStrblob.cc	/^void read_from_file(StrBlob &sb, ifstream &ifile)$/;"	f	signature:(StrBlob &sb, ifstream &ifile)
+read_from_file	./12/textquery.cc	/^void read_from_file(vector<string> &file_info, $/;"	f	signature:(vector<string> &file_info, ifstream &ifile, map<string, set<int>> &words_info)
+read_input	./12/12.6.cpp	/^void read_input()$/;"	f	signature:()
+read_input	./12/12.6.cpp	/^void read_input();$/;"	p	file:	signature:()
+reference	./13/13.13.cpp	/^void reference(X &x)$/;"	f	signature:(X &x)
+remMsg	./13/message.h	/^                void remMsg(Message &);$/;"	p	class:Folder	access:public	signature:(Message &)
+remMsg	./13/message.h	/^void Folder::remMsg(Message &m)$/;"	f	class:Folder	signature:(Message &m)
+remMsg	./13/msg.hpp	/^    void remMsg(Msg*);$/;"	p	class:Folder	access:public	signature:(Msg*)
+remMsg	./13/msg.hpp	/^void Folder::remMsg(Msg* m)$/;"	f	class:Folder	signature:(Msg* m)
+remove	./13/message.h	/^                void remove(Folder &);$/;"	p	class:Message	access:public	signature:(Folder &)
+remove	./13/message.h	/^void Message::remove(Folder &f) \/\/将本message从指定的folder中删除$/;"	f	class:Message	signature:(Folder &f)
+remove	./13/msg.hpp	/^    void remove(Folder&);$/;"	p	class:Msg	access:public	signature:(Folder&)
+remove	./13/msg.hpp	/^void Msg::remove(Folder& f)$/;"	f	class:Msg	signature:(Folder& f)
+remove_from_Folders	./13/message.h	/^                void remove_from_Folders();$/;"	p	class:Message	access:private	signature:()
+remove_from_Folders	./13/message.h	/^void Message::remove_from_Folders() \/\/从所有包含本message的folder中删除本message$/;"	f	class:Message	signature:()
+remove_from_folders	./13/msg.hpp	/^    void remove_from_folders();$/;"	p	class:Msg	access:private	signature:()
+remove_from_folders	./13/msg.hpp	/^void Msg::remove_from_folders()$/;"	f	class:Msg	signature:()
+rep	./15/query.h	/^                std::string rep() const { return "(" + lhs.rep() + " " $/;"	f	class:BinaryQuery	access:protected	signature:() const
+rep	./15/query.h	/^        std::string rep() const { return "~(" + query.rep() + ")"; }$/;"	f	class:NotQuery	access:private	signature:() const
+rep	./15/query.h	/^        std::string rep() const { return q->rep(); }$/;"	f	class:Query	access:public	signature:() const
+rep	./15/query.h	/^        std::string rep() const { return query_word; }$/;"	f	class:WordQuery	access:private	signature:() const
+rep	./15/query.h	/^        virtual std::string rep() const = 0;$/;"	p	class:Query_base	access:private	signature:() const
+rep	./15/query_2.hpp	/^    string rep() const { return "(" + lhs.rep() + " " + opSym + " " + rhs.rep() + ")"; }$/;"	f	class:BinaryQuery	access:protected	signature:() const
+rep	./15/query_2.hpp	/^    string rep() const { return "~(" + query.rep() + ")"; }$/;"	f	class:NotQuery	access:private	signature:() const
+rep	./15/query_2.hpp	/^    string rep() const { return q->rep(); }$/;"	f	class:Query	access:public	signature:() const
+rep	./15/query_2.hpp	/^    string rep() const { return query_word; }$/;"	f	class:WordQuery	access:private	signature:() const
+rep	./15/query_2.hpp	/^    virtual string rep() const = 0;$/;"	p	class:Query_base	access:private	signature:() const
+replace	./9/9.28.cpp	/^void replace(forward_list<string> &sflst, const string &str1, const string &str2)$/;"	f	signature:(forward_list<string> &sflst, const string &str1, const string &str2)
+replace	./9/9.43.cpp	/^void replace(string &s, const string &oldVal, const string &newVal)$/;"	f	signature:(string &s, const string &oldVal, const string &newVal)
+result_map	./12/query.h	/^                map<int, string>        result_map; \/\/出现行与行内容的map$/;"	m	class:QueryResult	access:private
+revenue	./7/sales.h	/^        double          revenue = 0.0;$/;"	m	struct:Sales_data	access:public
+rhs	./15/query.h	/^                Query           lhs, rhs;       \/\/右侧对象和左侧对象$/;"	m	class:BinaryQuery	access:protected
+rhs	./15/query_2.hpp	/^    Query lhs, rhs;$/;"	m	class:BinaryQuery	access:protected
+right	./13/tree.cc	/^    Tree *left, *right;$/;"	m	struct:Tree	file:	access:public
+runQueries	./12/__main.cpp	/^void runQueries(ifstream &);$/;"	p	file:	signature:(ifstream &)
+runQueries	./12/__main.cpp	/^void runQueries(ifstream &infile)$/;"	f	signature:(ifstream &infile)
+runQueries	./12/_main.cpp	/^void runQueries(ifstream &infile)$/;"	f	signature:(ifstream &infile)
+runQueries	./12/main.cpp	/^void runQueries(ifstream &infile)$/;"	f	signature:(ifstream &infile)
+runQueries	./12/main.cpp	/^void runQueries(ifstream &infile);$/;"	p	file:	signature:(ifstream &infile)
+runQueries	./12/query.cc	/^void runQueries(ifstream &ifile)$/;"	f	signature:(ifstream &ifile)
+runQueries	./12/tquery_main.cpp	/^void runQueries(ifstream &infile)$/;"	f	signature:(ifstream &infile)
+run_optr	./9/9.52.cpp	/^void    run_optr();$/;"	p	file:	signature:()
+run_optr	./9/9.52.cpp	/^void run_optr()$/;"	f	signature:()
+save	./13/message.h	/^                void save(Folder &);$/;"	p	class:Message	access:public	signature:(Folder &)
+save	./13/message.h	/^void Message::save(Folder &f)   \/\/将本message添加到指定的folder中$/;"	f	class:Message	signature:(Folder &f)
+save	./13/msg.hpp	/^    void save(Folder&);$/;"	p	class:Msg	access:public	signature:(Folder&)
+save	./13/msg.hpp	/^void Msg::save(Folder& f)$/;"	f	class:Msg	signature:(Folder& f)
+screens	./7/screen.h	/^                std::vector<Screen> screens;\/\/{Screen(24, 80, ' ')};$/;"	m	class:Window_mgr	access:private
+search	./9/9.4.cpp	/^bool search(std::vector<int>::iterator beg, std::vector<int>::iterator end, int val)$/;"	f	signature:(std::vector<int>::iterator beg, std::vector<int>::iterator end, int val)
+search	./9/9.5.cpp	/^ivec_it search(ivec_it beg, ivec_it end, int val)$/;"	f	signature:(ivec_it beg, ivec_it end, int val)
+set	./7/screen.h	/^                Screen &set(char);$/;"	p	class:Screen	access:public	signature:(char)
+set	./7/screen.h	/^                Screen &set(pos, pos, char);$/;"	p	class:Screen	access:public	signature:(pos, pos, char)
+set	./7/screen.h	/^inline Screen &Screen::set(char c)$/;"	f	class:Screen	signature:(char c)
+set	./7/screen.h	/^inline Screen &Screen::set(pos r, pos col, char ch)$/;"	f	class:Screen	signature:(pos r, pos col, char ch)
+setval	./7/test.cpp	/^                Type setval(Type);$/;"	p	class:Exercise	file:	access:public	signature:(Type)
+setval	./7/test.cpp	/^Type Exercise::setval(Type parm)$/;"	f	class:Exercise	signature:(Type parm)
+showInfo	./13/msg.cc	/^void showInfo(Msg &m1, Msg &m2, Folder &f1, Folder &f2)$/;"	f	signature:(Msg &m1, Msg &m2, Folder &f1, Folder &f2)
+showInfo	./13/msg.hpp	/^    void showInfo();$/;"	p	class:Folder	access:public	signature:()
+showInfo	./13/msg.hpp	/^    void showInfo();$/;"	p	class:Msg	access:public	signature:()
+showInfo	./13/msg.hpp	/^void Folder::showInfo()$/;"	f	class:Folder	signature:()
+showInfo	./13/msg.hpp	/^void Msg::showInfo()$/;"	f	class:Msg	signature:()
+size	./12/blob.h	/^                size_type size() const { return data->size(); }$/;"	f	class:StrBlob	access:public	signature:() const
+size	./12/cblob.h	/^                size_type size() const { return data->size(); }$/;"	f	class:StrBlob	access:public	signature:() const
+size	./12/strblob.hpp	/^    size_type size() const { return data->size(); }$/;"	f	class:StrBlob	access:public	signature:() const
+size	./16/blob.h	/^                size_type size() const { return data->size(); }$/;"	f	class:Blob	access:public	signature:() const
+size_type	./12/blob.h	/^                typedef std::vector<std::string>::size_type     size_type;$/;"	t	class:StrBlob	access:public
+size_type	./12/cblob.h	/^                typedef std::vector<std::string>::size_type     size_type;$/;"	t	class:StrBlob	access:public
+size_type	./16/blob.h	/^                typedef typename std::vector<T>::size_type size_type;$/;"	t	class:Blob	access:public
+sought	./12/_query.h	/^        std::string     sought; \/\/要查询的单词$/;"	m	class:QueryResult	access:private
+sought	./12/tquery.h	/^        std::string     sought;         \/\/要查询的单词$/;"	m	class:QueryResult	access:private
+sought	./15/query.h	/^        std::string     sought;         \/\/要查询的单词$/;"	m	class:QueryResult	access:private
+sum	./6/6.27.cpp	/^int sum(std::initializer_list<int> list)$/;"	f	signature:(std::initializer_list<int> list)
+sum	./6/6.55.cpp	/^int sum(int a, int b)$/;"	f	signature:(int a, int b)
+swap	./13/hasptr.h	/^                friend void swap(HasPtr&, HasPtr&);$/;"	p	class:HasPtr	access:friend	signature:(HasPtr&, HasPtr&)
+swap	./13/hasptr.h	/^void swap(HasPtr &lhs, HasPtr &rhs)$/;"	f	signature:(HasPtr &lhs, HasPtr &rhs)
+swap	./13/message.h	/^        friend void swap(Folder &, Folder &);$/;"	p	class:Folder	access:friend	signature:(Folder &, Folder &)
+swap	./13/message.h	/^        friend void swap(Message &, Message &);$/;"	p	class:Message	access:friend	signature:(Message &, Message &)
+swap	./13/message.h	/^void swap(Folder &lhs, Folder &rhs)$/;"	f	signature:(Folder &lhs, Folder &rhs)
+swap	./13/message.h	/^void swap(Message &lhs, Message &rhs)$/;"	f	signature:(Message &lhs, Message &rhs)
+test	./13/msg.cc	/^void test(Folder &f, Msg &mm)$/;"	f	signature:(Folder &f, Msg &mm)
+text	./12/query.h	/^                vector<string>          text;$/;"	m	class:TextQuery	access:private
+times	./12/query.h	/^                int             times;  \/\/出现的次数$/;"	m	class:QueryResult	access:private
+trans	./11/multi_word_trans.cc	/^trans(const string& word, const unordered_map<string, string> trans_file)$/;"	f	signature:(const string& word, const unordered_map<string, string> trans_file)
+trans_form	./11/multi_word_trans.cc	/^void trans_form(ifstream& input, ifstream& trans_file)$/;"	f	signature:(ifstream& input, ifstream& trans_file)
+trans_form	./11/replace.cpp	/^void trans_form(ifstream &map_file, ifstream &input)$/;"	f	signature:(ifstream &map_file, ifstream &input)
+trans_form	./11/replace.cpp	/^void trans_form(ifstream &map_file, ifstream &input);$/;"	p	file:	signature:(ifstream &map_file, ifstream &input)
+transform	./11/11.33.cpp	/^const string & transform(const string &s, const map<string, string> &m);        $/;"	p	file:	signature:(const string &s, const map<string, string> &m)
+transform	./11/11.33.cpp	/^const string &transform(const string &s, const map<string, string> &m)$/;"	f	signature:(const string &s, const map<string, string> &m)
+transform	./11/11.33_.cpp	/^const string &transform(const string &s, const map<string, string> &m);$/;"	p	file:	signature:(const string &s, const map<string, string> &m)
+transform	./11/11.33_.cpp	/^const string& transform(const string &s, const map<string, string> &m)$/;"	f	signature:(const string &s, const map<string, string> &m)
+transform	./11/11.33__.cpp	/^const string& transform(const string &s, map<string, string> &m)$/;"	f	signature:(const string &s, map<string, string> &m)
+transform	./11/11.33__.cpp	/^const string& transform(const string &s, map<string, string> &m);$/;"	p	file:	signature:(const string &s, map<string, string> &m)
+transform	./11/11.38.cpp	/^const string &transform(const string &s, const unordered_map<string, string> &m);$/;"	p	file:	signature:(const string &s, const unordered_map<string, string> &m)
+transform	./11/11.38.cpp	/^const string &transform(const string &s, const unordered_map<string, string> &um)$/;"	f	signature:(const string &s, const unordered_map<string, string> &um)
+transform	./11/replace.cpp	/^const string &transform(const string &word, const map<string, string> &m)$/;"	f	signature:(const string &word, const map<string, string> &m)
+transform	./11/replace.cpp	/^const string &transform(const string &word, const map<string, string> &m);$/;"	p	file:	signature:(const string &word, const map<string, string> &m)
+transform	./11/trans_word.cc	/^const string& transform(const string &s, const map<string, string> &m)$/;"	f	signature:(const string &s, const map<string, string> &m)
+units_sold	./7/sales.h	/^        unsigned        units_sold = 0;$/;"	m	struct:Sales_data	access:public
+use	./13/13.27.h	/^                std::size_t     *use;$/;"	m	class:HasPtr	access:private
+use	./13/hasptr.h	/^                std::size_t     *use;   \/\/用来记录有多少个对象共享*ps的成员$/;"	m	class:HasPtr	access:private
+val	./7/test.cpp	/^                int val;$/;"	m	class:Exercise	file:	access:private
+value	./13/13.13.cpp	/^void value(X x)$/;"	f	signature:(X x)
+value_type	./16/blob.h	/^                typedef T        value_type;$/;"	t	class:Blob	access:public
+width	./7/screen.h	/^                pos     height = 0, width = 0;$/;"	m	class:Screen	access:private
+wm	./12/__query.h	/^                std::map<std::string, std::shared_ptr<std::set<line_no>>> wm; \/\/保存各单词及出现行号的set$/;"	m	class:TextQuery	access:private
+wm	./12/_query.h	/^                         std::shared_ptr<std::set<line_no>>>    wm;     \/\/单词与行号set的map$/;"	m	class:TextQuery	access:private
+wm	./12/querytest.hpp	/^    map<string, shared_ptr<set<line_no>>> wm;$/;"	m	class:TextQuery	access:private
+wm	./12/tquery.h	/^                         std::shared_ptr<std::set<line_no>>> wm;$/;"	m	class:TextQuery	access:private
+wm	./15/query.h	/^                         std::shared_ptr<std::set<line_no>>>    wm;     \/\/每个单词和它所在行号的set$/;"	m	class:TextQuery	access:private
+word	./12/__query.h	/^        std::string     word;   \/\/要查询的单词$/;"	m	class:QueryResult	access:private
+word	./12/query.h	/^                const string    word;   \/\/要查询的单词$/;"	m	class:QueryResult	access:private
+word_info	./12/query.h	/^                map<string, set<int>>   word_info;$/;"	m	class:TextQuery	access:private
+word_transform	./11/11.33.cpp	/^void word_transform(ifstream &map_file, ifstream &input)$/;"	f	signature:(ifstream &map_file, ifstream &input)
+word_transform	./11/11.33.cpp	/^void word_transform(ifstream &map_file, ifstream &input);$/;"	p	file:	signature:(ifstream &map_file, ifstream &input)
+word_transform	./11/11.33_.cpp	/^void word_transform(ifstream &map_file, ifstream &infile)$/;"	f	signature:(ifstream &map_file, ifstream &infile)
+word_transform	./11/11.33_.cpp	/^void word_transform(ifstream &map_file, ifstream &infile);$/;"	p	file:	signature:(ifstream &map_file, ifstream &infile)
+word_transform	./11/11.33__.cpp	/^void word_transform(ifstream &map_file, ifstream &infile)$/;"	f	signature:(ifstream &map_file, ifstream &infile)
+word_transform	./11/11.33__.cpp	/^void word_transform(ifstream &map_file, ifstream &infile);$/;"	p	file:	signature:(ifstream &map_file, ifstream &infile)
+word_transform	./11/11.38.cpp	/^void word_transform(ifstream &map_file, ifstream &input)$/;"	f	signature:(ifstream &map_file, ifstream &input)
+word_transform	./11/11.38.cpp	/^void word_transform(ifstream &map_file, ifstream &input);$/;"	p	file:	signature:(ifstream &map_file, ifstream &input)
+word_transform	./11/trans_word.cc	/^void word_transform(ifstream &map_file, ifstream &input)$/;"	f	signature:(ifstream &map_file, ifstream &input)
+wptr	./12/blob.h	/^                std::weak_ptr<std::vector<std::string>> wptr;$/;"	m	class:StrBlobPtr	access:private
+wptr	./12/cblob.h	/^                std::weak_ptr<std::vector<std::string>> wptr;$/;"	m	class:StrBlobPtr	access:private
+wptr	./12/strblob.hpp	/^    weak_ptr<vector<string>> wptr;$/;"	m	class:StrBlobPtr	access:private
+wptr	./16/blob.h	/^                std::weak_ptr<std::vector<T>>   wptr;$/;"	m	class:BlobPtr	access:private
+year	./9/date.h	/^                unsigned long   year;$/;"	m	class:Date	access:private
+~Base1	./18/18.25.cpp	/^                virtual ~Base1();$/;"	p	class:Base1	file:	access:public	signature:()
+~Base2	./18/18.25.cpp	/^                virtual ~Base2();$/;"	p	class:Base2	file:	access:public	signature:()
+~Employee	./13/employee.h	/^                ~Employee() = default;$/;"	p	class:Employee	access:public	signature:()
+~Folder	./13/message.h	/^                ~Folder();$/;"	p	class:Folder	access:public	signature:()
+~Folder	./13/message.h	/^Folder::~Folder()$/;"	f	class:Folder	signature:()
+~Folder	./13/msg.hpp	/^    ~Folder();$/;"	p	class:Folder	access:public	signature:()
+~Folder	./13/msg.hpp	/^Folder::~Folder()$/;"	f	class:Folder	signature:()
+~HasPtr	./13/13.27.h	/^                ~HasPtr();$/;"	p	class:HasPtr	access:public	signature:()
+~HasPtr	./13/13.27.h	/^HasPtr::~HasPtr()$/;"	f	class:HasPtr	signature:()
+~HasPtr	./13/hasptr.h	/^                ~HasPtr();$/;"	p	class:HasPtr	access:public	signature:()
+~HasPtr	./13/hasptr.h	/^HasPtr::~HasPtr()$/;"	f	class:HasPtr	signature:()
+~Message	./13/message.h	/^                ~Message();$/;"	p	class:Message	access:public	signature:()
+~Message	./13/message.h	/^Message::~Message()$/;"	f	class:Message	signature:()
+~Msg	./13/msg.hpp	/^    ~Msg();$/;"	p	class:Msg	access:public	signature:()
+~Msg	./13/msg.hpp	/^Msg::~Msg()$/;"	f	class:Msg	signature:()
+~Query_base	./15/query.h	/^        virtual ~Query_base() = default;$/;"	p	class:Query_base	access:protected	signature:()
+~Query_base	./15/query_2.hpp	/^    virtual ~Query_base() = default;$/;"	p	class:Query_base	access:protected	signature:()
+~Quote	./15/quote.h	/^                virtual ~Quote() = default;     \/\/对析构函数进行动态绑定$/;"	p	class:Quote	access:public	signature:()
+~Quote	./15/quote.hpp	/^    virtual ~Quote() = default;$/;"	p	class:Quote	access:public	signature:()
+~X	./13/13.13.cpp	/^        ~X() { std::cout << "~X()" << std::endl; }$/;"	f	struct:X	access:public	signature:()
+~family	./11/11.7.cc	/^    ~family() {}$/;"	f	class:family	access:public	signature:()

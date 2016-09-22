@@ -1,0 +1,258 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BLOB_H	./blob.h	18;"	d
+EMPLOYEE_H	./employee.h	18;"	d
+Employee	./employee.h	/^                Employee() = default;$/;"	p	class:Employee	access:public	signature:()
+Employee	./employee.h	/^                Employee(const Employee& e) : name(e.name), no(++number) { }$/;"	f	class:Employee	access:public	signature:(const Employee& e)
+Employee	./employee.h	/^                Employee(const std::string& n) : name(n), no(++number) { }$/;"	f	class:Employee	access:public	signature:(const std::string& n)
+Employee	./employee.h	/^class Employee$/;"	c
+Employee::Employee	./employee.h	/^                Employee() = default;$/;"	p	class:Employee	access:public	signature:()
+Employee::Employee	./employee.h	/^                Employee(const Employee& e) : name(e.name), no(++number) { }$/;"	f	class:Employee	access:public	signature:(const Employee& e)
+Employee::Employee	./employee.h	/^                Employee(const std::string& n) : name(n), no(++number) { }$/;"	f	class:Employee	access:public	signature:(const std::string& n)
+Employee::f	./employee.h	/^                friend void f(const Employee&);$/;"	p	class:Employee	access:friend	signature:(const Employee&)
+Employee::name	./employee.h	/^                std::string     name;$/;"	m	class:Employee	access:private
+Employee::no	./employee.h	/^                int             no;$/;"	m	class:Employee	access:private
+Employee::number	./employee.h	/^                static int      number;$/;"	m	class:Employee	access:public
+Employee::number	./employee.h	/^int Employee::number = 0;$/;"	m	class:Employee
+Employee::operator =	./employee.h	/^                Employee &operator=(const Employee &e);$/;"	p	class:Employee	access:public	signature:(const Employee &e)
+Employee::operator =	./employee.h	/^Employee& Employee::operator=(const Employee &e)$/;"	f	class:Employee	signature:(const Employee &e)
+Employee::~Employee	./employee.h	/^                ~Employee() = default;$/;"	p	class:Employee	access:public	signature:()
+Folder	./message.h	/^                Folder() { }$/;"	f	class:Folder	access:public	signature:()
+Folder	./message.h	/^                Folder(const Folder &);$/;"	p	class:Folder	access:public	signature:(const Folder &)
+Folder	./message.h	/^Folder::Folder(const Folder &f)$/;"	f	class:Folder	signature:(const Folder &f)
+Folder	./message.h	/^class Folder$/;"	c
+Folder	./message.hpp	/^    Folder(const Folder&);$/;"	p	class:Folder	access:public	signature:(const Folder&)
+Folder	./message.hpp	/^    Folder(const std::string n = "") : name(n) {  }$/;"	f	class:Folder	access:public	signature:(const std::string n = �)
+Folder	./message.hpp	/^Folder::Folder(const Folder& f)$/;"	f	class:Folder	signature:(const Folder& f)
+Folder	./message.hpp	/^class Folder$/;"	c
+Folder::Folder	./message.h	/^                Folder() { }$/;"	f	class:Folder	access:public	signature:()
+Folder::Folder	./message.h	/^                Folder(const Folder &);$/;"	p	class:Folder	access:public	signature:(const Folder &)
+Folder::Folder	./message.h	/^Folder::Folder(const Folder &f)$/;"	f	class:Folder	signature:(const Folder &f)
+Folder::Folder	./message.hpp	/^    Folder(const Folder&);$/;"	p	class:Folder	access:public	signature:(const Folder&)
+Folder::Folder	./message.hpp	/^    Folder(const std::string n = "") : name(n) {  }$/;"	f	class:Folder	access:public	signature:(const std::string n = �)
+Folder::Folder	./message.hpp	/^Folder::Folder(const Folder& f)$/;"	f	class:Folder	signature:(const Folder& f)
+Folder::addMsg	./message.h	/^                void addMsg(Message &);$/;"	p	class:Folder	access:public	signature:(Message &)
+Folder::addMsg	./message.h	/^void Folder::addMsg(Message &m)$/;"	f	class:Folder	signature:(Message &m)
+Folder::addMsg	./message.hpp	/^    void addMsg(const Message*);$/;"	p	class:Folder	access:public	signature:(const Message*)
+Folder::addMsg	./message.hpp	/^void Folder::addMsg(const Message *m)$/;"	f	class:Folder	signature:(const Message *m)
+Folder::messages	./message.h	/^                std::set<Message *>     messages;       \/\/保存指向所包含的所有message的指针$/;"	m	class:Folder	access:private
+Folder::messages	./message.hpp	/^    std::set<Message*> messages;$/;"	m	class:Folder	access:private
+Folder::name	./message.hpp	/^    std::string name;$/;"	m	class:Folder	access:private
+Folder::operator =	./message.h	/^                Folder& operator=(const Folder&);$/;"	p	class:Folder	access:public	signature:(const Folder&)
+Folder::operator =	./message.h	/^Folder& Folder::operator=(const Folder &f)$/;"	f	class:Folder	signature:(const Folder &f)
+Folder::operator =	./message.hpp	/^    Folder& operator=(const Folder&);$/;"	p	class:Folder	access:public	signature:(const Folder&)
+Folder::operator =	./message.hpp	/^Folder& Folder::operator=(const Folder &f)$/;"	f	class:Folder	signature:(const Folder &f)
+Folder::print	./message.h	/^                void print();$/;"	p	class:Folder	access:public	signature:()
+Folder::print	./message.h	/^void Folder::print()$/;"	f	class:Folder	signature:()
+Folder::remMsg	./message.h	/^                void remMsg(Message &);$/;"	p	class:Folder	access:public	signature:(Message &)
+Folder::remMsg	./message.h	/^void Folder::remMsg(Message &m)$/;"	f	class:Folder	signature:(Message &m)
+Folder::remMsg	./message.hpp	/^    void remMsg(const Message*);$/;"	p	class:Folder	access:public	signature:(const Message*)
+Folder::remMsg	./message.hpp	/^void Folder::remMsg(const Message *m)$/;"	f	class:Folder	signature:(const Message *m)
+Folder::showMsg	./message.hpp	/^    void showMsg();$/;"	p	class:Folder	access:public	signature:()
+Folder::showMsg	./message.hpp	/^void Folder::showMsg()$/;"	f	class:Folder	signature:()
+Folder::swap	./message.h	/^        friend void swap(Folder &, Folder &);$/;"	p	class:Folder	access:friend	signature:(Folder &, Folder &)
+Folder::~Folder	./message.h	/^                ~Folder();$/;"	p	class:Folder	access:public	signature:()
+Folder::~Folder	./message.h	/^Folder::~Folder()$/;"	f	class:Folder	signature:()
+Folder::~Folder	./message.hpp	/^    ~Folder();$/;"	p	class:Folder	access:public	signature:()
+Folder::~Folder	./message.hpp	/^Folder::~Folder()$/;"	f	class:Folder	signature:()
+HASPTR_H	./13.27.h	18;"	d
+HASPTR_H	./hasptr.h	18;"	d
+HasPtr	./13.27.h	/^                HasPtr(const HasPtr &p) :$/;"	f	class:HasPtr	access:public	signature:(const HasPtr &p)
+HasPtr	./13.27.h	/^                HasPtr(const std::string &s = std::string()) :$/;"	f	class:HasPtr	access:public	signature:(const std::string &s = std::string())
+HasPtr	./13.27.h	/^class HasPtr$/;"	c
+HasPtr	./hasptr.h	/^                HasPtr(const HasPtr &p) :$/;"	f	class:HasPtr	access:public	signature:(const HasPtr &p)
+HasPtr	./hasptr.h	/^                HasPtr(const std::string &s = std::string()) :$/;"	f	class:HasPtr	access:public	signature:(const std::string &s = std::string())
+HasPtr	./hasptr.h	/^class HasPtr$/;"	c
+HasPtr::HasPtr	./13.27.h	/^                HasPtr(const HasPtr &p) :$/;"	f	class:HasPtr	access:public	signature:(const HasPtr &p)
+HasPtr::HasPtr	./13.27.h	/^                HasPtr(const std::string &s = std::string()) :$/;"	f	class:HasPtr	access:public	signature:(const std::string &s = std::string())
+HasPtr::HasPtr	./hasptr.h	/^                HasPtr(const HasPtr &p) :$/;"	f	class:HasPtr	access:public	signature:(const HasPtr &p)
+HasPtr::HasPtr	./hasptr.h	/^                HasPtr(const std::string &s = std::string()) :$/;"	f	class:HasPtr	access:public	signature:(const std::string &s = std::string())
+HasPtr::i	./13.27.h	/^                int     i;$/;"	m	class:HasPtr	access:private
+HasPtr::i	./hasptr.h	/^                int     i;$/;"	m	class:HasPtr	access:private
+HasPtr::operator <	./hasptr.h	/^                bool operator<(const HasPtr& p)$/;"	f	class:HasPtr	access:public	signature:(const HasPtr& p)
+HasPtr::operator =	./13.27.h	/^                HasPtr& operator=(const HasPtr&);$/;"	p	class:HasPtr	access:public	signature:(const HasPtr&)
+HasPtr::operator =	./13.27.h	/^HasPtr& HasPtr::operator=(const HasPtr &rhs)$/;"	f	class:HasPtr	signature:(const HasPtr &rhs)
+HasPtr::operator =	./hasptr.h	/^                HasPtr& operator=(const HasPtr&);$/;"	p	class:HasPtr	access:public	signature:(const HasPtr&)
+HasPtr::operator =	./hasptr.h	/^HasPtr& HasPtr::operator=(const HasPtr& p)$/;"	f	class:HasPtr	signature:(const HasPtr& p)
+HasPtr::print	./hasptr.h	/^                void print() const { std::cout << *ps << ' ' << i << ' ' << *use << std::endl; }$/;"	f	class:HasPtr	access:public	signature:() const
+HasPtr::ps	./13.27.h	/^                std::string     *ps;$/;"	m	class:HasPtr	access:private
+HasPtr::ps	./hasptr.h	/^                std::string     *ps;$/;"	m	class:HasPtr	access:private
+HasPtr::swap	./hasptr.h	/^                friend void swap(HasPtr&, HasPtr&);$/;"	p	class:HasPtr	access:friend	signature:(HasPtr&, HasPtr&)
+HasPtr::use	./13.27.h	/^                std::size_t     *use;$/;"	m	class:HasPtr	access:private
+HasPtr::use	./hasptr.h	/^                std::size_t     *use;   \/\/用来记录有多少个对象共享*ps的成员$/;"	m	class:HasPtr	access:private
+HasPtr::~HasPtr	./13.27.h	/^                ~HasPtr();$/;"	p	class:HasPtr	access:public	signature:()
+HasPtr::~HasPtr	./13.27.h	/^HasPtr::~HasPtr()$/;"	f	class:HasPtr	signature:()
+HasPtr::~HasPtr	./hasptr.h	/^                ~HasPtr();$/;"	p	class:HasPtr	access:public	signature:()
+HasPtr::~HasPtr	./hasptr.h	/^HasPtr::~HasPtr()$/;"	f	class:HasPtr	signature:()
+MESSAGE_H	./message.h	18;"	d
+MESSAGE_HPP	./message.hpp	11;"	d
+Message	./message.h	/^                Message(const Message& );$/;"	p	class:Message	access:public	signature:(const Message& )
+Message	./message.h	/^                explicit Message(const std::string& s = "") :$/;"	f	class:Message	access:public	signature:(const std::string& s = �)
+Message	./message.h	/^Message::Message(const Message &m) : $/;"	f	class:Message	signature:(const Message &m)
+Message	./message.h	/^class Message$/;"	c
+Message	./message.hpp	/^    Message(const Message&);$/;"	p	class:Message	access:public	signature:(const Message&)
+Message	./message.hpp	/^    explicit Message(const std::string &str = "") : contents(str) {  }$/;"	f	class:Message	access:public	signature:(const std::string &str = �)
+Message	./message.hpp	/^Message::Message(const Message& m)$/;"	f	class:Message	signature:(const Message& m)
+Message	./message.hpp	/^class Message$/;"	c
+Message::Message	./message.h	/^                Message(const Message& );$/;"	p	class:Message	access:public	signature:(const Message& )
+Message::Message	./message.h	/^                explicit Message(const std::string& s = "") :$/;"	f	class:Message	access:public	signature:(const std::string& s = �)
+Message::Message	./message.h	/^Message::Message(const Message &m) : $/;"	f	class:Message	signature:(const Message &m)
+Message::Message	./message.hpp	/^    Message(const Message&);$/;"	p	class:Message	access:public	signature:(const Message&)
+Message::Message	./message.hpp	/^    explicit Message(const std::string &str = "") : contents(str) {  }$/;"	f	class:Message	access:public	signature:(const std::string &str = �)
+Message::Message	./message.hpp	/^Message::Message(const Message& m)$/;"	f	class:Message	signature:(const Message& m)
+Message::add_to_Folders	./message.h	/^                void add_to_Folders(const Message &);$/;"	p	class:Message	access:private	signature:(const Message &)
+Message::add_to_Folders	./message.h	/^void Message::add_to_Folders(const Message &m)   \/\/将本message添加到所有包含本message的folder中$/;"	f	class:Message	signature:(const Message &m)
+Message::add_to_folders	./message.hpp	/^    void add_to_folders(const Message&);    \/\/将Message添加到目录中$/;"	p	class:Message	access:private	signature:(const Message&)
+Message::add_to_folders	./message.hpp	/^void Message::add_to_folders(const Message &m)$/;"	f	class:Message	signature:(const Message &m)
+Message::contents	./message.h	/^                std::string     contents;       \/\/保存信息文本$/;"	m	class:Message	access:private
+Message::contents	./message.hpp	/^    std::string contents;       \/\/消息文本$/;"	m	class:Message	access:private
+Message::folders	./message.h	/^                std::set<Folder *>      folders;\/\/保存所有包含该信息的Folder$/;"	m	class:Message	access:private
+Message::folders	./message.hpp	/^    std::set<Folder*> folders;  \/\/所在的目录集合$/;"	m	class:Message	access:private
+Message::operator =	./message.h	/^                Message& operator=(const Message&);$/;"	p	class:Message	access:public	signature:(const Message&)
+Message::operator =	./message.h	/^Message& Message::operator=(const Message &m)$/;"	f	class:Message	signature:(const Message &m)
+Message::operator =	./message.hpp	/^    Message& operator=(const Message&);$/;"	p	class:Message	access:public	signature:(const Message&)
+Message::remove	./message.h	/^                void remove(Folder &);$/;"	p	class:Message	access:public	signature:(Folder &)
+Message::remove	./message.h	/^void Message::remove(Folder &f) \/\/将本message从指定的folder中删除$/;"	f	class:Message	signature:(Folder &f)
+Message::remove	./message.hpp	/^    void remove(Folder&);$/;"	p	class:Message	access:public	signature:(Folder&)
+Message::remove	./message.hpp	/^void Message::remove(Folders& f)$/;"	f	class:Message	signature:(Folders& f)
+Message::remove_from_Folders	./message.h	/^                void remove_from_Folders();$/;"	p	class:Message	access:private	signature:()
+Message::remove_from_Folders	./message.h	/^void Message::remove_from_Folders() \/\/从所有包含本message的folder中删除本message$/;"	f	class:Message	signature:()
+Message::remove_from_folders	./message.hpp	/^    void remove_from_folders();             \/\/从目录中删除Message$/;"	p	class:Message	access:private	signature:()
+Message::save	./message.h	/^                void save(Folder &);$/;"	p	class:Message	access:public	signature:(Folder &)
+Message::save	./message.h	/^void Message::save(Folder &f)   \/\/将本message添加到指定的folder中$/;"	f	class:Message	signature:(Folder &f)
+Message::save	./message.hpp	/^    void save(Folder&);$/;"	p	class:Message	access:public	signature:(Folder&)
+Message::save	./message.hpp	/^void Message::save(Folders& f)$/;"	f	class:Message	signature:(Folders& f)
+Message::showFolder	./message.hpp	/^    void showFolder();$/;"	p	class:Message	access:public	signature:()
+Message::showFolder	./message.hpp	/^void Message::showFolder()$/;"	f	class:Message	signature:()
+Message::swap	./message.h	/^        friend void swap(Message &, Message &);$/;"	p	class:Message	access:friend	signature:(Message &, Message &)
+Message::~Message	./message.h	/^                ~Message();$/;"	p	class:Message	access:public	signature:()
+Message::~Message	./message.h	/^Message::~Message()$/;"	f	class:Message	signature:()
+Message::~Message	./message.hpp	/^    ~Message();$/;"	p	class:Message	access:public	signature:()
+Message::~Message	./message.hpp	/^Message::~Message()$/;"	f	class:Message	signature:()
+StrBlob	./blob.h	/^                StrBlob(const StrBlob& sb) : $/;"	f	class:StrBlob	access:public	signature:(const StrBlob& sb)
+StrBlob	./blob.h	/^                StrBlob(std::initializer_list<std::string> il) : $/;"	f	class:StrBlob	access:public	signature:(std::initializer_list<std::string> il)
+StrBlob	./blob.h	/^class StrBlob$/;"	c
+StrBlob::StrBlob	./blob.h	/^                StrBlob(const StrBlob& sb) : $/;"	f	class:StrBlob	access:public	signature:(const StrBlob& sb)
+StrBlob::StrBlob	./blob.h	/^                StrBlob(std::initializer_list<std::string> il) : $/;"	f	class:StrBlob	access:public	signature:(std::initializer_list<std::string> il)
+StrBlob::data	./blob.h	/^                std::shared_ptr<std::vector<std::string>>       data;$/;"	m	class:StrBlob	access:private
+StrBlob::operator =	./blob.h	/^                StrBlob operator=(const StrBlob&);$/;"	p	class:StrBlob	access:public	signature:(const StrBlob&)
+StrBlob::operator =	./blob.h	/^StrBlob StrBlob::operator=(const StrBlob& sb)$/;"	f	class:StrBlob	signature:(const StrBlob& sb)
+X	./13.13.cpp	/^        X() { std::cout << "X()" << std::endl; }$/;"	f	struct:X	access:public	signature:()
+X	./13.13.cpp	/^        X(const X&) { std::cout << "X(const X&)" << std::endl; }$/;"	f	struct:X	access:public	signature:(const X&)
+X	./13.13.cpp	/^struct X$/;"	s	file:
+X::X	./13.13.cpp	/^        X() { std::cout << "X()" << std::endl; }$/;"	f	struct:X	access:public	signature:()
+X::X	./13.13.cpp	/^        X(const X&) { std::cout << "X(const X&)" << std::endl; }$/;"	f	struct:X	access:public	signature:(const X&)
+X::operator =	./13.13.cpp	/^        X& operator=(const X& x) { std::cout << "X& operator=(const X& x)" << std::endl; $/;"	f	struct:X	access:public	signature:(const X& x)
+X::~X	./13.13.cpp	/^        ~X() { std::cout << "~X()" << std::endl; }$/;"	f	struct:X	access:public	signature:()
+addMsg	./message.h	/^                void addMsg(Message &);$/;"	p	class:Folder	access:public	signature:(Message &)
+addMsg	./message.h	/^void Folder::addMsg(Message &m)$/;"	f	class:Folder	signature:(Message &m)
+addMsg	./message.hpp	/^    void addMsg(const Message*);$/;"	p	class:Folder	access:public	signature:(const Message*)
+addMsg	./message.hpp	/^void Folder::addMsg(const Message *m)$/;"	f	class:Folder	signature:(const Message *m)
+add_to_Folders	./message.h	/^                void add_to_Folders(const Message &);$/;"	p	class:Message	access:private	signature:(const Message &)
+add_to_Folders	./message.h	/^void Message::add_to_Folders(const Message &m)   \/\/将本message添加到所有包含本message的folder中$/;"	f	class:Message	signature:(const Message &m)
+add_to_folders	./message.hpp	/^    void add_to_folders(const Message&);    \/\/将Message添加到目录中$/;"	p	class:Message	access:private	signature:(const Message&)
+add_to_folders	./message.hpp	/^void Message::add_to_folders(const Message &m)$/;"	f	class:Message	signature:(const Message &m)
+contents	./message.h	/^                std::string     contents;       \/\/保存信息文本$/;"	m	class:Message	access:private
+contents	./message.hpp	/^    std::string contents;       \/\/消息文本$/;"	m	class:Message	access:private
+data	./blob.h	/^                std::shared_ptr<std::vector<std::string>>       data;$/;"	m	class:StrBlob	access:private
+f	./13.14.cpp	/^void f(const numbered &n)$/;"	f	signature:(const numbered &n)
+f	./employee.h	/^                friend void f(const Employee&);$/;"	p	class:Employee	access:friend	signature:(const Employee&)
+f	./employee.h	/^void f(const Employee &e)$/;"	f	signature:(const Employee &e)
+folders	./message.h	/^                std::set<Folder *>      folders;\/\/保存所有包含该信息的Folder$/;"	m	class:Message	access:private
+folders	./message.hpp	/^    std::set<Folder*> folders;  \/\/所在的目录集合$/;"	m	class:Message	access:private
+i	./13.27.h	/^                int     i;$/;"	m	class:HasPtr	access:private
+i	./hasptr.h	/^                int     i;$/;"	m	class:HasPtr	access:private
+main	./13.13.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./13.14.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./13.19.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./13.30.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./13.31.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./mess_main.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./test_msg.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+messages	./message.h	/^                std::set<Message *>     messages;       \/\/保存指向所包含的所有message的指针$/;"	m	class:Folder	access:private
+messages	./message.hpp	/^    std::set<Message*> messages;$/;"	m	class:Folder	access:private
+mysn	./13.14.cpp	/^                int             mysn;$/;"	m	class:numbered	file:	access:public
+name	./employee.h	/^                std::string     name;$/;"	m	class:Employee	access:private
+name	./message.hpp	/^    std::string name;$/;"	m	class:Folder	access:private
+no	./13.14.cpp	/^int     no = 1;$/;"	v
+no	./employee.h	/^                int             no;$/;"	m	class:Employee	access:private
+number	./employee.h	/^                static int      number;$/;"	m	class:Employee	access:public
+number	./employee.h	/^int Employee::number = 0;$/;"	m	class:Employee
+numbered	./13.14.cpp	/^                numbered() : mysn(no++) { }$/;"	f	class:numbered	access:public	signature:()
+numbered	./13.14.cpp	/^                numbered(const numbered &n) : mysn(no++) { }$/;"	f	class:numbered	access:public	signature:(const numbered &n)
+numbered	./13.14.cpp	/^class   numbered$/;"	c	file:
+numbered::mysn	./13.14.cpp	/^                int             mysn;$/;"	m	class:numbered	file:	access:public
+numbered::numbered	./13.14.cpp	/^                numbered() : mysn(no++) { }$/;"	f	class:numbered	access:public	signature:()
+numbered::numbered	./13.14.cpp	/^                numbered(const numbered &n) : mysn(no++) { }$/;"	f	class:numbered	access:public	signature:(const numbered &n)
+operator <	./hasptr.h	/^                bool operator<(const HasPtr& p)$/;"	f	class:HasPtr	access:public	signature:(const HasPtr& p)
+operator =	./13.13.cpp	/^        X& operator=(const X& x) { std::cout << "X& operator=(const X& x)" << std::endl; $/;"	f	struct:X	access:public	signature:(const X& x)
+operator =	./13.27.h	/^                HasPtr& operator=(const HasPtr&);$/;"	p	class:HasPtr	access:public	signature:(const HasPtr&)
+operator =	./13.27.h	/^HasPtr& HasPtr::operator=(const HasPtr &rhs)$/;"	f	class:HasPtr	signature:(const HasPtr &rhs)
+operator =	./blob.h	/^                StrBlob operator=(const StrBlob&);$/;"	p	class:StrBlob	access:public	signature:(const StrBlob&)
+operator =	./blob.h	/^StrBlob StrBlob::operator=(const StrBlob& sb)$/;"	f	class:StrBlob	signature:(const StrBlob& sb)
+operator =	./employee.h	/^                Employee &operator=(const Employee &e);$/;"	p	class:Employee	access:public	signature:(const Employee &e)
+operator =	./employee.h	/^Employee& Employee::operator=(const Employee &e)$/;"	f	class:Employee	signature:(const Employee &e)
+operator =	./hasptr.h	/^                HasPtr& operator=(const HasPtr&);$/;"	p	class:HasPtr	access:public	signature:(const HasPtr&)
+operator =	./hasptr.h	/^HasPtr& HasPtr::operator=(const HasPtr& p)$/;"	f	class:HasPtr	signature:(const HasPtr& p)
+operator =	./message.h	/^                Folder& operator=(const Folder&);$/;"	p	class:Folder	access:public	signature:(const Folder&)
+operator =	./message.h	/^                Message& operator=(const Message&);$/;"	p	class:Message	access:public	signature:(const Message&)
+operator =	./message.h	/^Folder& Folder::operator=(const Folder &f)$/;"	f	class:Folder	signature:(const Folder &f)
+operator =	./message.h	/^Message& Message::operator=(const Message &m)$/;"	f	class:Message	signature:(const Message &m)
+operator =	./message.hpp	/^    Folder& operator=(const Folder&);$/;"	p	class:Folder	access:public	signature:(const Folder&)
+operator =	./message.hpp	/^    Message& operator=(const Message&);$/;"	p	class:Message	access:public	signature:(const Message&)
+operator =	./message.hpp	/^Folder& Folder::operator=(const Folder &f)$/;"	f	class:Folder	signature:(const Folder &f)
+operator =	./message.hpp	/^Message& operator=(const Message& m)$/;"	f	signature:(const Message& m)
+print	./hasptr.h	/^                void print() const { std::cout << *ps << ' ' << i << ' ' << *use << std::endl; }$/;"	f	class:HasPtr	access:public	signature:() const
+print	./message.h	/^                void print();$/;"	p	class:Folder	access:public	signature:()
+print	./message.h	/^void Folder::print()$/;"	f	class:Folder	signature:()
+ps	./13.27.h	/^                std::string     *ps;$/;"	m	class:HasPtr	access:private
+ps	./hasptr.h	/^                std::string     *ps;$/;"	m	class:HasPtr	access:private
+reference	./13.13.cpp	/^void reference(X &x)$/;"	f	signature:(X &x)
+remMsg	./message.h	/^                void remMsg(Message &);$/;"	p	class:Folder	access:public	signature:(Message &)
+remMsg	./message.h	/^void Folder::remMsg(Message &m)$/;"	f	class:Folder	signature:(Message &m)
+remMsg	./message.hpp	/^    void remMsg(const Message*);$/;"	p	class:Folder	access:public	signature:(const Message*)
+remMsg	./message.hpp	/^void Folder::remMsg(const Message *m)$/;"	f	class:Folder	signature:(const Message *m)
+remove	./message.h	/^                void remove(Folder &);$/;"	p	class:Message	access:public	signature:(Folder &)
+remove	./message.h	/^void Message::remove(Folder &f) \/\/将本message从指定的folder中删除$/;"	f	class:Message	signature:(Folder &f)
+remove	./message.hpp	/^    void remove(Folder&);$/;"	p	class:Message	access:public	signature:(Folder&)
+remove	./message.hpp	/^void Message::remove(Folders& f)$/;"	f	class:Message	signature:(Folders& f)
+remove_from_Folders	./message.h	/^                void remove_from_Folders();$/;"	p	class:Message	access:private	signature:()
+remove_from_Folders	./message.h	/^void Message::remove_from_Folders() \/\/从所有包含本message的folder中删除本message$/;"	f	class:Message	signature:()
+remove_from_folders	./message.hpp	/^    void remove_from_folders();             \/\/从目录中删除Message$/;"	p	class:Message	access:private	signature:()
+remove_from_folders	./message.hpp	/^void remove_from_folders()$/;"	f	signature:()
+save	./message.h	/^                void save(Folder &);$/;"	p	class:Message	access:public	signature:(Folder &)
+save	./message.h	/^void Message::save(Folder &f)   \/\/将本message添加到指定的folder中$/;"	f	class:Message	signature:(Folder &f)
+save	./message.hpp	/^    void save(Folder&);$/;"	p	class:Message	access:public	signature:(Folder&)
+save	./message.hpp	/^void Message::save(Folders& f)$/;"	f	class:Message	signature:(Folders& f)
+showFolder	./message.hpp	/^    void showFolder();$/;"	p	class:Message	access:public	signature:()
+showFolder	./message.hpp	/^void Message::showFolder()$/;"	f	class:Message	signature:()
+showMsg	./message.hpp	/^    void showMsg();$/;"	p	class:Folder	access:public	signature:()
+showMsg	./message.hpp	/^void Folder::showMsg()$/;"	f	class:Folder	signature:()
+swap	./hasptr.h	/^                friend void swap(HasPtr&, HasPtr&);$/;"	p	class:HasPtr	access:friend	signature:(HasPtr&, HasPtr&)
+swap	./hasptr.h	/^void swap(HasPtr &lhs, HasPtr &rhs)$/;"	f	signature:(HasPtr &lhs, HasPtr &rhs)
+swap	./message.h	/^        friend void swap(Folder &, Folder &);$/;"	p	class:Folder	access:friend	signature:(Folder &, Folder &)
+swap	./message.h	/^        friend void swap(Message &, Message &);$/;"	p	class:Message	access:friend	signature:(Message &, Message &)
+swap	./message.h	/^void swap(Folder &lhs, Folder &rhs)$/;"	f	signature:(Folder &lhs, Folder &rhs)
+swap	./message.h	/^void swap(Message &lhs, Message &rhs)$/;"	f	signature:(Message &lhs, Message &rhs)
+swap_msg	./message.hpp	/^void swap_msg(Message &lhs, Message &rhs)$/;"	f	signature:(Message &lhs, Message &rhs)
+use	./13.27.h	/^                std::size_t     *use;$/;"	m	class:HasPtr	access:private
+use	./hasptr.h	/^                std::size_t     *use;   \/\/用来记录有多少个对象共享*ps的成员$/;"	m	class:HasPtr	access:private
+value	./13.13.cpp	/^void value(X x)$/;"	f	signature:(X x)
+~Employee	./employee.h	/^                ~Employee() = default;$/;"	p	class:Employee	access:public	signature:()
+~Folder	./message.h	/^                ~Folder();$/;"	p	class:Folder	access:public	signature:()
+~Folder	./message.h	/^Folder::~Folder()$/;"	f	class:Folder	signature:()
+~Folder	./message.hpp	/^    ~Folder();$/;"	p	class:Folder	access:public	signature:()
+~Folder	./message.hpp	/^Folder::~Folder()$/;"	f	class:Folder	signature:()
+~HasPtr	./13.27.h	/^                ~HasPtr();$/;"	p	class:HasPtr	access:public	signature:()
+~HasPtr	./13.27.h	/^HasPtr::~HasPtr()$/;"	f	class:HasPtr	signature:()
+~HasPtr	./hasptr.h	/^                ~HasPtr();$/;"	p	class:HasPtr	access:public	signature:()
+~HasPtr	./hasptr.h	/^HasPtr::~HasPtr()$/;"	f	class:HasPtr	signature:()
+~Message	./message.h	/^                ~Message();$/;"	p	class:Message	access:public	signature:()
+~Message	./message.h	/^Message::~Message()$/;"	f	class:Message	signature:()
+~Message	./message.hpp	/^    ~Message();$/;"	p	class:Message	access:public	signature:()
+~Message	./message.hpp	/^Message::~Message()$/;"	f	class:Message	signature:()
+~X	./13.13.cpp	/^        ~X() { std::cout << "~X()" << std::endl; }$/;"	f	struct:X	access:public	signature:()
