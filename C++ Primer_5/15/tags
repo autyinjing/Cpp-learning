@@ -1,0 +1,276 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AndQuery	./query.h	/^        AndQuery(const Query &left, const Query &right) :$/;"	f	class:AndQuery	access:private	signature:(const Query &left, const Query &right)
+AndQuery	./query.h	/^class AndQuery : public BinaryQuery$/;"	c	inherits:BinaryQuery
+AndQuery	./query_2.hpp	/^    AndQuery(const Query &left, const Query &right)$/;"	f	class:AndQuery	access:private	signature:(const Query &left, const Query &right)
+AndQuery	./query_2.hpp	/^class AndQuery : public BinaryQuery$/;"	c	inherits:BinaryQuery
+AndQuery::AndQuery	./query.h	/^        AndQuery(const Query &left, const Query &right) :$/;"	f	class:AndQuery	access:private	signature:(const Query &left, const Query &right)
+AndQuery::AndQuery	./query_2.hpp	/^    AndQuery(const Query &left, const Query &right)$/;"	f	class:AndQuery	access:private	signature:(const Query &left, const Query &right)
+AndQuery::eval	./query.h	/^        QueryResult eval(const TextQuery &) const;$/;"	p	class:AndQuery	access:private	signature:(const TextQuery &) const
+AndQuery::eval	./query.h	/^QueryResult AndQuery::eval(const TextQuery& text) const$/;"	f	class:AndQuery	signature:(const TextQuery& text) const
+AndQuery::eval	./query_2.hpp	/^    QueryResult eval(const TextQuery&) const;$/;"	p	class:AndQuery	access:private	signature:(const TextQuery&) const
+AndQuery::eval	./query_2.hpp	/^QueryResult AndQuery::eval(const TextQuery& text) const$/;"	f	class:AndQuery	signature:(const TextQuery& text) const
+AndQuery::operator &	./query.h	/^        friend Query operator&(const Query &, const Query &);$/;"	p	class:AndQuery	access:friend	signature:(const Query &, const Query &)
+AndQuery::operator &	./query_2.hpp	/^    friend Query operator&(const Query&, const Query&);$/;"	p	class:AndQuery	access:friend	signature:(const Query&, const Query&)
+BinaryQuery	./query.h	/^                BinaryQuery(const Query &l, const Query &r, std::string s)$/;"	f	class:BinaryQuery	access:protected	signature:(const Query &l, const Query &r, std::string s)
+BinaryQuery	./query.h	/^class BinaryQuery : public Query_base$/;"	c	inherits:Query_base
+BinaryQuery	./query_2.hpp	/^    BinaryQuery(const Query &l, const Query &r, string s)$/;"	f	class:BinaryQuery	access:protected	signature:(const Query &l, const Query &r, string s)
+BinaryQuery	./query_2.hpp	/^class BinaryQuery : public Query_base$/;"	c	inherits:Query_base
+BinaryQuery::BinaryQuery	./query.h	/^                BinaryQuery(const Query &l, const Query &r, std::string s)$/;"	f	class:BinaryQuery	access:protected	signature:(const Query &l, const Query &r, std::string s)
+BinaryQuery::BinaryQuery	./query_2.hpp	/^    BinaryQuery(const Query &l, const Query &r, string s)$/;"	f	class:BinaryQuery	access:protected	signature:(const Query &l, const Query &r, string s)
+BinaryQuery::lhs	./query.h	/^                Query           lhs, rhs;       \/\/右侧对象和左侧对象$/;"	m	class:BinaryQuery	access:protected
+BinaryQuery::lhs	./query_2.hpp	/^    Query lhs, rhs;$/;"	m	class:BinaryQuery	access:protected
+BinaryQuery::opSym	./query.h	/^                std::string     opSym;          \/\/运算符的名字$/;"	m	class:BinaryQuery	access:protected
+BinaryQuery::opSym	./query_2.hpp	/^    string opSym;$/;"	m	class:BinaryQuery	access:protected
+BinaryQuery::rep	./query.h	/^                std::string rep() const { return "(" + lhs.rep() + " " $/;"	f	class:BinaryQuery	access:protected	signature:() const
+BinaryQuery::rep	./query_2.hpp	/^    string rep() const { return "(" + lhs.rep() + " " + opSym + " " + rhs.rep() + ")"; }$/;"	f	class:BinaryQuery	access:protected	signature:() const
+BinaryQuery::rhs	./query.h	/^                Query           lhs, rhs;       \/\/右侧对象和左侧对象$/;"	m	class:BinaryQuery	access:protected
+BinaryQuery::rhs	./query_2.hpp	/^    Query lhs, rhs;$/;"	m	class:BinaryQuery	access:protected
+Bule_quote	./quote.h	/^                Bule_quote(const std::string &book, double price,$/;"	f	class:Bulk_quote	access:public	signature:(const std::string &book, double price, std::size_t qty, double disc)
+Bulk_quote	./quote.h	/^                Bulk_quote() = default;$/;"	p	class:Bulk_quote	access:public	signature:()
+Bulk_quote	./quote.h	/^class Bulk_quote : public Disc_quote$/;"	c	inherits:Disc_quote
+Bulk_quote	./quote.hpp	/^    Bulk_quote() = default;$/;"	p	class:Bulk_quote	access:public	signature:()
+Bulk_quote	./quote.hpp	/^    Bulk_quote(const string&, double, size_t, double);$/;"	p	class:Bulk_quote	access:public	signature:(const string&, double, size_t, double)
+Bulk_quote	./quote.hpp	/^Bulk_quote::Bulk_quote(const string& book, double p, size_t qty, double disc)$/;"	f	class:Bulk_quote	signature:(const string& book, double p, size_t qty, double disc)
+Bulk_quote	./quote.hpp	/^class Bulk_quote : public Quote$/;"	c	inherits:Quote
+Bulk_quote::Bule_quote	./quote.h	/^                Bule_quote(const std::string &book, double price,$/;"	f	class:Bulk_quote	access:public	signature:(const std::string &book, double price, std::size_t qty, double disc)
+Bulk_quote::Bulk_quote	./quote.h	/^                Bulk_quote() = default;$/;"	p	class:Bulk_quote	access:public	signature:()
+Bulk_quote::Bulk_quote	./quote.hpp	/^    Bulk_quote() = default;$/;"	p	class:Bulk_quote	access:public	signature:()
+Bulk_quote::Bulk_quote	./quote.hpp	/^    Bulk_quote(const string&, double, size_t, double);$/;"	p	class:Bulk_quote	access:public	signature:(const string&, double, size_t, double)
+Bulk_quote::Bulk_quote	./quote.hpp	/^Bulk_quote::Bulk_quote(const string& book, double p, size_t qty, double disc)$/;"	f	class:Bulk_quote	signature:(const string& book, double p, size_t qty, double disc)
+Bulk_quote::debug	./quote.hpp	/^    void debug() { Quote::debug(); cout << "min_qty: " << min_qty << ", discount: " << discount << endl; }$/;"	f	class:Bulk_quote	access:public	signature:()
+Bulk_quote::discount	./quote.hpp	/^    double discount = 0.0;$/;"	m	class:Bulk_quote	access:private
+Bulk_quote::min_qty	./quote.hpp	/^    size_t min_qty = 0;$/;"	m	class:Bulk_quote	access:private
+Bulk_quote::net_price	./quote.h	/^double Bulk_quote::net_price(size_t cnt) const$/;"	f	class:Bulk_quote	signature:(size_t cnt) const
+Bulk_quote::net_price	./quote.hpp	/^double Bulk_quote::net_price(size_t cnt) const$/;"	f	class:Bulk_quote	signature:(size_t cnt) const
+Bulk_quote::override	./quote.h	/^                double net_price(std::size_t) const override;$/;"	m	class:Bulk_quote	access:public
+Bulk_quote::override	./quote.hpp	/^    double net_price(size_t) const override;$/;"	m	class:Bulk_quote	access:public
+Disc_quote	./quote.h	/^                Disc_quote() = default;$/;"	p	class:Disc_quote	access:public	signature:()
+Disc_quote	./quote.h	/^                Disc_quote(const std::string &book, double p, std::size_t n, double dis)$/;"	f	class:Disc_quote	access:public	signature:(const std::string &book, double p, std::size_t n, double dis)
+Disc_quote	./quote.h	/^class Disc_quote : public Quote$/;"	c	inherits:Quote
+Disc_quote::Disc_quote	./quote.h	/^                Disc_quote() = default;$/;"	p	class:Disc_quote	access:public	signature:()
+Disc_quote::Disc_quote	./quote.h	/^                Disc_quote(const std::string &book, double p, std::size_t n, double dis)$/;"	f	class:Disc_quote	access:public	signature:(const std::string &book, double p, std::size_t n, double dis)
+Disc_quote::discount	./quote.h	/^                double          discount = 0.0;$/;"	m	class:Disc_quote	access:protected
+Disc_quote::net_price	./quote.h	/^                double net_price(std::size_t) const = 0;$/;"	p	class:Disc_quote	access:public	signature:(std::size_t) const
+Disc_quote::quantity	./quote.h	/^                std::size_t     quantity = 0;$/;"	m	class:Disc_quote	access:protected
+NotQuery	./query.h	/^        NotQuery(const Query &q) : query(q) { }$/;"	f	class:NotQuery	access:private	signature:(const Query &q)
+NotQuery	./query.h	/^class NotQuery : public Query_base$/;"	c	inherits:Query_base
+NotQuery	./query_2.hpp	/^    NotQuery(const Query &q) : query(q) {  }$/;"	f	class:NotQuery	access:private	signature:(const Query &q)
+NotQuery	./query_2.hpp	/^class NotQuery : public Query_base$/;"	c	inherits:Query_base
+NotQuery::NotQuery	./query.h	/^        NotQuery(const Query &q) : query(q) { }$/;"	f	class:NotQuery	access:private	signature:(const Query &q)
+NotQuery::NotQuery	./query_2.hpp	/^    NotQuery(const Query &q) : query(q) {  }$/;"	f	class:NotQuery	access:private	signature:(const Query &q)
+NotQuery::eval	./query.h	/^        QueryResult eval(const TextQuery &) const;$/;"	p	class:NotQuery	access:private	signature:(const TextQuery &) const
+NotQuery::eval	./query.h	/^QueryResult NotQuery::eval(const TextQuery& text) const$/;"	f	class:NotQuery	signature:(const TextQuery& text) const
+NotQuery::eval	./query_2.hpp	/^    QueryResult eval(const TextQuery &) const;$/;"	p	class:NotQuery	access:private	signature:(const TextQuery &) const
+NotQuery::eval	./query_2.hpp	/^QueryResult NotQuery::eval(const TextQuery& text) const$/;"	f	class:NotQuery	signature:(const TextQuery& text) const
+NotQuery::operator ~	./query.h	/^        friend Query operator~(const Query &);$/;"	p	class:NotQuery	access:friend	signature:(const Query &)
+NotQuery::operator ~	./query_2.hpp	/^    friend Query operator~(const Query &);$/;"	p	class:NotQuery	access:friend	signature:(const Query &)
+NotQuery::query	./query.h	/^        Query   query;$/;"	m	class:NotQuery	access:private
+NotQuery::query	./query_2.hpp	/^    Query query;$/;"	m	class:NotQuery	access:private
+NotQuery::rep	./query.h	/^        std::string rep() const { return "~(" + query.rep() + ")"; }$/;"	f	class:NotQuery	access:private	signature:() const
+NotQuery::rep	./query_2.hpp	/^    string rep() const { return "~(" + query.rep() + ")"; }$/;"	f	class:NotQuery	access:private	signature:() const
+OrQuery	./query.h	/^        OrQuery(const Query &left, const Query &right) :$/;"	f	class:OrQuery	access:private	signature:(const Query &left, const Query &right)
+OrQuery	./query.h	/^class OrQuery : public BinaryQuery$/;"	c	inherits:BinaryQuery
+OrQuery	./query_2.hpp	/^    OrQuery(const Query &left, const Query &right)$/;"	f	class:OrQuery	access:private	signature:(const Query &left, const Query &right)
+OrQuery	./query_2.hpp	/^class OrQuery : public BinaryQuery$/;"	c	inherits:BinaryQuery
+OrQuery::OrQuery	./query.h	/^        OrQuery(const Query &left, const Query &right) :$/;"	f	class:OrQuery	access:private	signature:(const Query &left, const Query &right)
+OrQuery::OrQuery	./query_2.hpp	/^    OrQuery(const Query &left, const Query &right)$/;"	f	class:OrQuery	access:private	signature:(const Query &left, const Query &right)
+OrQuery::eval	./query.h	/^        QueryResult eval(const TextQuery &) const;$/;"	p	class:OrQuery	access:private	signature:(const TextQuery &) const
+OrQuery::eval	./query.h	/^QueryResult OrQuery::eval(const TextQuery& text) const$/;"	f	class:OrQuery	signature:(const TextQuery& text) const
+OrQuery::eval	./query_2.hpp	/^    QueryResult eval(const TextQuery&) const;$/;"	p	class:OrQuery	access:private	signature:(const TextQuery&) const
+OrQuery::eval	./query_2.hpp	/^QueryResult OrQuery::eval(const TextQuery& text) const$/;"	f	class:OrQuery	signature:(const TextQuery& text) const
+OrQuery::operator |	./query.h	/^        friend Query operator|(const Query &, const Query &);$/;"	p	class:OrQuery	access:friend	signature:(const Query &, const Query &)
+OrQuery::operator |	./query_2.hpp	/^    friend Query operator|(const Query&, const Query&);$/;"	p	class:OrQuery	access:friend	signature:(const Query&, const Query&)
+QUERY_2_HPP	./query_2.hpp	11;"	d
+QUERY_H	./query.h	18;"	d
+QUOTE_H	./quote.h	18;"	d
+QUOTE_HPP	./quote.hpp	11;"	d
+Query	./query.h	/^        Query(const std::string&);      \/\/构建一个新的WordQuery$/;"	p	class:Query	access:public	signature:(const std::string&)
+Query	./query.h	/^        Query(std::shared_ptr<Query_base> query) : q(query) { }$/;"	f	class:Query	access:private	signature:(std::shared_ptr<Query_base> query)
+Query	./query.h	/^class Query$/;"	c
+Query	./query.h	/^inline Query::Query(const string &s) : q(new WordQuery(s)) { }$/;"	f	class:Query	signature:(const string &s)
+Query	./query_2.hpp	/^    Query(const string&);$/;"	p	class:Query	access:public	signature:(const string&)
+Query	./query_2.hpp	/^    Query(shared_ptr<Query_base> query) : q(query) {  }$/;"	f	class:Query	access:private	signature:(shared_ptr<Query_base> query)
+Query	./query_2.hpp	/^class Query $/;"	c
+Query::Query	./query.h	/^        Query(const std::string&);      \/\/构建一个新的WordQuery$/;"	p	class:Query	access:public	signature:(const std::string&)
+Query::Query	./query.h	/^        Query(std::shared_ptr<Query_base> query) : q(query) { }$/;"	f	class:Query	access:private	signature:(std::shared_ptr<Query_base> query)
+Query::Query	./query.h	/^inline Query::Query(const string &s) : q(new WordQuery(s)) { }$/;"	f	class:Query	signature:(const string &s)
+Query::Query	./query_2.hpp	/^    Query(const string&);$/;"	p	class:Query	access:public	signature:(const string&)
+Query::Query	./query_2.hpp	/^    Query(shared_ptr<Query_base> query) : q(query) {  }$/;"	f	class:Query	access:private	signature:(shared_ptr<Query_base> query)
+Query::eval	./query.h	/^        QueryResult eval(const TextQuery &t) const$/;"	f	class:Query	access:public	signature:(const TextQuery &t) const
+Query::eval	./query_2.hpp	/^    QueryResult eval(const TextQuery &t) const { return q->eval(t); }$/;"	f	class:Query	access:public	signature:(const TextQuery &t) const
+Query::operator &	./query.h	/^        friend Query operator&(const Query &, const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &, const Query &)
+Query::operator &	./query_2.hpp	/^    friend Query operator&(const Query &, const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &, const Query &)
+Query::operator |	./query.h	/^        friend Query operator|(const Query &, const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &, const Query &)
+Query::operator |	./query_2.hpp	/^    friend Query operator|(const Query &, const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &, const Query &)
+Query::operator ~	./query.h	/^        friend Query operator~(const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &)
+Query::operator ~	./query_2.hpp	/^    friend Query operator~(const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &)
+Query::q	./query.h	/^        std::shared_ptr<Query_base>     q;$/;"	m	class:Query	access:private
+Query::q	./query_2.hpp	/^    shared_ptr<Query_base> q;$/;"	m	class:Query	access:private
+Query::rep	./query.h	/^        std::string rep() const { return q->rep(); }$/;"	f	class:Query	access:public	signature:() const
+Query::rep	./query_2.hpp	/^    string rep() const { return q->rep(); }$/;"	f	class:Query	access:public	signature:() const
+QueryResult	./query.h	/^        QueryResult(std::string s,$/;"	f	class:QueryResult	access:public	signature:(std::string s, std::shared_ptr<std::set<line_no>> p, std::shared_ptr<std::vector<std::string>> f)
+QueryResult	./query.h	/^class QueryResult$/;"	c
+QueryResult::QueryResult	./query.h	/^        QueryResult(std::string s,$/;"	f	class:QueryResult	access:public	signature:(std::string s, std::shared_ptr<std::set<line_no>> p, std::shared_ptr<std::vector<std::string>> f)
+QueryResult::begin	./query.h	/^                begin() { return lines->begin(); }$/;"	f	class:QueryResult	access:public	signature:()
+QueryResult::end	./query.h	/^                end() { return lines->end(); }$/;"	f	class:QueryResult	access:public	signature:()
+QueryResult::file	./query.h	/^        std::shared_ptr<std::vector<std::string>>       file;   \/\/输入文件$/;"	m	class:QueryResult	access:private
+QueryResult::get_file	./query.h	/^                get_file() { return std::shared_ptr<std::vector<std::string>>(file); }$/;"	f	class:QueryResult	access:public	signature:()
+QueryResult::lines	./query.h	/^        std::shared_ptr<std::set<line_no>>      lines;  \/\/行号的set$/;"	m	class:QueryResult	access:private
+QueryResult::print	./query.h	/^        friend std::ostream& print(std::ostream&, const QueryResult&);$/;"	p	class:QueryResult	access:friend	signature:(std::ostream&, const QueryResult&)
+QueryResult::sought	./query.h	/^        std::string     sought;         \/\/要查询的单词$/;"	m	class:QueryResult	access:private
+Query_base	./query.h	/^class Query_base$/;"	c
+Query_base	./query_2.hpp	/^class Query_base$/;"	c
+Query_base::eval	./query.h	/^        virtual QueryResult eval(const TextQuery &) const = 0;$/;"	p	class:Query_base	access:private	signature:(const TextQuery &) const
+Query_base::eval	./query_2.hpp	/^    virtual QueryResult eval(const TextQuery&) const = 0;$/;"	p	class:Query_base	access:private	signature:(const TextQuery&) const
+Query_base::rep	./query.h	/^        virtual std::string rep() const = 0;$/;"	p	class:Query_base	access:private	signature:() const
+Query_base::rep	./query_2.hpp	/^    virtual string rep() const = 0;$/;"	p	class:Query_base	access:private	signature:() const
+Query_base::~Query_base	./query.h	/^        virtual ~Query_base() = default;$/;"	p	class:Query_base	access:protected	signature:()
+Query_base::~Query_base	./query_2.hpp	/^    virtual ~Query_base() = default;$/;"	p	class:Query_base	access:protected	signature:()
+Quote	./quote.h	/^                Quote() = default;$/;"	p	class:Quote	access:public	signature:()
+Quote	./quote.h	/^                Quote(const std::string &book, double p) :$/;"	f	class:Quote	access:public	signature:(const std::string &book, double p)
+Quote	./quote.h	/^class Quote$/;"	c
+Quote	./quote.hpp	/^    Quote() = default;$/;"	p	class:Quote	access:public	signature:()
+Quote	./quote.hpp	/^    Quote(const string &book, double sales_price)$/;"	f	class:Quote	access:public	signature:(const string &book, double sales_price)
+Quote	./quote.hpp	/^class Quote$/;"	c
+Quote::Quote	./quote.h	/^                Quote() = default;$/;"	p	class:Quote	access:public	signature:()
+Quote::Quote	./quote.h	/^                Quote(const std::string &book, double p) :$/;"	f	class:Quote	access:public	signature:(const std::string &book, double p)
+Quote::Quote	./quote.hpp	/^    Quote() = default;$/;"	p	class:Quote	access:public	signature:()
+Quote::Quote	./quote.hpp	/^    Quote(const string &book, double sales_price)$/;"	f	class:Quote	access:public	signature:(const string &book, double sales_price)
+Quote::bookNo	./quote.h	/^                std::string     bookNo;$/;"	m	class:Quote	access:private
+Quote::bookNo	./quote.hpp	/^    string bookNo;$/;"	m	class:Quote	access:private
+Quote::debug	./quote.h	/^                virtual void debug() const $/;"	f	class:Quote	access:public	signature:() const
+Quote::debug	./quote.hpp	/^    virtual void debug() { cout << "bookNo: " << bookNo << ", price: " << price << endl; }$/;"	f	class:Quote	access:public	signature:()
+Quote::isbn	./quote.h	/^                std::string isbn() const { return bookNo; }$/;"	f	class:Quote	access:public	signature:() const
+Quote::isbn	./quote.hpp	/^    string isbn() const { return bookNo; }$/;"	f	class:Quote	access:public	signature:() const
+Quote::net_price	./quote.h	/^                virtual double net_price(std::size_t n) const$/;"	f	class:Quote	access:public	signature:(std::size_t n) const
+Quote::net_price	./quote.hpp	/^    virtual double net_price(size_t n) const { return n * price; }$/;"	f	class:Quote	access:public	signature:(size_t n) const
+Quote::price	./quote.h	/^                double          price = 0.0;    \/\/代表普通状态下不打折的价格$/;"	m	class:Quote	access:protected
+Quote::price	./quote.hpp	/^    double price = 0.0;$/;"	m	class:Quote	access:protected
+Quote::~Quote	./quote.h	/^                virtual ~Quote() = default;     \/\/对析构函数进行动态绑定$/;"	p	class:Quote	access:public	signature:()
+Quote::~Quote	./quote.hpp	/^    virtual ~Quote() = default;$/;"	p	class:Quote	access:public	signature:()
+TextQuery	./query.h	/^                TextQuery(std::ifstream&);$/;"	p	class:TextQuery	access:public	signature:(std::ifstream&)
+TextQuery	./query.h	/^TextQuery::TextQuery(ifstream &is) : file(new vector<string>)$/;"	f	class:TextQuery	signature:(ifstream &is)
+TextQuery	./query.h	/^class   TextQuery$/;"	c
+TextQuery::TextQuery	./query.h	/^                TextQuery(std::ifstream&);$/;"	p	class:TextQuery	access:public	signature:(std::ifstream&)
+TextQuery::TextQuery	./query.h	/^TextQuery::TextQuery(ifstream &is) : file(new vector<string>)$/;"	f	class:TextQuery	signature:(ifstream &is)
+TextQuery::file	./query.h	/^                std::shared_ptr<std::vector<std::string>>       file;   \/\/保存要查询的文件$/;"	m	class:TextQuery	access:private
+TextQuery::query	./query.h	/^                QueryResult query(const std::string&) const;$/;"	p	class:TextQuery	access:public	signature:(const std::string&) const
+TextQuery::query	./query.h	/^QueryResult TextQuery::query(const string &sought) const$/;"	f	class:TextQuery	signature:(const string &sought) const
+TextQuery::wm	./query.h	/^                         std::shared_ptr<std::set<line_no>>>    wm;     \/\/每个单词和它所在行号的set$/;"	m	class:TextQuery	access:private
+WordQuery	./query.h	/^        WordQuery(const std::string &s) : query_word(s) { }$/;"	f	class:WordQuery	access:private	signature:(const std::string &s)
+WordQuery	./query.h	/^class WordQuery : public Query_base$/;"	c	inherits:Query_base
+WordQuery	./query_2.hpp	/^    WordQuery(const string &s) : query_word(s) {  }$/;"	f	class:WordQuery	access:private	signature:(const string &s)
+WordQuery	./query_2.hpp	/^class WordQuery : public Query_base$/;"	c	inherits:Query_base
+WordQuery::WordQuery	./query.h	/^        WordQuery(const std::string &s) : query_word(s) { }$/;"	f	class:WordQuery	access:private	signature:(const std::string &s)
+WordQuery::WordQuery	./query_2.hpp	/^    WordQuery(const string &s) : query_word(s) {  }$/;"	f	class:WordQuery	access:private	signature:(const string &s)
+WordQuery::eval	./query.h	/^        QueryResult eval(const TextQuery &t) const$/;"	f	class:WordQuery	access:private	signature:(const TextQuery &t) const
+WordQuery::eval	./query_2.hpp	/^    QueryResult eval(const TextQuery &t) const { return t.query(query_word); }$/;"	f	class:WordQuery	access:private	signature:(const TextQuery &t) const
+WordQuery::query_word	./query.h	/^        std::string     query_word;$/;"	m	class:WordQuery	access:private
+WordQuery::query_word	./query_2.hpp	/^    string query_word;$/;"	m	class:WordQuery	access:private
+WordQuery::rep	./query.h	/^        std::string rep() const { return query_word; }$/;"	f	class:WordQuery	access:private	signature:() const
+WordQuery::rep	./query_2.hpp	/^    string rep() const { return query_word; }$/;"	f	class:WordQuery	access:private	signature:() const
+begin	./query.h	/^                begin() { return lines->begin(); }$/;"	f	class:QueryResult	access:public	signature:()
+bookNo	./quote.h	/^                std::string     bookNo;$/;"	m	class:Quote	access:private
+bookNo	./quote.hpp	/^    string bookNo;$/;"	m	class:Quote	access:private
+debug	./quote.h	/^                virtual void debug() const $/;"	f	class:Quote	access:public	signature:() const
+debug	./quote.hpp	/^    virtual void debug() { cout << "bookNo: " << bookNo << ", price: " << price << endl; }$/;"	f	class:Quote	access:public	signature:()
+debug	./quote.hpp	/^    void debug() { Quote::debug(); cout << "min_qty: " << min_qty << ", discount: " << discount << endl; }$/;"	f	class:Bulk_quote	access:public	signature:()
+discount	./quote.h	/^                double          discount = 0.0;$/;"	m	class:Disc_quote	access:protected
+discount	./quote.hpp	/^    double discount = 0.0;$/;"	m	class:Bulk_quote	access:private
+end	./query.h	/^                end() { return lines->end(); }$/;"	f	class:QueryResult	access:public	signature:()
+eval	./query.h	/^        QueryResult eval(const TextQuery &) const;$/;"	p	class:AndQuery	access:private	signature:(const TextQuery &) const
+eval	./query.h	/^        QueryResult eval(const TextQuery &) const;$/;"	p	class:NotQuery	access:private	signature:(const TextQuery &) const
+eval	./query.h	/^        QueryResult eval(const TextQuery &) const;$/;"	p	class:OrQuery	access:private	signature:(const TextQuery &) const
+eval	./query.h	/^        QueryResult eval(const TextQuery &t) const$/;"	f	class:Query	access:public	signature:(const TextQuery &t) const
+eval	./query.h	/^        QueryResult eval(const TextQuery &t) const$/;"	f	class:WordQuery	access:private	signature:(const TextQuery &t) const
+eval	./query.h	/^        virtual QueryResult eval(const TextQuery &) const = 0;$/;"	p	class:Query_base	access:private	signature:(const TextQuery &) const
+eval	./query.h	/^QueryResult AndQuery::eval(const TextQuery& text) const$/;"	f	class:AndQuery	signature:(const TextQuery& text) const
+eval	./query.h	/^QueryResult NotQuery::eval(const TextQuery& text) const$/;"	f	class:NotQuery	signature:(const TextQuery& text) const
+eval	./query.h	/^QueryResult OrQuery::eval(const TextQuery& text) const$/;"	f	class:OrQuery	signature:(const TextQuery& text) const
+eval	./query_2.hpp	/^    QueryResult eval(const TextQuery &) const;$/;"	p	class:NotQuery	access:private	signature:(const TextQuery &) const
+eval	./query_2.hpp	/^    QueryResult eval(const TextQuery &t) const { return q->eval(t); }$/;"	f	class:Query	access:public	signature:(const TextQuery &t) const
+eval	./query_2.hpp	/^    QueryResult eval(const TextQuery &t) const { return t.query(query_word); }$/;"	f	class:WordQuery	access:private	signature:(const TextQuery &t) const
+eval	./query_2.hpp	/^    QueryResult eval(const TextQuery&) const;$/;"	p	class:AndQuery	access:private	signature:(const TextQuery&) const
+eval	./query_2.hpp	/^    QueryResult eval(const TextQuery&) const;$/;"	p	class:OrQuery	access:private	signature:(const TextQuery&) const
+eval	./query_2.hpp	/^    virtual QueryResult eval(const TextQuery&) const = 0;$/;"	p	class:Query_base	access:private	signature:(const TextQuery&) const
+eval	./query_2.hpp	/^QueryResult AndQuery::eval(const TextQuery& text) const$/;"	f	class:AndQuery	signature:(const TextQuery& text) const
+eval	./query_2.hpp	/^QueryResult NotQuery::eval(const TextQuery& text) const$/;"	f	class:NotQuery	signature:(const TextQuery& text) const
+eval	./query_2.hpp	/^QueryResult OrQuery::eval(const TextQuery& text) const$/;"	f	class:OrQuery	signature:(const TextQuery& text) const
+file	./query.h	/^                std::shared_ptr<std::vector<std::string>>       file;   \/\/保存要查询的文件$/;"	m	class:TextQuery	access:private
+file	./query.h	/^        std::shared_ptr<std::vector<std::string>>       file;   \/\/输入文件$/;"	m	class:QueryResult	access:private
+get_file	./query.h	/^                get_file() { return std::shared_ptr<std::vector<std::string>>(file); }$/;"	f	class:QueryResult	access:public	signature:()
+isbn	./quote.h	/^                std::string isbn() const { return bookNo; }$/;"	f	class:Quote	access:public	signature:() const
+isbn	./quote.hpp	/^    string isbn() const { return bookNo; }$/;"	f	class:Quote	access:public	signature:() const
+lhs	./query.h	/^                Query           lhs, rhs;       \/\/右侧对象和左侧对象$/;"	m	class:BinaryQuery	access:protected
+lhs	./query_2.hpp	/^    Query lhs, rhs;$/;"	m	class:BinaryQuery	access:protected
+lines	./query.h	/^        std::shared_ptr<std::set<line_no>>      lines;  \/\/行号的set$/;"	m	class:QueryResult	access:private
+main	./query.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./quote.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	./testquote.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+min_qty	./quote.hpp	/^    size_t min_qty = 0;$/;"	m	class:Bulk_quote	access:private
+net_price	./quote.h	/^                double net_price(std::size_t) const = 0;$/;"	p	class:Disc_quote	access:public	signature:(std::size_t) const
+net_price	./quote.h	/^                virtual double net_price(std::size_t n) const$/;"	f	class:Quote	access:public	signature:(std::size_t n) const
+net_price	./quote.h	/^double Bulk_quote::net_price(size_t cnt) const$/;"	f	class:Bulk_quote	signature:(size_t cnt) const
+net_price	./quote.hpp	/^    virtual double net_price(size_t n) const { return n * price; }$/;"	f	class:Quote	access:public	signature:(size_t n) const
+net_price	./quote.hpp	/^double Bulk_quote::net_price(size_t cnt) const$/;"	f	class:Bulk_quote	signature:(size_t cnt) const
+opSym	./query.h	/^                std::string     opSym;          \/\/运算符的名字$/;"	m	class:BinaryQuery	access:protected
+opSym	./query_2.hpp	/^    string opSym;$/;"	m	class:BinaryQuery	access:protected
+operator &	./query.h	/^        friend Query operator&(const Query &, const Query &);$/;"	p	class:AndQuery	access:friend	signature:(const Query &, const Query &)
+operator &	./query.h	/^        friend Query operator&(const Query &, const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &, const Query &)
+operator &	./query.h	/^inline Query operator&(const Query &lhs, const Query &rhs)$/;"	f	signature:(const Query &lhs, const Query &rhs)
+operator &	./query_2.hpp	/^    friend Query operator&(const Query &, const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &, const Query &)
+operator &	./query_2.hpp	/^    friend Query operator&(const Query&, const Query&);$/;"	p	class:AndQuery	access:friend	signature:(const Query&, const Query&)
+operator &	./query_2.hpp	/^inline Query operator&(const Query &lhs, const Query &rhs)$/;"	f	signature:(const Query &lhs, const Query &rhs)
+operator <<	./query.h	/^std::ostream &operator<<(std::ostream &os, const Query &query)$/;"	f	signature:(std::ostream &os, const Query &query)
+operator <<	./query_2.hpp	/^ostream & operator<<(ostream &os, const Query &query)$/;"	f	signature:(ostream &os, const Query &query)
+operator |	./query.h	/^        friend Query operator|(const Query &, const Query &);$/;"	p	class:OrQuery	access:friend	signature:(const Query &, const Query &)
+operator |	./query.h	/^        friend Query operator|(const Query &, const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &, const Query &)
+operator |	./query.h	/^inline Query operator|(const Query &lhs, const Query &rhs)$/;"	f	signature:(const Query &lhs, const Query &rhs)
+operator |	./query_2.hpp	/^    friend Query operator|(const Query &, const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &, const Query &)
+operator |	./query_2.hpp	/^    friend Query operator|(const Query&, const Query&);$/;"	p	class:OrQuery	access:friend	signature:(const Query&, const Query&)
+operator |	./query_2.hpp	/^inline Query operator|(const Query &lhs, const Query &rhs)$/;"	f	signature:(const Query &lhs, const Query &rhs)
+operator ~	./query.h	/^        friend Query operator~(const Query &);$/;"	p	class:NotQuery	access:friend	signature:(const Query &)
+operator ~	./query.h	/^        friend Query operator~(const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &)
+operator ~	./query.h	/^inline Query operator~(const Query &operand)$/;"	f	signature:(const Query &operand)
+operator ~	./query_2.hpp	/^    friend Query operator~(const Query &);$/;"	p	class:NotQuery	access:friend	signature:(const Query &)
+operator ~	./query_2.hpp	/^    friend Query operator~(const Query &);$/;"	p	class:Query	access:friend	signature:(const Query &)
+operator ~	./query_2.hpp	/^inline Query operator~(const Query &operand)$/;"	f	signature:(const Query &operand)
+override	./quote.h	/^                double net_price(std::size_t) const override;$/;"	m	class:Bulk_quote	access:public
+override	./quote.hpp	/^    double net_price(size_t) const override;$/;"	m	class:Bulk_quote	access:public
+price	./quote.h	/^                double          price = 0.0;    \/\/代表普通状态下不打折的价格$/;"	m	class:Quote	access:protected
+price	./quote.hpp	/^    double price = 0.0;$/;"	m	class:Quote	access:protected
+print	./query.h	/^        friend std::ostream& print(std::ostream&, const QueryResult&);$/;"	p	class:QueryResult	access:friend	signature:(std::ostream&, const QueryResult&)
+print	./query.h	/^ostream &print(ostream &os, const QueryResult &qr)$/;"	f	signature:(ostream &os, const QueryResult &qr)
+print_total	./quote.h	/^double print_total(ostream &os, const Quote &item, size_t n)$/;"	f	signature:(ostream &os, const Quote &item, size_t n)
+q	./query.h	/^        std::shared_ptr<Query_base>     q;$/;"	m	class:Query	access:private
+q	./query_2.hpp	/^    shared_ptr<Query_base> q;$/;"	m	class:Query	access:private
+quantity	./quote.h	/^                std::size_t     quantity = 0;$/;"	m	class:Disc_quote	access:protected
+query	./query.h	/^                QueryResult query(const std::string&) const;$/;"	p	class:TextQuery	access:public	signature:(const std::string&) const
+query	./query.h	/^        Query   query;$/;"	m	class:NotQuery	access:private
+query	./query.h	/^QueryResult TextQuery::query(const string &sought) const$/;"	f	class:TextQuery	signature:(const string &sought) const
+query	./query_2.hpp	/^    Query query;$/;"	m	class:NotQuery	access:private
+query_word	./query.h	/^        std::string     query_word;$/;"	m	class:WordQuery	access:private
+query_word	./query_2.hpp	/^    string query_word;$/;"	m	class:WordQuery	access:private
+rep	./query.h	/^                std::string rep() const { return "(" + lhs.rep() + " " $/;"	f	class:BinaryQuery	access:protected	signature:() const
+rep	./query.h	/^        std::string rep() const { return "~(" + query.rep() + ")"; }$/;"	f	class:NotQuery	access:private	signature:() const
+rep	./query.h	/^        std::string rep() const { return q->rep(); }$/;"	f	class:Query	access:public	signature:() const
+rep	./query.h	/^        std::string rep() const { return query_word; }$/;"	f	class:WordQuery	access:private	signature:() const
+rep	./query.h	/^        virtual std::string rep() const = 0;$/;"	p	class:Query_base	access:private	signature:() const
+rep	./query_2.hpp	/^    string rep() const { return "(" + lhs.rep() + " " + opSym + " " + rhs.rep() + ")"; }$/;"	f	class:BinaryQuery	access:protected	signature:() const
+rep	./query_2.hpp	/^    string rep() const { return "~(" + query.rep() + ")"; }$/;"	f	class:NotQuery	access:private	signature:() const
+rep	./query_2.hpp	/^    string rep() const { return q->rep(); }$/;"	f	class:Query	access:public	signature:() const
+rep	./query_2.hpp	/^    string rep() const { return query_word; }$/;"	f	class:WordQuery	access:private	signature:() const
+rep	./query_2.hpp	/^    virtual string rep() const = 0;$/;"	p	class:Query_base	access:private	signature:() const
+rhs	./query.h	/^                Query           lhs, rhs;       \/\/右侧对象和左侧对象$/;"	m	class:BinaryQuery	access:protected
+rhs	./query_2.hpp	/^    Query lhs, rhs;$/;"	m	class:BinaryQuery	access:protected
+sought	./query.h	/^        std::string     sought;         \/\/要查询的单词$/;"	m	class:QueryResult	access:private
+wm	./query.h	/^                         std::shared_ptr<std::set<line_no>>>    wm;     \/\/每个单词和它所在行号的set$/;"	m	class:TextQuery	access:private
+~Query_base	./query.h	/^        virtual ~Query_base() = default;$/;"	p	class:Query_base	access:protected	signature:()
+~Query_base	./query_2.hpp	/^    virtual ~Query_base() = default;$/;"	p	class:Query_base	access:protected	signature:()
+~Quote	./quote.h	/^                virtual ~Quote() = default;     \/\/对析构函数进行动态绑定$/;"	p	class:Quote	access:public	signature:()
+~Quote	./quote.hpp	/^    virtual ~Quote() = default;$/;"	p	class:Quote	access:public	signature:()

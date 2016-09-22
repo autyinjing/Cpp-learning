@@ -16,15 +16,15 @@
 
 #include <iostream>
 
-#include "query.h"
+#include "query_2.hpp"
 
 int main(int argc, char *argv[])
 {
-        std::ifstream   infile("a.txt");  
-        TextQuery       tq(infile);
+    std::ifstream   infile("a.txt");  
+    TextQuery       tq(infile);
 
-        std::cout << (Query("fiery") & Query("bird") | Query("wind")) << std::endl;
-        print(std::cout, (Query("fiery") & Query("bird") | Query("wind")).eval(tq));
+    std::cout << ((Query("fiery") & Query("bird")) | Query("wind")) << std::endl;
+    print(std::cout, ((Query("fiery") & Query("bird")) | Query("wind")).eval(tq));
 
-        return false;
+    return false;
 }
