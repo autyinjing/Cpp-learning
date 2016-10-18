@@ -1,27 +1,26 @@
 /* ***********************************************************************
 
-  > File Name: bitset.cc
+  > File Name: regexerror.cc
   > Author: Aut
   > Mail: aut@taomee.com 
-  > Created Time: 2016年08月18日 星期四 18时16分41秒
+  > Created Time: 2016年10月17日 星期一 16时53分10秒
 
  ********************************************************************** */
 
 #include <iostream>
 #include <vector>
 #include <string>
-#include <bitset>
+#include <regex>
 
 using namespace std;
 
 int main(int argc, const char* argv[])
 {
-//    string s = "110101001010110101010101";
-//    bitset<8> b(s);
-//    cout << s << endl << b << endl << b.to_ulong() << endl;
-
-    bitset<32> b(1025);
-    cout << b << endl;
+    try {
+        regex r("[[:alnum:]+\\.(cpp|cc|cxx)$", regex::icase);
+    } catch (regex_error e) {
+        cout << e.what() << "\ncode: " << e.code() << endl;
+    }
 
     return 0;
 }

@@ -1,27 +1,27 @@
 /* ***********************************************************************
 
-  > File Name: bitset.cc
+  > File Name: unique.cc
   > Author: Aut
   > Mail: aut@taomee.com 
-  > Created Time: 2016年08月18日 星期四 18时16分41秒
+  > Created Time: 2016年10月09日 星期日 15时29分49秒
 
  ********************************************************************** */
 
 #include <iostream>
 #include <vector>
 #include <string>
-#include <bitset>
+#include <algorithm>
 
 using namespace std;
 
 int main(int argc, const char* argv[])
 {
-//    string s = "110101001010110101010101";
-//    bitset<8> b(s);
-//    cout << s << endl << b << endl << b.to_ulong() << endl;
+    vector<int> v{1,2,2,2,3,3,2,2,1};
+    unique(v.begin(), v.end());
 
-    bitset<32> b(1025);
-    cout << b << endl;
+    for (auto i : v)
+        cout << i << " ";
+    cout << endl;
 
     return 0;
 }
