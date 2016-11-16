@@ -1,0 +1,156 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BOOST_AUTO_TEST_CASE	./6_test/unit_test.cc	/^    BOOST_AUTO_TEST_CASE(t_scoped_ptr)$/;"	f	signature:(t_scoped_ptr)
+BOOST_DATE_TIME_SOURCE	./2_timer/date_time.cc	15;"	d	file:
+BOOST_ENABLE_ASSERT_HANDLER	./6_test/assert.cc	28;"	d	file:
+BOOST_TEST_INCLUDED	./6_test/test.cc	16;"	d	file:
+BOOST_TEST_INCLUDED	./6_test/unit_test.cc	16;"	d	file:
+BOOST_TEST_MAIN	./6_test/test.cc	15;"	d	file:
+_start_time	./2_timer/time.cc	/^    ptime _start_time;$/;"	m	class:basic_ptimer	file:	access:private
+a	./3_smart_ptr/pool.cc	/^    int a, b, c;$/;"	m	struct:demo_class	file:	access:public
+abstract	./3_smart_ptr/impl.cc	/^class abstract$/;"	c	file:
+abstract::f	./3_smart_ptr/impl.cc	/^    virtual void f() = 0;$/;"	p	class:abstract	file:	access:public	signature:()
+abstract::g	./3_smart_ptr/impl.cc	/^    virtual void g() = 0;$/;"	p	class:abstract	file:	access:public	signature:()
+abstract::~abstract	./3_smart_ptr/impl.cc	/^    virtual ~abstract() {}$/;"	f	class:abstract	access:protected	signature:()
+any_func	./3_smart_ptr/impl.cc	/^void any_func(void *p) { cout << "some operate" << endl; }$/;"	f	signature:(void *p)
+assertion_failed	./6_test/assert.cc	/^    void assertion_failed(char const* expr, char const* func, char const* file, long line)$/;"	f	namespace:boost	signature:(char const* expr, char const* func, char const* file, long line)
+b	./3_smart_ptr/pool.cc	/^    int a, b, c;$/;"	m	struct:demo_class	file:	access:public
+bank_name	./2_timer/date_time.cc	/^    string bank_name;$/;"	m	class:credit_card	file:	access:public
+basic_ptimer	./2_timer/time.cc	/^    basic_ptimer() { restart(); }$/;"	f	class:basic_ptimer	access:public	signature:()
+basic_ptimer	./2_timer/time.cc	/^class basic_ptimer$/;"	c	file:
+basic_ptimer::_start_time	./2_timer/time.cc	/^    ptime _start_time;$/;"	m	class:basic_ptimer	file:	access:private
+basic_ptimer::basic_ptimer	./2_timer/time.cc	/^    basic_ptimer() { restart(); }$/;"	f	class:basic_ptimer	access:public	signature:()
+basic_ptimer::elapsed	./2_timer/time.cc	/^    void elapsed() const { cout << Clock::local_time() - _start_time << endl; }$/;"	f	class:basic_ptimer	access:public	signature:() const
+basic_ptimer::restart	./2_timer/time.cc	/^    void restart() { _start_time = Clock::local_time(); }$/;"	f	class:basic_ptimer	access:public	signature:()
+basic_ptimer::~basic_ptimer	./2_timer/time.cc	/^    ~basic_ptimer() { elapsed(); }$/;"	f	class:basic_ptimer	access:public	signature:()
+bill_day_no	./2_timer/date_time.cc	/^    int bill_day_no;$/;"	m	class:credit_card	file:	access:public
+boost	./6_test/assert.cc	/^namespace boost$/;"	n	file:
+boost::assertion_failed	./6_test/assert.cc	/^    void assertion_failed(char const* expr, char const* func, char const* file, long line)$/;"	f	namespace:boost	signature:(char const* expr, char const* func, char const* file, long line)
+c	./3_smart_ptr/pool.cc	/^    int a, b, c;$/;"	m	struct:demo_class	file:	access:public
+calc	./4_tools/optional.cc	/^optional<double> calc(int x)$/;"	f	signature:(int x)
+calc_free_days	./2_timer/date_time.cc	/^    int calc_free_days(date consume_day = day_clock::local_day()) const$/;"	f	class:credit_card	access:public	signature:(date consume_day = day_clock::local_day()) const
+chufa	./4_tools/optional.cc	/^optional<double> chufa(double a, double b)$/;"	f	signature:(double a, double b)
+create	./3_smart_ptr/impl.cc	/^shared_ptr<abstract> create() { return shared_ptr<abstract>(new impl); }$/;"	f	signature:()
+credit_card	./2_timer/date_time.cc	/^    credit_card(const char* bname, int no)$/;"	f	class:credit_card	access:public	signature:(const char* bname, int no)
+credit_card	./2_timer/date_time.cc	/^class credit_card$/;"	c	file:
+credit_card::bank_name	./2_timer/date_time.cc	/^    string bank_name;$/;"	m	class:credit_card	file:	access:public
+credit_card::bill_day_no	./2_timer/date_time.cc	/^    int bill_day_no;$/;"	m	class:credit_card	file:	access:public
+credit_card::calc_free_days	./2_timer/date_time.cc	/^    int calc_free_days(date consume_day = day_clock::local_day()) const$/;"	f	class:credit_card	access:public	signature:(date consume_day = day_clock::local_day()) const
+credit_card::credit_card	./2_timer/date_time.cc	/^    credit_card(const char* bname, int no)$/;"	f	class:credit_card	access:public	signature:(const char* bname, int no)
+credit_card::operator <	./2_timer/date_time.cc	/^    friend bool operator<(const credit_card& l, const credit_card& r)$/;"	f	class:credit_card	access:friend	signature:(const credit_card& l, const credit_card& r)
+demo_class	./3_smart_ptr/pool.cc	/^    demo_class(int x = 1, int y = 2, int z = 3) : a(x), b(y), c(z) {  }$/;"	f	struct:demo_class	access:public	signature:(int x = 1, int y = 2, int z = 3)
+demo_class	./3_smart_ptr/pool.cc	/^struct demo_class$/;"	s	file:
+demo_class::a	./3_smart_ptr/pool.cc	/^    int a, b, c;$/;"	m	struct:demo_class	file:	access:public
+demo_class::b	./3_smart_ptr/pool.cc	/^    int a, b, c;$/;"	m	struct:demo_class	file:	access:public
+demo_class::c	./3_smart_ptr/pool.cc	/^    int a, b, c;$/;"	m	struct:demo_class	file:	access:public
+demo_class::demo_class	./3_smart_ptr/pool.cc	/^    demo_class(int x = 1, int y = 2, int z = 3) : a(x), b(y), c(z) {  }$/;"	f	struct:demo_class	access:public	signature:(int x = 1, int y = 2, int z = 3)
+do_not_copy	./4_tools/noncopyable.cc	/^class do_not_copy : boost::noncopyable {};$/;"	c	file:	inherits:boost::noncopyable
+elapsed	./2_timer/time.cc	/^    void elapsed() const { cout << Clock::local_time() - _start_time << endl; }$/;"	f	class:basic_ptimer	access:public	signature:() const
+f	./3_smart_ptr/impl.cc	/^    virtual void f() = 0;$/;"	p	class:abstract	file:	access:public	signature:()
+f	./3_smart_ptr/impl.cc	/^    virtual void f() { cout << "class impl f()" << endl; }$/;"	f	class:impl	access:public	signature:()
+func	./6_test/assert.cc	/^double func(int x)$/;"	f	signature:(int x)
+g	./3_smart_ptr/impl.cc	/^    virtual void g() = 0;$/;"	p	class:abstract	file:	access:public	signature:()
+g	./3_smart_ptr/impl.cc	/^    virtual void g() { cout << "class impl g()" << endl; }$/;"	f	class:impl	access:public	signature:()
+get_primers	./7_container/dynamic_bitset.cc	/^void get_primers(dynamic_bitset<> &db)$/;"	f	signature:(dynamic_bitset< &db)
+greeting	./2_timer/time.cc	/^    void greeting(const ptime& t)$/;"	f	class:work_time	access:public	signature:(const ptime& t)
+impl	./3_smart_ptr/impl.cc	/^class impl : public abstract$/;"	c	file:	inherits:abstract
+impl	./3_smart_ptr/scoped_ptr.cc	/^class sample::impl$/;"	c	class:sample	file:
+impl::f	./3_smart_ptr/impl.cc	/^    virtual void f() { cout << "class impl f()" << endl; }$/;"	f	class:impl	access:public	signature:()
+impl::g	./3_smart_ptr/impl.cc	/^    virtual void g() { cout << "class impl g()" << endl; }$/;"	f	class:impl	access:public	signature:()
+init	./2_timer/time.cc	/^    void init()$/;"	f	class:work_time	file:	access:private	signature:()
+instance	./4_tools/singleton.cc	/^    static object_type & instance() { if (m_instance_ == nullptr) m_instance_ = new T(); return *m_instance_; }$/;"	f	class:singleton_default	access:public	signature:()
+m_instance_	./4_tools/singleton.cc	/^    static T* m_instance_;$/;"	m	class:singleton_default	file:	access:private
+m_instance_	./4_tools/singleton.cc	/^template<typename T> T * singleton_default<T>::m_instance_ = nullptr;$/;"	m	class:singleton_default	file:
+m_os	./2_timer/new_pro.cc	/^    ostream & m_os;$/;"	m	class:new_progress_timer	file:	access:private
+main	./2_timer/begin.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./2_timer/date_time.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./2_timer/display.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./2_timer/new_pro.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./2_timer/time.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./2_timer/timer.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./3_smart_ptr/impl.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./3_smart_ptr/pool.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./3_smart_ptr/scoped_ptr.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./4_tools/assign.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./4_tools/noncopyable.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./4_tools/optional.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./4_tools/singleton.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./4_tools/swap.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./4_tools/tribool.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./5_string/format.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./5_string/lexical_cast.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./5_string/string_algo.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./6_test/assert.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./7_container/array.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./7_container/bimap.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+main	./7_container/dynamic_bitset.cc	/^int main(int argc, const char* argv[])$/;"	f	signature:(int argc, const char* argv[])
+map_t	./2_timer/time.cc	/^    typedef map<time_period, string> map_t;$/;"	t	class:work_time	file:	access:public
+map_ts	./2_timer/time.cc	/^    map_t map_ts;$/;"	m	class:work_time	file:	access:private
+my_min	./6_test/assert.cc	/^T my_min(T a, T b)$/;"	f	signature:(T a, T b)
+new_progress_timer	./2_timer/new_pro.cc	/^    new_progress_timer(ostream & os = cout) : m_os(os)$/;"	f	class:new_progress_timer	access:public	signature:(ostream & os = cout)
+new_progress_timer	./2_timer/new_pro.cc	/^class new_progress_timer : public boost::timer$/;"	c	file:	inherits:boost::timer
+new_progress_timer	./2_timer/new_pro.cc	/^class new_progress_timer<2> : public boost::progress_timer$/;"	c	file:	inherits:boost::progress_timer
+new_progress_timer::m_os	./2_timer/new_pro.cc	/^    ostream & m_os;$/;"	m	class:new_progress_timer	file:	access:private
+new_progress_timer::new_progress_timer	./2_timer/new_pro.cc	/^    new_progress_timer(ostream & os = cout) : m_os(os)$/;"	f	class:new_progress_timer	access:public	signature:(ostream & os = cout)
+new_progress_timer::~new_progress_timer	./2_timer/new_pro.cc	/^    ~new_progress_timer()$/;"	f	class:new_progress_timer	access:public	signature:()
+num_valid	./5_string/lexical_cast.cc	/^bool num_valid(const char *str)$/;"	f	signature:(const char *str)
+object_type	./4_tools/singleton.cc	/^    typedef T object_type;$/;"	t	class:singleton_default	file:	access:public
+operator <	./2_timer/date_time.cc	/^    friend bool operator<(const credit_card& l, const credit_card& r)$/;"	f	class:credit_card	access:friend	signature:(const credit_card& l, const credit_card& r)
+p	./3_smart_ptr/scoped_ptr.cc	/^    shared_ptr<impl> p;$/;"	m	class:sample	file:	access:private
+point	./4_tools/swap.cc	/^class point$/;"	c	file:
+point::swap	./4_tools/swap.cc	/^    void swap(point &p) { cout << "inner swap" << endl; }$/;"	f	class:point	access:public	signature:(point &p)
+print	./3_smart_ptr/scoped_ptr.cc	/^    void print() { cout << "impl print" << endl; }$/;"	f	class:sample::impl	access:public	signature:()
+print	./3_smart_ptr/scoped_ptr.cc	/^    void print();$/;"	p	class:sample	file:	access:public	signature:()
+print	./3_smart_ptr/scoped_ptr.cc	/^void sample::print() { p->print(); }$/;"	f	class:sample	signature:()
+print	./5_string/string_algo.cc	/^void print(T &tok)$/;"	f	signature:(T &tok)
+print	./help/print.cc	/^void print(const T& t)$/;"	f	signature:(const T& t)
+print_pair	./help/print.cc	/^void print_pair(const T& t)$/;"	f	signature:(const T& t)
+print_primers	./7_container/dynamic_bitset.cc	/^void print_primers(const dynamic_bitset<> &db)$/;"	f	signature:(const dynamic_bitset< &db)
+ptimer	./2_timer/time.cc	/^typedef basic_ptimer<microsec_clock> ptimer;$/;"	t	file:
+restart	./2_timer/time.cc	/^    void restart() { _start_time = Clock::local_time(); }$/;"	f	class:basic_ptimer	access:public	signature:()
+sample	./3_smart_ptr/scoped_ptr.cc	/^    sample();$/;"	p	class:sample	file:	access:public	signature:()
+sample	./3_smart_ptr/scoped_ptr.cc	/^class sample$/;"	c	file:
+sample	./3_smart_ptr/scoped_ptr.cc	/^sample::sample() : p(new impl) {}$/;"	f	class:sample	signature:()
+sample::impl	./3_smart_ptr/scoped_ptr.cc	/^class sample::impl$/;"	c	class:sample	file:
+sample::impl::print	./3_smart_ptr/scoped_ptr.cc	/^    void print() { cout << "impl print" << endl; }$/;"	f	class:sample::impl	access:public	signature:()
+sample::p	./3_smart_ptr/scoped_ptr.cc	/^    shared_ptr<impl> p;$/;"	m	class:sample	file:	access:private
+sample::print	./3_smart_ptr/scoped_ptr.cc	/^    void print();$/;"	p	class:sample	file:	access:public	signature:()
+sample::print	./3_smart_ptr/scoped_ptr.cc	/^void sample::print() { p->print(); }$/;"	f	class:sample	signature:()
+sample::sample	./3_smart_ptr/scoped_ptr.cc	/^    sample();$/;"	p	class:sample	file:	access:public	signature:()
+sample::sample	./3_smart_ptr/scoped_ptr.cc	/^sample::sample() : p(new impl) {}$/;"	f	class:sample	signature:()
+single	./4_tools/singleton.cc	/^    single() { cout << "single()" << endl; }$/;"	f	class:single	access:public	signature:()
+single	./4_tools/singleton.cc	/^class single$/;"	c	file:
+single::single	./4_tools/singleton.cc	/^    single() { cout << "single()" << endl; }$/;"	f	class:single	access:public	signature:()
+singleton_default	./4_tools/singleton.cc	/^class singleton_default$/;"	c	file:
+singleton_default::instance	./4_tools/singleton.cc	/^    static object_type & instance() { if (m_instance_ == nullptr) m_instance_ = new T(); return *m_instance_; }$/;"	f	class:singleton_default	access:public	signature:()
+singleton_default::m_instance_	./4_tools/singleton.cc	/^    static T* m_instance_;$/;"	m	class:singleton_default	file:	access:private
+singleton_default::m_instance_	./4_tools/singleton.cc	/^template<typename T> T * singleton_default<T>::m_instance_ = nullptr;$/;"	m	class:singleton_default	file:
+singleton_default::object_type	./4_tools/singleton.cc	/^    typedef T object_type;$/;"	t	class:singleton_default	file:	access:public
+singleton_default::~singleton_default	./4_tools/singleton.cc	/^    ~singleton_default() {$/;"	f	class:singleton_default	access:public	signature:()
+sptimer	./2_timer/time.cc	/^typedef basic_ptimer<second_clock> sptimer;$/;"	t	file:
+sqrt_op	./4_tools/optional.cc	/^optional<double> sqrt_op(double x)$/;"	f	signature:(double x)
+std	./4_tools/swap.cc	/^namespace std$/;"	n	file:
+std::swap	./4_tools/swap.cc	/^        void swap(point &x, point &y) { x.swap(y); }$/;"	f	namespace:std	signature:(point &x, point &y)
+swap	./4_tools/swap.cc	/^        void swap(point &x, point &y) { x.swap(y); }$/;"	f	namespace:std	signature:(point &x, point &y)
+swap	./4_tools/swap.cc	/^    void swap(point &p) { cout << "inner swap" << endl; }$/;"	f	class:point	access:public	signature:(point &p)
+test	./4_tools/optional.cc	/^    test(const test& t) { cout << "copy test" << endl; }$/;"	f	class:test	access:public	signature:(const test& t)
+test	./4_tools/optional.cc	/^    test(int i) { cout << "test(), i = " << i << endl; };$/;"	f	class:test	access:public	signature:(int i)
+test	./4_tools/optional.cc	/^class test$/;"	c	file:
+test::test	./4_tools/optional.cc	/^    test(const test& t) { cout << "copy test" << endl; }$/;"	f	class:test	access:public	signature:(const test& t)
+test::test	./4_tools/optional.cc	/^    test(int i) { cout << "test(), i = " << i << endl; };$/;"	f	class:test	access:public	signature:(int i)
+test_main	./6_test/test_main.cc	/^int test_main(int argc, char* argv[])$/;"	f	signature:(int argc, char* argv[])
+work_time	./2_timer/time.cc	/^    work_time() { init(); }$/;"	f	class:work_time	access:public	signature:()
+work_time	./2_timer/time.cc	/^class work_time$/;"	c	file:
+work_time::greeting	./2_timer/time.cc	/^    void greeting(const ptime& t)$/;"	f	class:work_time	access:public	signature:(const ptime& t)
+work_time::init	./2_timer/time.cc	/^    void init()$/;"	f	class:work_time	file:	access:private	signature:()
+work_time::map_t	./2_timer/time.cc	/^    typedef map<time_period, string> map_t;$/;"	t	class:work_time	file:	access:public
+work_time::map_ts	./2_timer/time.cc	/^    map_t map_ts;$/;"	m	class:work_time	file:	access:private
+work_time::work_time	./2_timer/time.cc	/^    work_time() { init(); }$/;"	f	class:work_time	access:public	signature:()
+~abstract	./3_smart_ptr/impl.cc	/^    virtual ~abstract() {}$/;"	f	class:abstract	access:protected	signature:()
+~basic_ptimer	./2_timer/time.cc	/^    ~basic_ptimer() { elapsed(); }$/;"	f	class:basic_ptimer	access:public	signature:()
+~new_progress_timer	./2_timer/new_pro.cc	/^    ~new_progress_timer()$/;"	f	class:new_progress_timer	access:public	signature:()
+~singleton_default	./4_tools/singleton.cc	/^    ~singleton_default() {$/;"	f	class:singleton_default	access:public	signature:()
